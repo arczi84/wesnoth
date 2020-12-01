@@ -268,7 +268,7 @@ RANLIB = m68k-amigaos-ranlib
 SDL_CFLAGS = -I/cygdrive/e/usr/local/amiga/m68k-amigaos/include -I/cygdrive/e/usr/local/amiga/m68k-amigaos/include-extra -I/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl -I/cygdrive/e/usr/local/amiga/m68k-amigaos/sys-include
 SDL_CONFIG = /cygdrive/e/usr/local/amiga/m68k-amigaos/bin/sdl-config
 SDL_IMAGE_LIBS = -lSDL_image -ljpeg
-SDL_LIBS = -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib ../audio.o -lSDL.mort3 -ldebug -lamiga -lpthread -lintl -liconv -lstdc++4
+SDL_LIBS = -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -Wl,--wrap=memcpy ../memopt.ao ../audio.o -lSDL.mort3 -ldebug -lamiga -lpthread -lintl -liconv -lstdc++4
 SDL_MIXER_LIBS = 
 SDL_NET_LIBS = -lSDL_net
 SET_MAKE = 
