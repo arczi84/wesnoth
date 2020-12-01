@@ -1,0 +1,5 @@
+zipios++/xcoll.o: zipios++/xcoll.cpp wesconfig.h ../config.h
+
+wesconfig.h:
+
+../config.h:

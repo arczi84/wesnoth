@@ -1,0 +1,317 @@
+# #-#-#-#-#  wesnoth-editor.cpp1.po (Battle for Wesnoth VERSION)  #-#-#-#-#
+# Estonian translations for Battle for Wesnoth package.
+# Copyright (C) 2005 Wesnoth development team
+# This file is distributed under the same license as the Battle for Wesnoth package.
+# Automatically generated, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Battle for Wesnoth 0.8.8-CVS\n"
+"Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
+"POT-Creation-Date: 2005-12-06 17:30+0100\n"
+"PO-Revision-Date: 2005-05-07 12:50+0300\n"
+"Last-Translator: Mart Tõnso <mart.tonso@ttu.ee>\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: data/themes/editor.cfg:445
+msgid "File"
+msgstr "Fail"
+
+#: data/themes/editor.cfg:454
+msgid "Edit"
+msgstr "Redigeeri"
+
+#: src/editor/editor.cpp:162
+msgid "Draw tiles"
+msgstr ""
+
+#: src/editor/editor.cpp:164
+#, fuzzy
+msgid "Fill"
+msgstr "Fail"
+
+#: src/editor/editor.cpp:166
+msgid "Set player's starting position"
+msgstr ""
+
+#: src/editor/editor.cpp:168
+msgid "Zoom in"
+msgstr ""
+
+#: src/editor/editor.cpp:170
+msgid "Zoom out"
+msgstr ""
+
+#: src/editor/editor.cpp:172
+msgid "Undo"
+msgstr ""
+
+#: src/editor/editor.cpp:174
+msgid "Redo"
+msgstr ""
+
+#: src/editor/editor.cpp:176
+msgid "Zoom to default view"
+msgstr ""
+
+#: src/editor/editor.cpp:178
+msgid "Toggle grid"
+msgstr ""
+
+#: src/editor/editor.cpp:180
+#, fuzzy
+msgid "Resize the map"
+msgstr "Muuda kaardi mõõtmeid"
+
+#: src/editor/editor.cpp:182
+msgid "Flip map"
+msgstr ""
+
+#: src/editor/editor.cpp:378
+msgid "Language"
+msgstr "Keel"
+
+#: src/editor/editor.cpp:379
+msgid "Choose your preferred language:"
+msgstr "Vali endale sobiv keel:"
+
+#: src/editor/editor.cpp:406
+msgid "Save the Map As"
+msgstr "Salvesta kaart kui"
+
+#: src/editor/editor.cpp:417
+msgid "The map already exists. Do you want to overwrite it?"
+msgstr "Kaart on juba olemas. Kas sa tahad selle üle kirjutada?"
+
+#: src/editor/editor.cpp:440
+#, fuzzy
+msgid "Player "
+msgstr "Mängija"
+
+#: src/editor/editor.cpp:443
+msgid "Which Player?"
+msgstr "Milline mängija?"
+
+#: src/editor/editor.cpp:444
+msgid "Which player should start here?"
+msgstr "Milline mängija siit alustama peaks?"
+
+#: src/editor/editor.cpp:496
+msgid "Choose a Map to Load"
+msgstr "Vali milline kaart laadida"
+
+#: src/editor/editor.cpp:500
+msgid ""
+"Warning: Illegal characters found in the map name. Please save under a "
+"different name."
+msgstr ""
+
+#: src/editor/editor.cpp:518 src/editor/editor.cpp:597
+msgid "The file does not contain a valid map."
+msgstr "Fail ei sisalda korralikku kaarti."
+
+#: src/editor/editor.cpp:659
+msgid "'$filename' does not exist or can not be read as a file."
+msgstr "'$filename' ei ole olemas või seda ei õnnestu failina lugeda."
+
+#: src/editor/editor.cpp:671
+msgid "Load failed: "
+msgstr "Laadimine ebaõnnestus:"
+
+#: src/editor/editor.cpp:870
+msgid "You must have a hex selected on the board."
+msgstr "Sul peab olema kaardil mõni väli valitud."
+
+#: src/editor/editor.cpp:1119
+msgid "Quit Editor"
+msgstr "Välju redaktorist"
+
+#: src/editor/editor.cpp:1124
+msgid "Do you want to save the map before quitting?"
+msgstr "Kas sa tahad kaardi enne väljumist salvestada?"
+
+#: src/editor/editor.cpp:1156
+msgid "Map saved."
+msgstr "Kaart salvestatud"
+
+#: src/editor/editor.cpp:1163
+msgid "Could not save the map: $msg"
+msgstr "Ei saa kaarti salvestada: $msg"
+
+#: src/editor/editor.cpp:1178
+msgid "Error: Illegal character in filename."
+msgstr ""
+
+#: src/editor/editor.cpp:1234
+msgid "Player"
+msgstr "Mängija"
+
+#: src/editor/editor_dialogs.cpp:47
+msgid "Your modifications to the map will be lost. Continue?"
+msgstr "Kaardile tehtud muudatused lähevad kaduma. Jätkad?"
+
+#: src/editor/editor_dialogs.cpp:74 src/editor/editor_dialogs.cpp:195
+msgid "Create New Map"
+msgstr "Loo uus kaart:"
+
+#: src/editor/editor_dialogs.cpp:76 src/editor/editor_dialogs.cpp:390
+#: src/mapgen_dialog.cpp:104
+msgid "Width:"
+msgstr "Laius"
+
+#: src/editor/editor_dialogs.cpp:77 src/editor/editor_dialogs.cpp:391
+#: src/mapgen_dialog.cpp:105
+msgid "Height:"
+msgstr "Kõrgus"
+
+#: src/editor/editor_dialogs.cpp:93
+msgid "Generate New Map"
+msgstr "Genereeri uus kaart:"
+
+#: src/editor/editor_dialogs.cpp:94
+msgid "Generate Random Map"
+msgstr "Genereeri juhuslik kaart"
+
+#: src/editor/editor_dialogs.cpp:95
+msgid "Random Generator Settings"
+msgstr "Juhugeneraatori seaded:"
+
+#: src/editor/editor_dialogs.cpp:96 src/editor/editor_dialogs.cpp:407
+msgid "Cancel"
+msgstr "Tühista"
+
+#: src/editor/editor_dialogs.cpp:181
+msgid "Map creation failed."
+msgstr "Kaardi loomine ebaõnnestus."
+
+#: src/editor/editor_dialogs.cpp:247 src/mapgen_dialog.cpp:95
+msgid "Close Window"
+msgstr "Sulge aken"
+
+#: src/editor/editor_dialogs.cpp:253 src/editor/editor_dialogs.cpp:320
+msgid "Preferences"
+msgstr "Eelistused"
+
+#: src/editor/editor_dialogs.cpp:255
+msgid "Scroll Speed:"
+msgstr "Kerimiskiirus:"
+
+#: src/editor/editor_dialogs.cpp:282
+msgid "Toggle Full Screen"
+msgstr "Täisekraan"
+
+#: src/editor/editor_dialogs.cpp:289
+msgid "Show Grid"
+msgstr "Näita võret"
+
+#: src/editor/editor_dialogs.cpp:296
+msgid "Video Mode"
+msgstr "Video režiim"
+
+#: src/editor/editor_dialogs.cpp:299
+msgid "Hotkeys"
+msgstr "Kiirvalikud"
+
+#: src/editor/editor_dialogs.cpp:388 src/editor/editor_dialogs.cpp:448
+msgid "Resize Map"
+msgstr "Muuda kaardi mõõtmeid"
+
+#: src/editor/editor_dialogs.cpp:408
+msgid "OK"
+msgstr ""
+
+#: src/editor/editor_dialogs.cpp:491
+msgid "X-Axis"
+msgstr "X-telg"
+
+#: src/editor/editor_dialogs.cpp:492
+msgid "Y-Axis"
+msgstr "Y-telg"
+
+#: src/editor/editor_dialogs.cpp:493
+msgid "Flip around (this may change the dimensions of the map):"
+msgstr "Keera ümber (see võib kaardi mõõtmeid muuta):"
+
+#: src/editor/editor_main.cpp:250
+msgid "Battle for Wesnoth Map Editor"
+msgstr ""
+
+#: src/editor/editor_palettes.cpp:311
+msgid "FG"
+msgstr "FG"
+
+#: src/editor/editor_palettes.cpp:313
+msgid "BG"
+msgstr "BG"
+
+#: src/mapgen_dialog.cpp:98
+msgid "Map Generator"
+msgstr ""
+
+#: src/mapgen_dialog.cpp:103
+#, fuzzy
+msgid "Players:"
+msgstr "Mängija"
+
+#: src/mapgen_dialog.cpp:106
+msgid "Number of Hills:"
+msgstr ""
+
+#: src/mapgen_dialog.cpp:107
+msgid "Max Hill Size:"
+msgstr ""
+
+#: src/mapgen_dialog.cpp:108
+msgid "Villages:"
+msgstr ""
+
+#: src/mapgen_dialog.cpp:109
+msgid "Landform:"
+msgstr ""
+
+#: src/mapgen_dialog.cpp:215
+msgid "Roads Between Castles"
+msgstr ""
+
+#: src/mapgen_dialog.cpp:272
+msgid "/1000 tiles"
+msgstr ""
+
+#: src/mapgen_dialog.cpp:277
+msgid "Coastal"
+msgstr ""
+
+#: src/mapgen_dialog.cpp:277
+msgid "Inland"
+msgstr ""
+
+#: src/mapgen_dialog.cpp:277
+msgid "Island"
+msgstr ""
+
+#: src/widgets/file_chooser.cpp:37
+msgid "Delete File"
+msgstr "Kustuta fail"
+
+#: src/widgets/file_chooser.cpp:169
+msgid "Deletion of the file failed."
+msgstr "Faili kustutamine ebaõnnestus."
+
+#~ msgid "Draw"
+#~ msgstr "Joonista"
+
+#~ msgid "Flood"
+#~ msgstr "Üleujutus"
+
+#~ msgid "Start P"
+#~ msgstr "Alusta P"
+
+#~ msgid "Paste"
+#~ msgstr "Kleebi"
+
+#~ msgid "Ok"
+#~ msgstr "Nõus"

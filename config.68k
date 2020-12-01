@@ -1,0 +1,1 @@
+./configure --target=m68k-amigaos --build=x86_64-pc-cygwin --host=m68k-amigaos --prefix=/e/usr/local/amiga/m68k-amigaos CXX="m68k-amigaos-g++ -fomit-frame-pointer -m68040 -ffast-math -O2 -s -noixemul -w" CC="m68k-amigaos-gcc -fomit-frame-pointer  -m68040 -ffast-math -O2 -s -noixemul -w"

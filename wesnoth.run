@@ -1,0 +1,3 @@
+stack 600000
+assign translations: translations
+run wesnoth > ram:log

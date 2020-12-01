@@ -1,0 +1,49 @@
+intl/intl_textdomain.o intl/intl_textdomain.o: intl/intl_textdomain.c \
+  /cygdrive/e/usr/local/amiga/m68k-amigaos/include-extra/libintl.h \
+  /cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/../../../../m68k-amigaos/include/locale.h \
+  /cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/../../../../m68k-amigaos/include/sys/cdefs.h \
+  /cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/../../../../m68k-amigaos/include/machine/cdefs.h \
+  /cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/../../../../m68k-amigaos/include/string.h \
+  /cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/include/stddef.h \
+  /cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/../../../../m68k-amigaos/include/machine/ansi.h \
+  /cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/../../../../m68k-amigaos/include/_G_config.h \
+  /cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/include/stdarg.h \
+  /cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/../../../../m68k-amigaos/include/sys/types.h \
+  /cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/../../../../m68k-amigaos/include/machine/types.h \
+  /cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/../../../../m68k-amigaos/include/machine/endian.h \
+  /cygdrive/e/usr/local/amiga/m68k-amigaos/include-extra/inttypes.h \
+  /cygdrive/e/usr/local/amiga/m68k-amigaos/include-extra/stdint.h \
+  /cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/include/limits.h \
+  /cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/../../../../m68k-amigaos/include/stdlib.h
+
+/cygdrive/e/usr/local/amiga/m68k-amigaos/include-extra/libintl.h:
+
+/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/../../../../m68k-amigaos/include/locale.h:
+
+/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/../../../../m68k-amigaos/include/sys/cdefs.h:
+
+/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/../../../../m68k-amigaos/include/machine/cdefs.h:
+
+/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/../../../../m68k-amigaos/include/string.h:
+
+/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/include/stddef.h:
+
+/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/../../../../m68k-amigaos/include/machine/ansi.h:
+
+/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/../../../../m68k-amigaos/include/_G_config.h:
+
+/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/include/stdarg.h:
+
+/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/../../../../m68k-amigaos/include/sys/types.h:
+
+/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/../../../../m68k-amigaos/include/machine/types.h:
+
+/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/../../../../m68k-amigaos/include/machine/endian.h:
+
+/cygdrive/e/usr/local/amiga/m68k-amigaos/include-extra/inttypes.h:
+
+/cygdrive/e/usr/local/amiga/m68k-amigaos/include-extra/stdint.h:
+
+/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/include/limits.h:
+
+/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/../../../../m68k-amigaos/include/stdlib.h:

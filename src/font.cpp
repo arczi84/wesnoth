@@ -929,10 +929,10 @@ void cut_word(std::string& line, std::string& word, int size, int max_width)
  * According to Kinsoku-Shori, Japanese rules about line-breaking:
  *
  * * the following characters cannot begin a line (so we will never break before them):
- * 、。，．）〕］｝〉》」』】’”ゝゞヽヾ々？！：；ぁぃぅぇぉゃゅょゎァィゥェォャュョヮっヵッヶ・…ー
+ * ă€�ă€‚ďĽŚďĽŽďĽ‰ă€•ďĽ˝ď˝ťă€‰ă€‹ă€Ťă€Źă€‘â€™â€ťă‚ťă‚žă�˝ă�ľă€…ďĽźďĽ�ďĽšďĽ›ă��ă��ă�…ă�‡ă�‰ă‚�ă‚…ă‚‡ă‚Žă‚ˇă‚Łă‚Ąă‚§ă‚©ă�Łă�Ąă�§ă�®ă�Łă�µă��ă�¶ă�»â€¦ă�Ľ
  *
  * * the following characters cannot end a line (so we will never break after them):
- * （〔［｛〈《「『【‘“
+ * ďĽ�ă€”ďĽ»ď˝›ă€�ă€Šă€Śă€Žă€�â€�â€ś
  */
 inline bool no_break_after(wchar_t ch)
 {

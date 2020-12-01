@@ -295,7 +295,7 @@ TTF_Font* TTF_OpenFontIndexRW( SDL_RWops *src, int freesrc, int ptsize, long ind
 	if ( FT_IS_SCALABLE(face) ) {
 
 		/* Set the character size and use default DPI (72) */
-		error = FT_Set_Char_Size( font->face, 0, ptsize * 64, 0, 0 );
+		error = FT_Set_Char_Size( font->face, 0, ptsize * 64, 0, 0 ); //arti
 			if( error ) {
 		TTF_SetFTError( "Couldn't set font size", error );
 		TTF_CloseFont( font );

@@ -1854,7 +1854,7 @@ void help_text_area::handle_jump_cfg(const config &cfg)
 		try {
 			amount = lexical_cast<unsigned, std::string>(amount_str);
 		}
-		catch (bad_lexical_cast) {
+		catch (bad_lexical_cast) {	printf(" line %d in file %s\n", __LINE__, __FILE__);
 			throw parse_error("Invalid amount the amount attribute in jump markup.");
 		}
 		jump_to += amount;
@@ -1864,7 +1864,7 @@ void help_text_area::handle_jump_cfg(const config &cfg)
 		try {
 			to = lexical_cast<unsigned, std::string>(to_str);
 		}
-		catch (bad_lexical_cast) {
+		catch (bad_lexical_cast) {	printf(" line %d in file %s\n", __LINE__, __FILE__);
 			throw parse_error("Invalid amount in the to attribute in jump markup.");
 		}
 		if (to < (unsigned)jump_to) {
@@ -1889,7 +1889,7 @@ void help_text_area::handle_format_cfg(const config &cfg)
 	if (cfg["font_size"] != "") {
 		try {
 			font_size = lexical_cast<int, std::string>(cfg["font_size"]);
-		} catch (bad_lexical_cast) {
+		} catch (bad_lexical_cast) {	printf(" line %d in file %s\n", __LINE__, __FILE__);
 			throw parse_error("Invalid font_size in format markup.");
 		}
 	}
@@ -2192,7 +2192,7 @@ void help_browser::adjust_layout()
   const int menu_buttons_padding = font::relative_size(10);
 	const int menu_y = location().y;
 	const int menu_x = location().x;
-#ifdef USE_TINY_GUI
+#if 1 //def USE_TINY_GUI
 	const int menu_w = 120;
 #else
 	const int menu_w = 250;

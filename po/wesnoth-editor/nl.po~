@@ -1,0 +1,314 @@
+# Dutch translations for Battle for Wesnoth package.
+# Copyright (C) 2005 Wesnoth development team
+# This file is distributed under the same license as the Battle for Wesnoth package.
+# 
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Battle for Wesnoth 0.8.11+CVS\n"
+"Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
+"POT-Creation-Date: 2005-12-06 17:30+0100\n"
+"PO-Revision-Date: 2005-08-09 10:16+0200\n"
+"Last-Translator: Maarten Albrecht <maartenalbrecht@gmail.com>\n"
+"Language-Team: Dutch <onne@grammex.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/themes/editor.cfg:445
+msgid "File"
+msgstr "Bestand"
+
+#: data/themes/editor.cfg:454
+msgid "Edit"
+msgstr "Bewerk"
+
+#: src/editor/editor.cpp:162
+msgid "Draw tiles"
+msgstr "Vakjes tekenen"
+
+#: src/editor/editor.cpp:164
+msgid "Fill"
+msgstr "Vullen"
+
+#: src/editor/editor.cpp:166
+msgid "Set player's starting position"
+msgstr "Startpositie instellen"
+
+#: src/editor/editor.cpp:168
+msgid "Zoom in"
+msgstr "Inzoomen"
+
+#: src/editor/editor.cpp:170
+msgid "Zoom out"
+msgstr "Uitzoomen"
+
+#: src/editor/editor.cpp:172
+msgid "Undo"
+msgstr "Ongedaan maken"
+
+#: src/editor/editor.cpp:174
+msgid "Redo"
+msgstr "Opnieuw doen"
+
+#: src/editor/editor.cpp:176
+msgid "Zoom to default view"
+msgstr "Standaardzoom"
+
+#: src/editor/editor.cpp:178
+msgid "Toggle grid"
+msgstr "Grid aan/uit"
+
+#: src/editor/editor.cpp:180
+msgid "Resize the map"
+msgstr "Afmetingen Wijzigen"
+
+#: src/editor/editor.cpp:182
+msgid "Flip map"
+msgstr "Kaart spiegelen"
+
+#: src/editor/editor.cpp:378
+msgid "Language"
+msgstr "Taal"
+
+#: src/editor/editor.cpp:379
+msgid "Choose your preferred language:"
+msgstr "Kies de taal:"
+
+#: src/editor/editor.cpp:406
+msgid "Save the Map As"
+msgstr "Map opslaan als"
+
+#: src/editor/editor.cpp:417
+msgid "The map already exists. Do you want to overwrite it?"
+msgstr "De kaart bestaat al. Wil je ze overschrijven?"
+
+#: src/editor/editor.cpp:440
+msgid "Player "
+msgstr "Speler "
+
+#: src/editor/editor.cpp:443
+msgid "Which Player?"
+msgstr "Welke Speler?"
+
+#: src/editor/editor.cpp:444
+msgid "Which player should start here?"
+msgstr "Welke speler moet hier starten?"
+
+#: src/editor/editor.cpp:496
+msgid "Choose a Map to Load"
+msgstr "Kies een map om te laden"
+
+#: src/editor/editor.cpp:500
+#, fuzzy
+msgid ""
+"Warning: Illegal characters found in the map name. Please save under a "
+"different name."
+msgstr ""
+"Waarschuwing: Ongeldige tekens gevonden in de kaartnaam. Kies een andere "
+"naam."
+
+#: src/editor/editor.cpp:518 src/editor/editor.cpp:597
+msgid "The file does not contain a valid map."
+msgstr "Het bestand bevat geen geldige map."
+
+#: src/editor/editor.cpp:659
+msgid "'$filename' does not exist or can not be read as a file."
+msgstr "'$filename'  bestaat niet of kan niet worden gelezen."
+
+#: src/editor/editor.cpp:671
+msgid "Load failed: "
+msgstr "Laden mislukt:"
+
+#: src/editor/editor.cpp:870
+msgid "You must have a hex selected on the board."
+msgstr "Je moet een vakje geselecteerd hebben op het bord."
+
+#: src/editor/editor.cpp:1119
+msgid "Quit Editor"
+msgstr "Verlaat Editor"
+
+#: src/editor/editor.cpp:1124
+msgid "Do you want to save the map before quitting?"
+msgstr "Wil je de kaart opslaan voor het afsluiten?"
+
+#: src/editor/editor.cpp:1156
+msgid "Map saved."
+msgstr "Map opgeslagen."
+
+#: src/editor/editor.cpp:1163
+msgid "Could not save the map: $msg"
+msgstr "Kon de kaart niet opslaan: $msg"
+
+#: src/editor/editor.cpp:1178
+msgid "Error: Illegal character in filename."
+msgstr "Fout: ongeldig teken in bestandsnaam."
+
+#: src/editor/editor.cpp:1234
+msgid "Player"
+msgstr "Speler"
+
+#: src/editor/editor_dialogs.cpp:47
+msgid "Your modifications to the map will be lost. Continue?"
+msgstr "Je veranderingen aan de kaart zullen verloren gaan. Verdergaan?"
+
+#: src/editor/editor_dialogs.cpp:74 src/editor/editor_dialogs.cpp:195
+msgid "Create New Map"
+msgstr "Nieuwe Kaart Maken"
+
+#: src/editor/editor_dialogs.cpp:76 src/editor/editor_dialogs.cpp:390
+#: src/mapgen_dialog.cpp:104
+msgid "Width:"
+msgstr "Breedte:"
+
+#: src/editor/editor_dialogs.cpp:77 src/editor/editor_dialogs.cpp:391
+#: src/mapgen_dialog.cpp:105
+msgid "Height:"
+msgstr "Hoogte:"
+
+#: src/editor/editor_dialogs.cpp:93
+msgid "Generate New Map"
+msgstr "Nieuwe Kaart Genereren"
+
+#: src/editor/editor_dialogs.cpp:94
+msgid "Generate Random Map"
+msgstr "Genereer Willekeurige Map"
+
+#: src/editor/editor_dialogs.cpp:95
+msgid "Random Generator Settings"
+msgstr "Mapgenerator Instellingen"
+
+#: src/editor/editor_dialogs.cpp:96 src/editor/editor_dialogs.cpp:407
+msgid "Cancel"
+msgstr "Annuleer"
+
+#: src/editor/editor_dialogs.cpp:181
+msgid "Map creation failed."
+msgstr "Make van map is mislukt."
+
+#: src/editor/editor_dialogs.cpp:247 src/mapgen_dialog.cpp:95
+msgid "Close Window"
+msgstr "Sluit Venster"
+
+#: src/editor/editor_dialogs.cpp:253 src/editor/editor_dialogs.cpp:320
+msgid "Preferences"
+msgstr "Instellingen"
+
+#: src/editor/editor_dialogs.cpp:255
+msgid "Scroll Speed:"
+msgstr "Scrolsnelheid"
+
+#: src/editor/editor_dialogs.cpp:282
+msgid "Toggle Full Screen"
+msgstr "Volledig Scherm Aan/Uit"
+
+#: src/editor/editor_dialogs.cpp:289
+msgid "Show Grid"
+msgstr "Toon Raster"
+
+#: src/editor/editor_dialogs.cpp:296
+msgid "Video Mode"
+msgstr "Video Mode"
+
+#: src/editor/editor_dialogs.cpp:299
+msgid "Hotkeys"
+msgstr "Sneltoetsen"
+
+#: src/editor/editor_dialogs.cpp:388 src/editor/editor_dialogs.cpp:448
+msgid "Resize Map"
+msgstr "Wijzig Afmetingen"
+
+#: src/editor/editor_dialogs.cpp:408
+msgid "OK"
+msgstr "Ok"
+
+#: src/editor/editor_dialogs.cpp:491
+msgid "X-Axis"
+msgstr "X-As"
+
+#: src/editor/editor_dialogs.cpp:492
+msgid "Y-Axis"
+msgstr "Y-As"
+
+#: src/editor/editor_dialogs.cpp:493
+msgid "Flip around (this may change the dimensions of the map):"
+msgstr "Kantel (dit kan de resolutie van de kaart veranderen)"
+
+#: src/editor/editor_main.cpp:250
+msgid "Battle for Wesnoth Map Editor"
+msgstr "Battle for Wesnoth Kaartontwerper"
+
+#: src/editor/editor_palettes.cpp:311
+msgid "FG"
+msgstr "FG"
+
+#: src/editor/editor_palettes.cpp:313
+msgid "BG"
+msgstr "BG"
+
+#: src/mapgen_dialog.cpp:98
+msgid "Map Generator"
+msgstr "Kaartgenerator"
+
+#: src/mapgen_dialog.cpp:103
+msgid "Players:"
+msgstr "Spelers:"
+
+#: src/mapgen_dialog.cpp:106
+msgid "Number of Hills:"
+msgstr "Aantal Heuvels"
+
+#: src/mapgen_dialog.cpp:107
+msgid "Max Hill Size:"
+msgstr "Max. Heuvelgrootte"
+
+#: src/mapgen_dialog.cpp:108
+msgid "Villages:"
+msgstr "Dorpjes:"
+
+#: src/mapgen_dialog.cpp:109
+msgid "Landform:"
+msgstr "Landvorm:"
+
+#: src/mapgen_dialog.cpp:215
+msgid "Roads Between Castles"
+msgstr "Wegen Tussen Kastelen"
+
+#: src/mapgen_dialog.cpp:272
+msgid "/1000 tiles"
+msgstr "/1000 vakjes"
+
+#: src/mapgen_dialog.cpp:277
+msgid "Coastal"
+msgstr "Kust"
+
+#: src/mapgen_dialog.cpp:277
+msgid "Inland"
+msgstr "Vaste Land"
+
+#: src/mapgen_dialog.cpp:277
+msgid "Island"
+msgstr "Eiland"
+
+#: src/widgets/file_chooser.cpp:37
+msgid "Delete File"
+msgstr "Verwijder Bestand"
+
+#: src/widgets/file_chooser.cpp:169
+msgid "Deletion of the file failed."
+msgstr "Kon bestand niet verwijderen"
+
+#~ msgid "Draw"
+#~ msgstr "Teken"
+
+#~ msgid "Flood"
+#~ msgstr "Vul op"
+
+#~ msgid "Start P"
+#~ msgstr "Start P"
+
+#~ msgid "Paste"
+#~ msgstr "Plak"
+
+#~ msgid "Ok"
+#~ msgstr "Ok"

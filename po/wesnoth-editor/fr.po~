@@ -1,0 +1,316 @@
+# French translations for the Battle for Wesnoth editor
+# vim:set encoding=utf-8:
+# Traduction anglaise de l'éditeur de Battle for Wesnoth.
+# Copyright (C) 2004 THE Battle for Wesnoth'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Battle for Wesnoth package.
+# French Wesnoth translation team <wesnoth@ml.free.fr>, 2004.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Battle for Wesnoth 0.8.4-CVS\n"
+"Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
+"POT-Creation-Date: 2005-12-06 17:30+0100\n"
+"PO-Revision-Date: 2005-05-25 18:56+0100\n"
+"Last-Translator: Guillaume MASSART <massart.guillaume@wanadoo.fr>\n"
+"Language-Team: Language fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/themes/editor.cfg:445
+msgid "File"
+msgstr "Fichier"
+
+#: data/themes/editor.cfg:454
+msgid "Edit"
+msgstr "Éditer"
+
+#: src/editor/editor.cpp:162
+msgid "Draw tiles"
+msgstr "Afficher les briques"
+
+#: src/editor/editor.cpp:164
+msgid "Fill"
+msgstr "Remplir"
+
+#: src/editor/editor.cpp:166
+msgid "Set player's starting position"
+msgstr "Placer la position de départ du joueur"
+
+#: src/editor/editor.cpp:168
+msgid "Zoom in"
+msgstr "Zoom avant"
+
+#: src/editor/editor.cpp:170
+msgid "Zoom out"
+msgstr "Zoom arrière"
+
+#: src/editor/editor.cpp:172
+msgid "Undo"
+msgstr "Annuler"
+
+#: src/editor/editor.cpp:174
+msgid "Redo"
+msgstr "Refaire"
+
+#: src/editor/editor.cpp:176
+msgid "Zoom to default view"
+msgstr "Zoom à la vue par défaut"
+
+#: src/editor/editor.cpp:178
+msgid "Toggle grid"
+msgstr "Grille"
+
+#: src/editor/editor.cpp:180
+msgid "Resize the map"
+msgstr "Redimensionner la carte"
+
+#: src/editor/editor.cpp:182
+msgid "Flip map"
+msgstr "Basculer la carte"
+
+#: src/editor/editor.cpp:378
+msgid "Language"
+msgstr "Langue"
+
+#: src/editor/editor.cpp:379
+msgid "Choose your preferred language:"
+msgstr "Choisissez votre langue préférée : "
+
+#: src/editor/editor.cpp:406
+msgid "Save the Map As"
+msgstr "Enregistrer la carte sous"
+
+#: src/editor/editor.cpp:417
+msgid "The map already exists. Do you want to overwrite it?"
+msgstr "La carte existe déjà. Souhaitez-vous l'écraser ?"
+
+#: src/editor/editor.cpp:440
+msgid "Player "
+msgstr "Joueur "
+
+#: src/editor/editor.cpp:443
+msgid "Which Player?"
+msgstr "Quel joueur ?"
+
+#: src/editor/editor.cpp:444
+msgid "Which player should start here?"
+msgstr "Quel joueur débutera ici ?"
+
+#: src/editor/editor.cpp:496
+msgid "Choose a Map to Load"
+msgstr "Choisissez une carte à charger"
+
+#: src/editor/editor.cpp:500
+#, fuzzy
+msgid ""
+"Warning: Illegal characters found in the map name. Please save under a "
+"different name."
+msgstr ""
+"Avertissement : caractère illégal rencontré dans le nom de la carte. Vous "
+"devez sauvegarder sous un nom différent."
+
+#: src/editor/editor.cpp:518 src/editor/editor.cpp:597
+msgid "The file does not contain a valid map."
+msgstr "Ce fichier ne contient pas de carte valide."
+
+#: src/editor/editor.cpp:659
+msgid "'$filename' does not exist or can not be read as a file."
+msgstr "« $filename » n'est pas un fichier existant ou ne peut pas être lu."
+
+#: src/editor/editor.cpp:671
+msgid "Load failed: "
+msgstr "Le chargement a échoué : "
+
+#: src/editor/editor.cpp:870
+msgid "You must have a hex selected on the board."
+msgstr "Vous devez avoir sélectionné un hexagone sur la carte."
+
+#: src/editor/editor.cpp:1119
+msgid "Quit Editor"
+msgstr "Quitter l'éditeur"
+
+#: src/editor/editor.cpp:1124
+msgid "Do you want to save the map before quitting?"
+msgstr "Souhaitez-vous sauvegarder la carte avant de quitter ?"
+
+#: src/editor/editor.cpp:1156
+msgid "Map saved."
+msgstr "Carte sauvegardée."
+
+#: src/editor/editor.cpp:1163
+msgid "Could not save the map: $msg"
+msgstr "Impossible de sauvegarder la carte : $msg"
+
+#: src/editor/editor.cpp:1178
+msgid "Error: Illegal character in filename."
+msgstr "Erreur : caractère illégal dans le nom du fichier."
+
+#: src/editor/editor.cpp:1234
+msgid "Player"
+msgstr "Joueur"
+
+#: src/editor/editor_dialogs.cpp:47
+msgid "Your modifications to the map will be lost. Continue?"
+msgstr "Vos modifications à la carte seront perdues. Continuer ?"
+
+#: src/editor/editor_dialogs.cpp:74 src/editor/editor_dialogs.cpp:195
+msgid "Create New Map"
+msgstr "Créer une nouvelle carte"
+
+#: src/editor/editor_dialogs.cpp:76 src/editor/editor_dialogs.cpp:390
+#: src/mapgen_dialog.cpp:104
+msgid "Width:"
+msgstr "Largeur :"
+
+#: src/editor/editor_dialogs.cpp:77 src/editor/editor_dialogs.cpp:391
+#: src/mapgen_dialog.cpp:105
+msgid "Height:"
+msgstr "Hauteur :"
+
+#: src/editor/editor_dialogs.cpp:93
+msgid "Generate New Map"
+msgstr "Générer une nouvelle carte"
+
+#: src/editor/editor_dialogs.cpp:94
+msgid "Generate Random Map"
+msgstr "Générer une carte aléatoire"
+
+#: src/editor/editor_dialogs.cpp:95
+msgid "Random Generator Settings"
+msgstr "Paramètres du générateur aléatoire"
+
+#: src/editor/editor_dialogs.cpp:96 src/editor/editor_dialogs.cpp:407
+msgid "Cancel"
+msgstr "Annuler"
+
+#: src/editor/editor_dialogs.cpp:181
+msgid "Map creation failed."
+msgstr "La création de la carte a échoué."
+
+#: src/editor/editor_dialogs.cpp:247 src/mapgen_dialog.cpp:95
+msgid "Close Window"
+msgstr "Fermer la fenêtre"
+
+#: src/editor/editor_dialogs.cpp:253 src/editor/editor_dialogs.cpp:320
+msgid "Preferences"
+msgstr "Préférences"
+
+#: src/editor/editor_dialogs.cpp:255
+msgid "Scroll Speed:"
+msgstr "Vitesse de défilement :"
+
+#: src/editor/editor_dialogs.cpp:282
+msgid "Toggle Full Screen"
+msgstr "Plein écran"
+
+#: src/editor/editor_dialogs.cpp:289
+msgid "Show Grid"
+msgstr "Afficher la Grille"
+
+#: src/editor/editor_dialogs.cpp:296
+msgid "Video Mode"
+msgstr "Mode vidéo"
+
+#: src/editor/editor_dialogs.cpp:299
+msgid "Hotkeys"
+msgstr "Raccourcis clavier"
+
+#: src/editor/editor_dialogs.cpp:388 src/editor/editor_dialogs.cpp:448
+msgid "Resize Map"
+msgstr "Redimensionner la carte"
+
+#: src/editor/editor_dialogs.cpp:408
+msgid "OK"
+msgstr "Ok"
+
+#: src/editor/editor_dialogs.cpp:491
+msgid "X-Axis"
+msgstr "Axe X"
+
+#: src/editor/editor_dialogs.cpp:492
+msgid "Y-Axis"
+msgstr "Axe Y"
+
+#: src/editor/editor_dialogs.cpp:493
+msgid "Flip around (this may change the dimensions of the map):"
+msgstr "Retourner (cela peut modifier les dimensions de la carte) :"
+
+#: src/editor/editor_main.cpp:250
+msgid "Battle for Wesnoth Map Editor"
+msgstr "Éditeur de cartes de la bataille pour Wesnoth"
+
+#: src/editor/editor_palettes.cpp:311
+msgid "FG"
+msgstr "PP"
+
+#: src/editor/editor_palettes.cpp:313
+msgid "BG"
+msgstr "AP"
+
+#: src/mapgen_dialog.cpp:98
+msgid "Map Generator"
+msgstr "Générateur de cartes"
+
+#: src/mapgen_dialog.cpp:103
+msgid "Players:"
+msgstr "Joueurs :"
+
+#: src/mapgen_dialog.cpp:106
+msgid "Number of Hills:"
+msgstr "Nombre de collines :"
+
+#: src/mapgen_dialog.cpp:107
+msgid "Max Hill Size:"
+msgstr "Taille maximale des colines :"
+
+#: src/mapgen_dialog.cpp:108
+msgid "Villages:"
+msgstr "Villages :"
+
+#: src/mapgen_dialog.cpp:109
+msgid "Landform:"
+msgstr "Formes du terrain :"
+
+#: src/mapgen_dialog.cpp:215
+msgid "Roads Between Castles"
+msgstr "Routes entre les châteaux"
+
+#: src/mapgen_dialog.cpp:272
+msgid "/1000 tiles"
+msgstr "/1000 briques"
+
+#: src/mapgen_dialog.cpp:277
+msgid "Coastal"
+msgstr "Côtier"
+
+#: src/mapgen_dialog.cpp:277
+msgid "Inland"
+msgstr "Continental"
+
+#: src/mapgen_dialog.cpp:277
+msgid "Island"
+msgstr "Insulaire"
+
+#: src/widgets/file_chooser.cpp:37
+msgid "Delete File"
+msgstr "Supprimer le fichier"
+
+#: src/widgets/file_chooser.cpp:169
+msgid "Deletion of the file failed."
+msgstr "La suppression du fichier a échoué."
+
+#~ msgid "Draw"
+#~ msgstr "Tracer"
+
+#~ msgid "Flood"
+#~ msgstr "Remplir"
+
+#~ msgid "Start P"
+#~ msgstr "Départ"
+
+#~ msgid "Paste"
+#~ msgstr "Coller"
+
+#~ msgid "Ok"
+#~ msgstr "Ok"

@@ -2,8 +2,8 @@
 # Copyright (C) 2004 Wesnoth development team
 # This file is distributed under the same license as the Battle for Wesnoth package.
 # Automatically generated ail.com, 2005.
-# 
-# 
+#
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Battle for Wesnoth 0.9.5-CVS\n"
@@ -12,6 +12,7 @@ msgstr ""
 "PO-Revision-Date: 2005-12-12 00:58+0900\n"
 "Last-Translator: Tiago \"Salvador\" Souza <ts.salvador AT gmail DOT com>\n"
 "Language-Team: Portuguese/Brazil\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"

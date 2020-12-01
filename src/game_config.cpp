@@ -76,10 +76,15 @@ namespace game_config
 
 
 #ifdef WESNOTH_PATH
-	std::string path = WESNOTH_PATH;
+
+#ifdef __AMIGA__ //arti
+		std::string path = "";
 #else
-	std::string path = "";
+		std::string path = WESNOTH_PATH;
 #endif
+
+#endif
+
 
 	void load_config(const config* cfg)
 	{

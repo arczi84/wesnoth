@@ -582,9 +582,9 @@ surface cut_surface(surface const &surf, SDL_Rect const &r)
 
 surface blend_surface(surface const &surf, double amount, Uint32 colour)
 {
-	if(surf== NULL) {
-		return NULL;
-	}
+	//if(surf== NULL) {
+		return surf;//NULL;
+	//}
 
 	surface nsurf(make_neutral_surface(surf));
 

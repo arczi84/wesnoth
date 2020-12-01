@@ -1,0 +1,545 @@
+# Slovenian translations for Battle for Wesnoth package.
+# Copyright (C) 2004 Wesnoth development team
+# This file is distributed under the same license as the Battle for Wesnoth package.
+# Automatically generated, 2004.
+msgid ""
+msgstr ""
+"Project-Id-Version: smart-sl\n"
+"Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
+"POT-Creation-Date: 2005-12-06 17:30+0100\n"
+"PO-Revision-Date: 2004-11-15 22:20+0100\n"
+"Last-Translator: lynx\n"
+"Language-Team:  <en@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3);\n"
+
+#: src/hotkeys.cpp:45
+msgid "Next unit"
+msgstr "Naslednja enota"
+
+#: src/hotkeys.cpp:46
+msgid "Previous unit"
+msgstr "Prejšnja enota"
+
+#: src/hotkeys.cpp:47
+msgid "Hold Position"
+msgstr "Ostani na mestu"
+
+#: src/hotkeys.cpp:48
+msgid "End Unit Turn"
+msgstr "Končaj enotino potezo"
+
+#: src/hotkeys.cpp:49
+msgid "Leader"
+msgstr "Vodja"
+
+#: src/hotkeys.cpp:50
+msgid "Undo"
+msgstr "Razveljavi"
+
+#: src/hotkeys.cpp:51
+msgid "Redo"
+msgstr "Uveljavi"
+
+#: src/hotkeys.cpp:52
+msgid "Zoom In"
+msgstr "Povečaj"
+
+#: src/hotkeys.cpp:53
+msgid "Zoom Out"
+msgstr "Pomanjšaj"
+
+#: src/hotkeys.cpp:54
+msgid "Default Zoom"
+msgstr "Privzeta povečava"
+
+#: src/hotkeys.cpp:55 src/preferences.cpp:887
+msgid "Toggle Full Screen"
+msgstr "Celozaslonski način"
+
+#: src/hotkeys.cpp:56
+msgid "Screenshot"
+msgstr "Posnetek zaslona"
+
+#: src/hotkeys.cpp:57
+msgid "Accelerated"
+msgstr "Pospešeno"
+
+#: src/hotkeys.cpp:58
+msgid "Unit Description"
+msgstr "Opis enote"
+
+#: src/hotkeys.cpp:59
+msgid "Rename Unit"
+msgstr "Preimenuj enoto"
+
+#: src/hotkeys.cpp:60
+msgid "Save Game"
+msgstr "Shrani igro"
+
+#: src/hotkeys.cpp:61
+msgid "Load Game"
+msgstr "Naloži igro"
+
+#: src/hotkeys.cpp:62
+msgid "Recruit"
+msgstr "Novači"
+
+#: src/hotkeys.cpp:63
+msgid "Repeat Recruit"
+msgstr "Ponovi novačenje"
+
+#: src/hotkeys.cpp:64
+msgid "Recall"
+msgstr "Prikliči"
+
+#: src/hotkeys.cpp:65
+msgid "End Turn"
+msgstr "Končaj potezo"
+
+#: src/hotkeys.cpp:66
+msgid "Toggle Grid"
+msgstr "Preklopi prikaz mreže"
+
+#: src/hotkeys.cpp:67
+msgid "Status Table"
+msgstr "Statusna tabela"
+
+#: src/hotkeys.cpp:68
+msgid "Mute"
+msgstr "Utišaj"
+
+#: src/hotkeys.cpp:69
+msgid "Speak"
+msgstr "Govori"
+
+#: src/hotkeys.cpp:70
+msgid "Create Unit (Debug!)"
+msgstr "Ustvari enoto (Debug!)"
+
+#: src/hotkeys.cpp:71
+msgid "Change Unit Side (Debug!)"
+msgstr "Spremeni enotino stran (Debug!)"
+
+#: src/hotkeys.cpp:72 src/preferences.cpp:1232
+msgid "Preferences"
+msgstr "Nastavitve"
+
+#: src/hotkeys.cpp:73
+msgid "Scenario Objectives"
+msgstr "Cilji scenarija"
+
+#: src/hotkeys.cpp:74
+msgid "Unit List"
+msgstr "Seznam enot"
+
+#: src/hotkeys.cpp:75
+msgid "Statistics"
+msgstr "Statistika"
+
+#: src/hotkeys.cpp:76
+msgid "Quit Game"
+msgstr "Izhod iz igre"
+
+#: src/hotkeys.cpp:77
+msgid "Set Label"
+msgstr "Nastavi oznako"
+
+#: src/hotkeys.cpp:78
+msgid "Show Enemy Moves"
+msgstr "Pokaži sovražne poteze"
+
+#: src/hotkeys.cpp:79
+msgid "Best Possible Enemy Moves"
+msgstr "Najboljše možne sovražne poteze"
+
+#: src/hotkeys.cpp:81
+msgid "Set Terrain"
+msgstr "Nastavi teren"
+
+#: src/hotkeys.cpp:82
+msgid "Quit Editor"
+msgstr "Izhod iz urejevalnika"
+
+#: src/hotkeys.cpp:83
+msgid "New Map"
+msgstr "Nova karta"
+
+#: src/hotkeys.cpp:84
+msgid "Load Map"
+msgstr "Naloži karto"
+
+#: src/hotkeys.cpp:85
+msgid "Save Map"
+msgstr "Shrani karto"
+
+#: src/hotkeys.cpp:86
+msgid "Save As"
+msgstr "Shrani kot"
+
+#: src/hotkeys.cpp:87
+msgid "Set Player's keep"
+msgstr "Nastavi igralčevo trdnjavo"
+
+#: src/hotkeys.cpp:88
+msgid "Flood Fill"
+msgstr "Zapolnitev"
+
+#: src/hotkeys.cpp:89
+msgid "Fill Selection"
+msgstr "Zapolni izbor"
+
+#: src/hotkeys.cpp:90
+msgid "Cut"
+msgstr "Izreži"
+
+#: src/hotkeys.cpp:91
+msgid "Copy"
+msgstr "Kopiraj"
+
+#: src/hotkeys.cpp:92
+msgid "Paste"
+msgstr "Prilepi"
+
+#: src/hotkeys.cpp:93
+msgid "Revert from Disk"
+msgstr "Povrni"
+
+#: src/hotkeys.cpp:94
+msgid "Resize Map"
+msgstr "Spremeni velikost karte"
+
+#: src/hotkeys.cpp:95
+msgid "Flip Map"
+msgstr "Prevrni karto"
+
+#: src/hotkeys.cpp:96
+msgid "Select All"
+msgstr "Izberi vse"
+
+#: src/hotkeys.cpp:97
+msgid "Draw Terrain"
+msgstr "Nariši teren"
+
+#: src/hotkeys.cpp:98
+msgid "Refresh Image Cache"
+msgstr "Posodobi slikovni predpomnilnik"
+
+#: src/hotkeys.cpp:100
+msgid "Delay Shroud Updates"
+msgstr "Zakasnitev posodobitve koprene"
+
+#: src/hotkeys.cpp:101
+msgid "Update Shroud Now"
+msgstr "Posodobi kopreno"
+
+#: src/hotkeys.cpp:102
+msgid "Continue Move"
+msgstr "Nadaljuj premik"
+
+#: src/hotkeys.cpp:103
+msgid "Find Label or Unit"
+msgstr "Najdi oznako ali enoto"
+
+#: src/hotkeys.cpp:104
+msgid "Speak to Ally"
+msgstr "Govori zaveznikom"
+
+#: src/hotkeys.cpp:105
+msgid "Speak to All"
+msgstr "Govori vsem"
+
+#: src/hotkeys.cpp:106 src/show_dialog.cpp:577
+msgid "Help"
+msgstr "Pomoč"
+
+#: src/hotkeys.cpp:107
+msgid "View Chat Log"
+msgstr "Oglej si dnevnik pogovorov"
+
+#: src/hotkeys.cpp:108
+msgid "Enter user command"
+msgstr "Vnesite svoj ukaz"
+
+#: src/hotkeys.cpp:110
+msgid "Change the language"
+msgstr "Spremeni jezik (prevod)"
+
+#: src/hotkeys.cpp:359 src/hotkeys.cpp:553
+msgid "Do you really want to quit?"
+msgstr "Ali res želite končati?"
+
+#: src/hotkeys.cpp:359 src/hotkeys.cpp:553
+msgid "Quit"
+msgstr "Izhod"
+
+#: src/preferences.cpp:158 src/preferences.cpp:209
+msgid ""
+"The video mode could not be changed. Your window manager must be set to 16 "
+"bits per pixel to run the game in windowed mode. Your display must support "
+"1024x768x16 to run the game full screen."
+msgstr ""
+"Nisem mogel spremeniti video načina. Da bi igrali v okenskem načinu, mora "
+"biti vaš upravitelj oken nastavljen na 16-bitno globino. Za igranje v "
+"celozaslonskem načinu mora vaš zaslon podpirati resolucijo najmanj 1024x768 "
+"pri 16-bitni globini."
+
+#: src/preferences.cpp:379
+msgid "player"
+msgstr "igralec"
+
+#: src/preferences.cpp:888
+msgid "Accelerated Speed"
+msgstr "Višja hitrost"
+
+#: src/preferences.cpp:889
+msgid "Skip AI Moves"
+msgstr "Preskoči poteze UI"
+
+#: src/preferences.cpp:890
+msgid "Show Grid"
+msgstr "Prikaži mrežo"
+
+#: src/preferences.cpp:891
+msgid "Show Floating Labels"
+msgstr "Prikaži lebdeče oznake"
+
+#: src/preferences.cpp:892
+msgid "Turn Dialog"
+msgstr "Pogovorno okno ob začetku vaše poteze"
+
+#: src/preferences.cpp:893
+msgid "Turn Bell"
+msgstr "Zvonenje ob začetku vaše poteze"
+
+#: src/preferences.cpp:894
+msgid "Show Team Colors"
+msgstr "Prikaži ekipne barve"
+
+#: src/preferences.cpp:895
+msgid "Show Color Cursors"
+msgstr "Prikaži barvne kazalce"
+
+#: src/preferences.cpp:896
+msgid "Show Haloing Effects"
+msgstr "Prikaži halo učinke"
+
+#: src/preferences.cpp:897
+msgid "Video Mode"
+msgstr "Video način"
+
+#: src/preferences.cpp:898
+msgid "Hotkeys"
+msgstr "Hitre tipke"
+
+#: src/preferences.cpp:899
+msgid "Adjust Gamma"
+msgstr "Uravnaj gammo"
+
+#: src/preferences.cpp:900
+msgid "Reverse Time Graphics"
+msgstr "Obrni slike časov dneva"
+
+#: src/preferences.cpp:901
+msgid "Sound effects"
+msgstr "Zvočni učinki"
+
+#: src/preferences.cpp:902
+msgid "Music"
+msgstr "Glasba"
+
+#: src/preferences.cpp:904
+msgid "Music Volume:"
+msgstr "Glasnost glasbe:"
+
+#: src/preferences.cpp:904
+msgid "SFX Volume:"
+msgstr "Glasnost učinkov:"
+
+#: src/preferences.cpp:905
+msgid "Gamma:"
+msgstr "Gamma:"
+
+#: src/preferences.cpp:905
+msgid "Scroll Speed:"
+msgstr "Hitrost drsenja:"
+
+#: src/preferences.cpp:918
+msgid "Sound effects on/off"
+msgstr "Zvočni učinki da/ne"
+
+#: src/preferences.cpp:922
+msgid "Change the sound effects volume"
+msgstr "Spremeni glasnost učinkov"
+
+#: src/preferences.cpp:925
+msgid "Music on/off"
+msgstr "Glasba da/ne"
+
+#: src/preferences.cpp:929
+msgid "Change the music volume"
+msgstr "Spremeni glasnost glasbe"
+
+#: src/preferences.cpp:935
+msgid "Change the speed of scrolling around the map"
+msgstr "Spremeni hitrost drsenja po karti"
+
+#: src/preferences.cpp:938 src/preferences.cpp:943
+msgid "Change the brightness of the display"
+msgstr "Spremeni svetlost prikaza"
+
+#: src/preferences.cpp:946
+msgid "Choose whether the game should run full screen or in a window"
+msgstr "Izberite ali naj igra teče v oknu ali v celozaslonskem načinu"
+
+#: src/preferences.cpp:949
+msgid "Make units move and fight faster"
+msgstr "Enote naj se premikajo in bojujejo hitreje"
+
+#: src/preferences.cpp:952
+msgid "Do not animate AI units moving"
+msgstr "Ne animiraj potez UI"
+
+#: src/preferences.cpp:955
+msgid "Overlay a grid onto the map"
+msgstr "Čez karto položi mrežo"
+
+#: src/preferences.cpp:958
+msgid "Show text above a unit when it is hit to display damage inflicted"
+msgstr "Nad enotami prikaži v napadu utrpelo škodo"
+
+#: src/preferences.cpp:960
+msgid "Change the resolution the game runs at"
+msgstr "Spremeni resolucijo igre"
+
+#: src/preferences.cpp:963
+msgid "Display a dialog at the beginning of your turn"
+msgstr "Prikaži pogovorno okno ob začetku moje poteze"
+
+#: src/preferences.cpp:966
+msgid "Play a bell sound at the beginning of your turn"
+msgstr "Pozvoni ob začetku moje poteze"
+
+#: src/preferences.cpp:969
+msgid ""
+"Show a colored circle around the base of each unit to show which side it is "
+"on"
+msgstr "Pod vsako enoto prikaži obarvan krog, ki kaže kateri ekipi pripada"
+
+#: src/preferences.cpp:972
+msgid "Choose whether the sun moves left-to-right or right-to-left"
+msgstr "Izberite ali naj se sonce premika iz leve proti desni ali obratno"
+
+#: src/preferences.cpp:975
+msgid "Use colored mouse cursors (may be slower)"
+msgstr "Uporabljaj barvne miškine kazalce (lahko upočasni igro)"
+
+#: src/preferences.cpp:978
+msgid "Use graphical special effects (may be slower)"
+msgstr "Uporabljaj posebne slikovne učinke (lahko upočasni igro)"
+
+#: src/preferences.cpp:980
+msgid "View and configure keyboard shortcuts"
+msgstr "Poglej in nastavi hitre tipke"
+
+#: src/preferences.cpp:1158
+msgid "yes"
+msgstr "da"
+
+#: src/preferences.cpp:1160
+msgid "no"
+msgstr "ne"
+
+#: src/preferences.cpp:1219
+msgid "Prefs section^General"
+msgstr "Splošno"
+
+#: src/preferences.cpp:1220
+msgid "Prefs section^Display"
+msgstr "Prikaz"
+
+#: src/preferences.cpp:1221
+msgid "Prefs section^Sound"
+msgstr "Zvok"
+
+#: src/preferences.cpp:1222
+msgid "Advanced section^Advanced"
+msgstr "Napredno"
+
+#: src/preferences.cpp:1278
+msgid "There are no alternative video modes available"
+msgstr "Na voljo ni nobenega drugega video načina"
+
+#: src/preferences.cpp:1307
+msgid "Choose Resolution"
+msgstr "Izberite resolucijo"
+
+#: src/preferences.cpp:1335
+msgid "Close Window"
+msgstr "Zapri okno"
+
+#: src/preferences.cpp:1340
+msgid "Hotkey Settings"
+msgstr "Nastavitve hitrih tipk"
+
+#: src/preferences.cpp:1344 src/preferences.cpp:1397
+#, fuzzy
+msgid "Press desired Hotkey"
+msgstr "Pritisnite željeno tipko"
+
+#: src/preferences.cpp:1362
+msgid "Action"
+msgstr "Dejanje"
+
+#: src/preferences.cpp:1362
+msgid "Binding"
+msgstr "Hitra tipka"
+
+#: src/preferences.cpp:1374
+msgid "Change Hotkey"
+msgstr "Spremeni hitro tipko"
+
+#: src/preferences.cpp:1377
+msgid "Save Hotkeys"
+msgstr "Shrani hitro tipko"
+
+#: src/preferences.cpp:1423
+#, fuzzy
+msgid "This Hotkey is already in use."
+msgstr "Ta hitra tipka je že v rabi."
+
+#: src/show_dialog.cpp:314
+msgid "Error"
+msgstr "Napaka"
+
+#: src/show_dialog.cpp:416 src/show_dialog.cpp:429
+msgid "OK"
+msgstr "Vredu"
+
+#: src/show_dialog.cpp:422
+msgid "Yes"
+msgstr "Da"
+
+#: src/show_dialog.cpp:423
+msgid "No"
+msgstr "Ne"
+
+#: src/show_dialog.cpp:430 src/show_dialog.cpp:436 src/show_dialog.cpp:849
+#: src/show_dialog.cpp:927
+msgid "Cancel"
+msgstr "Prekliči"
+
+#: src/show_dialog.cpp:442
+msgid "Close"
+msgstr "Zapri"
+
+#: src/show_dialog.cpp:839
+msgid "Receiving data..."
+msgstr "Sprejemanje podatkov..."
+
+#: src/show_dialog.cpp:872
+msgid "KB"
+msgstr "KB"

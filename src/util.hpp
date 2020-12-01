@@ -54,8 +54,8 @@ To lexical_cast(From a)
 	std::stringstream str;
 
 	if(!(str << a && str >> res)) {
-		throw bad_lexical_cast();
-	} else {
+		//throw bad_lexical_cast();
+	//} else {
 		return res;
 	}
 }

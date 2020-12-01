@@ -274,7 +274,7 @@ bool game_controller::init_video()
 
 	std::pair<int,int> resolution = preferences::resolution();
 
-	int DefaultBPP = 24;
+	int DefaultBPP = 8;//24;
 	const SDL_VideoInfo* const video_info = SDL_GetVideoInfo();
 	if(video_info != NULL && video_info->vfmt != NULL) {
 		DefaultBPP = video_info->vfmt->BitsPerPixel;
@@ -286,7 +286,14 @@ bool game_controller::init_video()
 
 	std::cerr << bpp << "\n";
 
+#ifdef __AMIGA__ //arti
+	resolution.first = 960;//640;
+	resolution.second = 540;//480;
+	bpp = 16;
+#endif
+
 	if(bpp == 0) {
+	/*
 		//Video mode not supported, maybe from bad prefs.
 		std::cerr << "Video mode " << resolution.first
 		          << "x" << resolution.second << "x" << DefaultBPP << " "
@@ -306,6 +313,7 @@ bool game_controller::init_video()
 
 			bpp = video_.modePossible(resolution.first,resolution.second,DefaultBPP,video_flags);
 		}
+*/
 
 #ifdef USE_TINY_GUI
 		if(bpp == 0) {
@@ -350,6 +358,8 @@ bool game_controller::init_video()
 	if(force_bpp_ > 0) {
 		bpp = force_bpp_;
 	}
+
+
 
 	std::cerr << "setting mode to " << resolution.first << "x" << resolution.second << "x" << bpp << "\n";
 	const int res = video_.setMode(resolution.first,resolution.second,bpp,video_flags);
@@ -1291,7 +1301,7 @@ void game_controller::read_game_cfg(const preproc_map& defines, config& cfg, boo
 					}
 				}
 
-				if(use_cache && file_exists(fname) && file_create_time(fname) > data_tree_checksum().modified && dir_checksum == data_tree_checksum()) {
+				if(use_cache && file_exists(fname) /*&& file_create_time(fname) > data_tree_checksum().modified && dir_checksum == data_tree_checksum()*/) {
 					std::cerr << "found valid cache at '" << fname << "' using it\n";
 					log_scope("read cache");
 					try {

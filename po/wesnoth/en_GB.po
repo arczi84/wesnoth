@@ -6,6 +6,7 @@ msgstr ""
 "PO-Revision-Date: 2005-12-30 18:59+0200\n"
 "Last-Translator: ott <ott@gaon.net>\n"
 "Language-Team: en_GB\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -465,8 +466,8 @@ msgstr ""
 "and village ownership (other than by you or your allies) from you. The Fog "
 "of War is cleared temporarily when you have units nearby, but returns when "
 "they leave. Both the Shroud and the Fog of War are cleared by units. Each "
-"unit will clear locations within one turn's move (ignoring ZOC and "
-"enemy units) and locations adjacent to those locations."
+"unit will clear locations within one turn's move (ignoring ZOC and enemy "
+"units) and locations adjacent to those locations."
 
 #: data/help.cfg:143
 msgid "Combat"
@@ -2954,12 +2955,12 @@ msgid ""
 "to retaliate at all. However, ranged units cannot shoot across multiple "
 "hexes; this is one of the distinctive features of Wesnoth."
 msgstr ""
-"Whenever a unit is attacked, it retaliates with one of its own weapons. "
-"This means that after each blow from the attacker, the defender retaliates "
-"with one blow. This continues until one side runs out of blows, in which "
-"case the other unit continues attacking until its blows are depleted as "
-"well. However, any unit can only retaliate by using a weapon of the same "
-"range as the one used to attack. This means that a ranged attack can only be "
+"Whenever a unit is attacked, it retaliates with one of its own weapons. This "
+"means that after each blow from the attacker, the defender retaliates with "
+"one blow. This continues until one side runs out of blows, in which case the "
+"other unit continues attacking until its blows are depleted as well. "
+"However, any unit can only retaliate by using a weapon of the same range as "
+"the one used to attack. This means that a ranged attack can only be "
 "countered by a ranged attack and a melee attack can only be countered by a "
 "melee attack. Most units have more powerful melee attacks than ranged "
 "attacks. Units with strong ranged attacks are useful in retaliation against "
@@ -3276,9 +3277,10 @@ msgstr ""
 "The times of day usually progress in a sequence: dawn- identical to "
 "twilight, morning- day, evening- day, dusk- twilight, first-watch- night, "
 "second-watch- night, then repeat. This is represented by the sun and moon "
-"which each rise in the east and set in the west. However, some scenarios have "
-"a different sequence, such as underground where it is perpetually night. You "
-"can find out the current time of day by looking at the Status Table."
+"which each rise in the east and set in the west. However, some scenarios "
+"have a different sequence, such as underground where it is perpetually "
+"night. You can find out the current time of day by looking at the Status "
+"Table."
 
 #: data/scenarios/tutorial/utils.cfg:125
 msgid ""
@@ -3335,16 +3337,16 @@ msgid ""
 "that type. For example, if an Elvish Scout is attacked by an Elvish Archer, "
 "the archer does 20% more damage than normal, since Elvish Scouts have -20% "
 "resistance to pierce. This bonus/penalty is calculated additively with other "
-"bonuses/penalties like time of day, so two -50% penalties would add up to -"
-"100%."
+"bonuses/penalties like time of day, so two -50% penalties would add up to "
+"-100%."
 msgstr ""
 "Each unit has a certain resistance against each attack type. This resistance "
 "is a percentage which is subtracted from the damage of opponent's weapons of "
 "that type. For example, if an Elvish Scout is attacked by an Elvish Archer, "
 "the archer does 20% more damage than normal, since Elvish Scouts have -20% "
 "resistance to pierce. This bonus/penalty is calculated additively with other "
-"bonuses/penalties like time of day, so two -50% penalties would add up to -"
-"100%."
+"bonuses/penalties like time of day, so two -50% penalties would add up to "
+"-100%."
 
 #: data/scenarios/tutorial/utils.cfg:130
 msgid "How does resistance affect attack damage?"
@@ -3459,8 +3461,8 @@ msgid ""
 "Most objects are permanent changes to the unit that receives them. However, "
 "a few objects, such as holy water, last only until the end of the scenario."
 msgstr ""
-"Most objects are permanent changes to the unit that receives them. However, a "
-"few objects, such as holy water, last only until the end of the scenario."
+"Most objects are permanent changes to the unit that receives them. However, "
+"a few objects, such as holy water, last only until the end of the scenario."
 
 #: data/scenarios/tutorial/utils.cfg:147
 msgid "How do I play a campaign?"
@@ -4161,9 +4163,9 @@ msgstr ""
 "the poison instead of healing."
 
 #: data/translations/english.cfg:73 data/units/Great_Troll.cfg:7
-#: data/units/Tentacle.cfg:7 data/units/Troll.cfg:7
-#: data/units/Troll_Hero.cfg:7 data/units/Troll_Rocklobber.cfg:7
-#: data/units/Troll_Warrior.cfg:7 data/units/Troll_Whelp.cfg:7
+#: data/units/Tentacle.cfg:7 data/units/Troll.cfg:7 data/units/Troll_Hero.cfg:7
+#: data/units/Troll_Rocklobber.cfg:7 data/units/Troll_Warrior.cfg:7
+#: data/units/Troll_Whelp.cfg:7
 msgid "regenerates"
 msgstr "regenerates"
 
@@ -4617,17 +4619,17 @@ msgstr ""
 #: data/units/Elder_Mage.cfg:24 data/units/Elvish_Druid.cfg:27
 #: data/units/Elvish_Enchantress.cfg:25 data/units/Elvish_Shaman.cfg:29
 #: data/units/Elvish_Sorceress.cfg:25 data/units/Great_Mage.cfg:28
-#: data/units/Great_Mage.cfg:126 data/units/Mage.cfg:48
-#: data/units/Mage.cfg:153 data/units/Mermaid_Diviner.cfg:32
-#: data/units/Mermaid_Enchantress.cfg:24 data/units/Mermaid_Initiate.cfg:26
-#: data/units/Mermaid_Priestess.cfg:27 data/units/Necromancer.cfg:21
-#: data/units/Orcish_Shaman.cfg:23 data/units/Orcish_Shaman.cfg:86
-#: data/units/Orcish_Shaman.cfg:149 data/units/Outlaw_Princess.cfg:53
-#: data/units/Outlaw_Queen.cfg:55 data/units/Red_Mage.cfg:49
-#: data/units/Red_Mage.cfg:168 data/units/Saurian_Icecaster.cfg:24
-#: data/units/Saurian_Soothsayer.cfg:24 data/units/Saurian_Tribalist.cfg:23
-#: data/units/Silver_Mage.cfg:84 data/units/Silver_Mage.cfg:220
-#: data/units/White_Mage.cfg:55 data/units/White_Mage.cfg:152
+#: data/units/Great_Mage.cfg:126 data/units/Mage.cfg:48 data/units/Mage.cfg:153
+#: data/units/Mermaid_Diviner.cfg:32 data/units/Mermaid_Enchantress.cfg:24
+#: data/units/Mermaid_Initiate.cfg:26 data/units/Mermaid_Priestess.cfg:27
+#: data/units/Necromancer.cfg:21 data/units/Orcish_Shaman.cfg:23
+#: data/units/Orcish_Shaman.cfg:86 data/units/Orcish_Shaman.cfg:149
+#: data/units/Outlaw_Princess.cfg:53 data/units/Outlaw_Queen.cfg:55
+#: data/units/Red_Mage.cfg:49 data/units/Red_Mage.cfg:168
+#: data/units/Saurian_Icecaster.cfg:24 data/units/Saurian_Soothsayer.cfg:24
+#: data/units/Saurian_Tribalist.cfg:23 data/units/Silver_Mage.cfg:84
+#: data/units/Silver_Mage.cfg:220 data/units/White_Mage.cfg:55
+#: data/units/White_Mage.cfg:152
 msgid "staff"
 msgstr "staff"
 
@@ -4692,11 +4694,11 @@ msgstr ""
 "which will continually sap away an enemy's strength."
 
 #: data/units/Assassin.cfg:37 data/units/Assassin.cfg:119
-#: data/units/Dwarvish_Thunderer.cfg:38
-#: data/units/Dwarvish_Thunderguard.cfg:22 data/units/Orcish_Archer.cfg:21
-#: data/units/Orcish_Assassin.cfg:22 data/units/Orcish_Slayer.cfg:23
-#: data/units/Poacher.cfg:25 data/units/Rogue.cfg:23 data/units/Rogue.cfg:85
-#: data/units/Thief.cfg:86 data/units/Thief.cfg:189 data/units/Trapper.cfg:26
+#: data/units/Dwarvish_Thunderer.cfg:38 data/units/Dwarvish_Thunderguard.cfg:22
+#: data/units/Orcish_Archer.cfg:21 data/units/Orcish_Assassin.cfg:22
+#: data/units/Orcish_Slayer.cfg:23 data/units/Poacher.cfg:25
+#: data/units/Rogue.cfg:23 data/units/Rogue.cfg:85 data/units/Thief.cfg:86
+#: data/units/Thief.cfg:189 data/units/Trapper.cfg:26
 msgid "dagger"
 msgstr "dagger"
 
@@ -4720,8 +4722,7 @@ msgstr "dagger"
 #: data/units/Duelist.cfg:68 data/units/Dwarvish_Berserker.cfg:29
 #: data/units/Dwarvish_Fighter.cfg:23 data/units/Dwarvish_Lord.cfg:29
 #: data/units/Dwarvish_Lord.cfg:62 data/units/Dwarvish_Steelclad.cfg:29
-#: data/units/Dwarvish_Thunderer.cfg:39
-#: data/units/Dwarvish_Thunderguard.cfg:23
+#: data/units/Dwarvish_Thunderer.cfg:39 data/units/Dwarvish_Thunderguard.cfg:23
 #: data/units/Dwarvish_Ulfserker.cfg:28 data/units/Elvish_Archer.cfg:46
 #: data/units/Elvish_Archer.cfg:148 data/units/Elvish_Avenger.cfg:52
 #: data/units/Elvish_Avenger.cfg:168 data/units/Elvish_Captain.cfg:27
@@ -4765,18 +4766,17 @@ msgstr "dagger"
 #: data/units/Shadow.cfg:25 data/units/Skeletal_Dragon.cfg:32
 #: data/units/Skeletal_Dragon.cfg:51 data/units/Skeleton.cfg:38
 #: data/units/Sleeping_Gryphon.cfg:20 data/units/Spectre.cfg:53
-#: data/units/Swordsman.cfg:25 data/units/Thief.cfg:87
-#: data/units/Thief.cfg:190 data/units/Trapper.cfg:27
-#: data/units/Vampire_Bat.cfg:20 data/units/Vampire_Lady.cfg:22
-#: data/units/Wolf_Rider.cfg:24 data/units/Wraith.cfg:29
-#: data/units/Young_Ogre.cfg:42
+#: data/units/Swordsman.cfg:25 data/units/Thief.cfg:87 data/units/Thief.cfg:190
+#: data/units/Trapper.cfg:27 data/units/Vampire_Bat.cfg:20
+#: data/units/Vampire_Lady.cfg:22 data/units/Wolf_Rider.cfg:24
+#: data/units/Wraith.cfg:29 data/units/Young_Ogre.cfg:42
 msgid "blade"
 msgstr "blade"
 
 #: data/units/Assassin.cfg:42 data/units/Assassin.cfg:124
-#: data/units/Nightgaunt.cfg:55 data/units/Rogue.cfg:28
-#: data/units/Rogue.cfg:90 data/units/Shadow.cfg:29 data/units/Thief.cfg:91
-#: data/units/Thief.cfg:194 src/actions.cpp:605
+#: data/units/Nightgaunt.cfg:55 data/units/Rogue.cfg:28 data/units/Rogue.cfg:90
+#: data/units/Shadow.cfg:29 data/units/Thief.cfg:91 data/units/Thief.cfg:194
+#: src/actions.cpp:605
 msgid "backstab"
 msgstr "backstab"
 
@@ -4861,13 +4861,12 @@ msgstr ""
 #: data/units/Elvish_Marshal.cfg:28 data/units/Elvish_Outrider.cfg:32
 #: data/units/Elvish_Ranger.cfg:48 data/units/Elvish_Ranger.cfg:163
 #: data/units/Elvish_Rider.cfg:34 data/units/Elvish_Scout.cfg:33
-#: data/units/Elvish_Sharpshooter.cfg:48
-#: data/units/Elvish_Sharpshooter.cfg:168 data/units/Fighter.cfg:20
-#: data/units/Fighter.cfg:61 data/units/General.cfg:31
-#: data/units/Grand_Knight.cfg:25 data/units/Grand_Marshal.cfg:27
-#: data/units/Horse_Lord.cfg:22 data/units/Knight.cfg:24
-#: data/units/Lieutenant.cfg:26 data/units/Longbowman.cfg:22
-#: data/units/Lord.cfg:23 data/units/Lord.cfg:99
+#: data/units/Elvish_Sharpshooter.cfg:48 data/units/Elvish_Sharpshooter.cfg:168
+#: data/units/Fighter.cfg:20 data/units/Fighter.cfg:61
+#: data/units/General.cfg:31 data/units/Grand_Knight.cfg:25
+#: data/units/Grand_Marshal.cfg:27 data/units/Horse_Lord.cfg:22
+#: data/units/Knight.cfg:24 data/units/Lieutenant.cfg:26
+#: data/units/Longbowman.cfg:22 data/units/Lord.cfg:23 data/units/Lord.cfg:99
 #: data/units/Master_Bowman.cfg:22 data/units/Mounted_Fighter.cfg:22
 #: data/units/Mounted_Warrior.cfg:22 data/units/Naga-Fighter.cfg:22
 #: data/units/Naga-Fighter.cfg:58 data/units/Naga-Myrmidon.cfg:27
@@ -4885,8 +4884,7 @@ msgid "sword"
 msgstr "sword"
 
 #: data/units/Battle_Princess.cfg:91 data/units/Commander.cfg:132
-#: data/units/Fighter.cfg:83 data/units/Lord.cfg:116
-#: data/units/Princess.cfg:77
+#: data/units/Fighter.cfg:83 data/units/Lord.cfg:116 data/units/Princess.cfg:77
 msgid "scepter of fire"
 msgstr "sceptre of fire"
 
@@ -4976,46 +4974,45 @@ msgstr "bow"
 #: data/units/Elvish_Marshal.cfg:45 data/units/Elvish_Outrider.cfg:49
 #: data/units/Elvish_Ranger.cfg:66 data/units/Elvish_Ranger.cfg:181
 #: data/units/Elvish_Rider.cfg:56 data/units/Elvish_Scout.cfg:55
-#: data/units/Elvish_Sharpshooter.cfg:66
-#: data/units/Elvish_Sharpshooter.cfg:186 data/units/Elvish_Shyde.cfg:80
-#: data/units/General.cfg:55 data/units/Giant_Scorpion.cfg:21
-#: data/units/Goblin_Impaler.cfg:24 data/units/Goblin_Impaler.cfg:43
-#: data/units/Goblin_Spearman.cfg:23 data/units/Goblin_Spearman.cfg:36
-#: data/units/Grand_Knight.cfg:43 data/units/Grand_Marshal.cfg:51
-#: data/units/Halbardier.cfg:30 data/units/Horseman.cfg:25
-#: data/units/Javelineer.cfg:24 data/units/Javelineer.cfg:52
-#: data/units/Knight.cfg:41 data/units/Lancer.cfg:26
-#: data/units/Lieutenant.cfg:44 data/units/Longbowman.cfg:40
-#: data/units/Lord.cfg:41 data/units/Master_Bowman.cfg:39
-#: data/units/Master_at_Arms.cfg:55 data/units/Merman.cfg:24
-#: data/units/Merman_Entangler.cfg:24 data/units/Merman_Fighter.cfg:25
-#: data/units/Merman_Hoplite.cfg:39 data/units/Merman_Hunter.cfg:22
-#: data/units/Merman_Hunter.cfg:62 data/units/Merman_Javelineer.cfg:23
-#: data/units/Merman_Javelineer.cfg:63 data/units/Merman_Netcaster.cfg:23
-#: data/units/Merman_Spearman.cfg:22 data/units/Merman_Spearman.cfg:62
-#: data/units/Merman_Triton.cfg:26 data/units/Merman_Warrior.cfg:25
-#: data/units/Naga.cfg:25 data/units/Noble_Commander.cfg:47
-#: data/units/Noble_Lord.cfg:47 data/units/Orcish_Archer.cfg:38
-#: data/units/Orcish_Crossbowman.cfg:40 data/units/Orcish_Leader.cfg:38
-#: data/units/Orcish_Ruler.cfg:39 data/units/Orcish_Shaman.cfg:41
-#: data/units/Orcish_Shaman.cfg:104 data/units/Orcish_Shaman.cfg:167
-#: data/units/Orcish_Slurbow.cfg:41 data/units/Orcish_Sovereign.cfg:44
-#: data/units/Orcish_Warlord.cfg:42 data/units/Paladin.cfg:48
-#: data/units/Peasant.cfg:22 data/units/Peasant.cfg:35
-#: data/units/Pikeman.cfg:53 data/units/Pirate_Galleon.cfg:19
-#: data/units/Poacher.cfg:43 data/units/Saurian.cfg:26
-#: data/units/Saurian.cfg:44 data/units/Saurian_Ambusher.cfg:25
-#: data/units/Saurian_Ambusher.cfg:43 data/units/Saurian_Flanker.cfg:27
-#: data/units/Saurian_Flanker.cfg:45 data/units/Saurian_Skirmisher.cfg:24
-#: data/units/Saurian_Skirmisher.cfg:42 data/units/Saurian_Warrior.cfg:27
-#: data/units/Saurian_Warrior.cfg:45 data/units/Sea_Hag.cfg:25
-#: data/units/Sea_Serpent.cfg:21 data/units/Sergeant.cfg:42
-#: data/units/Skeleton_Archer.cfg:42 data/units/Soul_Shooter.cfg:29
-#: data/units/Soul_Shooter.cfg:42 data/units/Spearman.cfg:62
-#: data/units/Spearman.cfg:113 data/units/Transport_Galleon.cfg:19
-#: data/units/Trapper.cfg:44 data/units/Triton.cfg:24
-#: data/units/Vampire_Lady.cfg:36 data/units/Wall_Guard.cfg:38
-#: data/units/Watch_Tower.cfg:20
+#: data/units/Elvish_Sharpshooter.cfg:66 data/units/Elvish_Sharpshooter.cfg:186
+#: data/units/Elvish_Shyde.cfg:80 data/units/General.cfg:55
+#: data/units/Giant_Scorpion.cfg:21 data/units/Goblin_Impaler.cfg:24
+#: data/units/Goblin_Impaler.cfg:43 data/units/Goblin_Spearman.cfg:23
+#: data/units/Goblin_Spearman.cfg:36 data/units/Grand_Knight.cfg:43
+#: data/units/Grand_Marshal.cfg:51 data/units/Halbardier.cfg:30
+#: data/units/Horseman.cfg:25 data/units/Javelineer.cfg:24
+#: data/units/Javelineer.cfg:52 data/units/Knight.cfg:41
+#: data/units/Lancer.cfg:26 data/units/Lieutenant.cfg:44
+#: data/units/Longbowman.cfg:40 data/units/Lord.cfg:41
+#: data/units/Master_Bowman.cfg:39 data/units/Master_at_Arms.cfg:55
+#: data/units/Merman.cfg:24 data/units/Merman_Entangler.cfg:24
+#: data/units/Merman_Fighter.cfg:25 data/units/Merman_Hoplite.cfg:39
+#: data/units/Merman_Hunter.cfg:22 data/units/Merman_Hunter.cfg:62
+#: data/units/Merman_Javelineer.cfg:23 data/units/Merman_Javelineer.cfg:63
+#: data/units/Merman_Netcaster.cfg:23 data/units/Merman_Spearman.cfg:22
+#: data/units/Merman_Spearman.cfg:62 data/units/Merman_Triton.cfg:26
+#: data/units/Merman_Warrior.cfg:25 data/units/Naga.cfg:25
+#: data/units/Noble_Commander.cfg:47 data/units/Noble_Lord.cfg:47
+#: data/units/Orcish_Archer.cfg:38 data/units/Orcish_Crossbowman.cfg:40
+#: data/units/Orcish_Leader.cfg:38 data/units/Orcish_Ruler.cfg:39
+#: data/units/Orcish_Shaman.cfg:41 data/units/Orcish_Shaman.cfg:104
+#: data/units/Orcish_Shaman.cfg:167 data/units/Orcish_Slurbow.cfg:41
+#: data/units/Orcish_Sovereign.cfg:44 data/units/Orcish_Warlord.cfg:42
+#: data/units/Paladin.cfg:48 data/units/Peasant.cfg:22
+#: data/units/Peasant.cfg:35 data/units/Pikeman.cfg:53
+#: data/units/Pirate_Galleon.cfg:19 data/units/Poacher.cfg:43
+#: data/units/Saurian.cfg:26 data/units/Saurian.cfg:44
+#: data/units/Saurian_Ambusher.cfg:25 data/units/Saurian_Ambusher.cfg:43
+#: data/units/Saurian_Flanker.cfg:27 data/units/Saurian_Flanker.cfg:45
+#: data/units/Saurian_Skirmisher.cfg:24 data/units/Saurian_Skirmisher.cfg:42
+#: data/units/Saurian_Warrior.cfg:27 data/units/Saurian_Warrior.cfg:45
+#: data/units/Sea_Hag.cfg:25 data/units/Sea_Serpent.cfg:21
+#: data/units/Sergeant.cfg:42 data/units/Skeleton_Archer.cfg:42
+#: data/units/Soul_Shooter.cfg:29 data/units/Soul_Shooter.cfg:42
+#: data/units/Spearman.cfg:62 data/units/Spearman.cfg:113
+#: data/units/Transport_Galleon.cfg:19 data/units/Trapper.cfg:44
+#: data/units/Triton.cfg:24 data/units/Vampire_Lady.cfg:36
+#: data/units/Wall_Guard.cfg:38 data/units/Watch_Tower.cfg:20
 msgid "pierce"
 msgstr "pierce"
 
@@ -5150,9 +5147,8 @@ msgid "spear"
 msgstr "spear"
 
 #: data/units/Chocobone.cfg:36 data/units/Grand_Knight.cfg:44
-#: data/units/Horseman.cfg:26 data/units/Knight.cfg:42
-#: data/units/Lancer.cfg:27 data/units/Paladin.cfg:49 src/actions.cpp:481
-#: src/actions.cpp:596
+#: data/units/Horseman.cfg:26 data/units/Knight.cfg:42 data/units/Lancer.cfg:27
+#: data/units/Paladin.cfg:49 src/actions.cpp:481 src/actions.cpp:596
 msgid "charge"
 msgstr "charge"
 
@@ -6465,14 +6461,13 @@ msgstr ""
 "their enemy, but only on the attack."
 
 #: data/units/Elvish_Marksman.cfg:65 data/units/Elvish_Marksman.cfg:185
-#: data/units/Elvish_Sharpshooter.cfg:65
-#: data/units/Elvish_Sharpshooter.cfg:185
+#: data/units/Elvish_Sharpshooter.cfg:65 data/units/Elvish_Sharpshooter.cfg:185
 msgid "longbow"
 msgstr "longbow"
 
 #: data/units/Elvish_Marksman.cfg:67 data/units/Elvish_Marksman.cfg:187
-#: data/units/Elvish_Sharpshooter.cfg:67
-#: data/units/Elvish_Sharpshooter.cfg:187 data/units/Fire_Dragon.cfg:62
+#: data/units/Elvish_Sharpshooter.cfg:67 data/units/Elvish_Sharpshooter.cfg:187
+#: data/units/Fire_Dragon.cfg:62
 msgid "marksman"
 msgstr "marksman"
 
@@ -6642,8 +6637,7 @@ msgstr ""
 msgid "Elvish Sharpshooter"
 msgstr "Elvish Sharpshooter"
 
-#: data/units/Elvish_Sharpshooter.cfg:23
-#: data/units/Elvish_Sharpshooter.cfg:143
+#: data/units/Elvish_Sharpshooter.cfg:23 data/units/Elvish_Sharpshooter.cfg:143
 msgid ""
 "A story once wandered about, of an elf who stopped an arrow by shooting it "
 "out of the air with one of his own. It is a testament to the skill of the "
@@ -10817,16 +10811,16 @@ msgid ""
 "This terrain acts as a keep, i.e., you can recruit units when a leader is in "
 "a location with this terrain."
 msgstr ""
-"This terrain acts as a keep: you can recruit units when a leader is in "
-"a location with this terrain."
+"This terrain acts as a keep: you can recruit units when a leader is in a "
+"location with this terrain."
 
 #: src/help.cpp:1319
 msgid ""
 "This terrain acts as a castle, i.e., you can recruit units onto a location "
 "with this terrain."
 msgstr ""
-"This terrain acts as a castle: you can recruit units onto a location "
-"with this terrain."
+"This terrain acts as a castle: you can recruit units onto a location with "
+"this terrain."
 
 #: src/help.cpp:1321
 msgid "This terrain gives healing."
@@ -10960,18 +10954,15 @@ msgstr "Server-side redirect loop"
 msgid "You must log in to this server"
 msgstr "You must log in to this server"
 
-#: src/multiplayer.cpp:350 src/multiplayer.cpp:365
-#: src/multiplayer_wait.cpp:181
+#: src/multiplayer.cpp:350 src/multiplayer.cpp:365 src/multiplayer_wait.cpp:181
 msgid "No multiplayer sides available in this game"
 msgstr "No multiplayer sides available in this game"
 
-#: src/multiplayer.cpp:351 src/multiplayer.cpp:366
-#: src/multiplayer_wait.cpp:210
+#: src/multiplayer.cpp:351 src/multiplayer.cpp:366 src/multiplayer_wait.cpp:210
 msgid "Era not available"
 msgstr "Era not available"
 
-#: src/multiplayer.cpp:352 src/multiplayer.cpp:367
-#: src/multiplayer_wait.cpp:215
+#: src/multiplayer.cpp:352 src/multiplayer.cpp:367 src/multiplayer_wait.cpp:215
 msgid "No multiplayer sides found"
 msgstr "No multiplayer sides found"
 

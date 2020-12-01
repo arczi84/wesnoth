@@ -1,0 +1,1 @@
+intl/intl_gettext.o intl/intl_gettext.o: intl/intl_gettext.c

@@ -1,0 +1,140 @@
+key.o: key.cpp global.hpp key.hpp \
+  D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL.h \
+  D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_main.h \
+  D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_stdinc.h \
+  D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_config.h \
+  D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_platform.h \
+  /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/include/sys/types.h \
+  /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/include/machine/types.h \
+  /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/include/sys/cdefs.h \
+  /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/include/machine/cdefs.h \
+  /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/include/machine/ansi.h \
+  /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/include/_G_config.h \
+  /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/include/stddef.h \
+  /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/include/stdarg.h \
+  /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/include/machine/endian.h \
+  /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/include/stdio.h \
+  /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/include/sys/syslimits.h \
+  /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/include/stdlib.h \
+  /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/include/string.h \
+  D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include-extra/inttypes.h \
+  D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include-extra/stdint.h \
+  /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/include-fixed/limits.h \
+  /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/sys-include/exec/types.h \
+  /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/include/strings.h \
+  /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/include/ctype.h \
+  D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/begin_code.h \
+  D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/close_code.h \
+  D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_audio.h \
+  D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_error.h \
+  D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_endian.h \
+  D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_mutex.h \
+  D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_thread.h \
+  D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_rwops.h \
+  D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_cdrom.h \
+  D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_cpuinfo.h \
+  D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_events.h \
+  D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_active.h \
+  D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_keyboard.h \
+  D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_keysym.h \
+  D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_mouse.h \
+  D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_video.h \
+  D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_joystick.h \
+  D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_quit.h \
+  D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_loadso.h \
+  D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_timer.h \
+  D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_version.h
+
+global.hpp:
+
+key.hpp:
+
+D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL.h:
+
+D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_main.h:
+
+D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_stdinc.h:
+
+D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_config.h:
+
+D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_platform.h:
+
+/cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/include/sys/types.h:
+
+/cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/include/machine/types.h:
+
+/cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/include/sys/cdefs.h:
+
+/cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/include/machine/cdefs.h:
+
+/cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/include/machine/ansi.h:
+
+/cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/include/_G_config.h:
+
+/cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/include/stddef.h:
+
+/cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/include/stdarg.h:
+
+/cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/include/machine/endian.h:
+
+/cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/include/stdio.h:
+
+/cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/include/sys/syslimits.h:
+
+/cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/include/stdlib.h:
+
+/cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/include/string.h:
+
+D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include-extra/inttypes.h:
+
+D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include-extra/stdint.h:
+
+/cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/include-fixed/limits.h:
+
+/cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/sys-include/exec/types.h:
+
+/cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/include/strings.h:
+
+/cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/include/ctype.h:
+
+D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/begin_code.h:
+
+D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/close_code.h:
+
+D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_audio.h:
+
+D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_error.h:
+
+D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_endian.h:
+
+D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_mutex.h:
+
+D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_thread.h:
+
+D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_rwops.h:
+
+D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_cdrom.h:
+
+D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_cpuinfo.h:
+
+D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_events.h:
+
+D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_active.h:
+
+D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_keyboard.h:
+
+D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_keysym.h:
+
+D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_mouse.h:
+
+D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_video.h:
+
+D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_joystick.h:
+
+D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_quit.h:
+
+D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_loadso.h:
+
+D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_timer.h:
+
+D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_version.h:

@@ -171,7 +171,7 @@ void display::new_turn()
 				const int cur_ticks = SDL_GetTicks();
 				const int wanted_ticks = starting_ticks + i*frame_time;
 				if(cur_ticks < wanted_ticks) {
-					SDL_Delay(wanted_ticks - cur_ticks);
+					SDL_Delay(wanted_ticks - cur_ticks); //arti
 				}
 			}
 		}
@@ -213,6 +213,8 @@ const SDL_Rect& display::minimap_area() const
 {
 	return theme_.mini_map_location(screen_area());
 }
+
+#include <clib/graphics_protos.h> //WaitTOF
 
 SDL_Rect display::screen_area() const
 {
@@ -751,7 +753,8 @@ void display::draw(bool update,bool force)
 
 	//force a wait for 10 ms every frame.
 	//TODO: review whether this is the correct thing to do
-	SDL_Delay(maximum<int>(10,wait_time));
+	SDL_Delay(maximum<int>(10,wait_time)); //arti
+	//WaitTOF();
 
 	if(update) {
 		lastDraw_ = SDL_GetTicks();
@@ -1338,7 +1341,7 @@ void display::draw_tile(int x, int y, surface unit_image, fixed_t alpha, Uint32 
 	if(screen_.update_locked())
 		return;
 
-	draw_halo_on_tile(x,y);
+	//draw_halo_on_tile(x,y);
 
 	const gamemap::location loc(x,y);
 	int xpos = int(get_location_x(loc));
@@ -1362,7 +1365,7 @@ void display::draw_tile(int x, int y, surface unit_image, fixed_t alpha, Uint32 
 		terrain = map_.get_terrain(loc);
 	}
 
-	image::TYPE image_type = image::SCALED;
+	image::TYPE image_type = image::UNSCALED;
 
 	const time_of_day& tod = status_.get_time_of_day();
 	const time_of_day& tod_at = timeofday_at(status_,units_,loc);
@@ -1400,7 +1403,7 @@ void display::draw_tile(int x, int y, surface unit_image, fixed_t alpha, Uint32 
 
 		typedef overlay_map::const_iterator Itor;
 
-		for(std::pair<Itor,Itor> overlays = overlays_.equal_range(loc);
+	/*	for(std::pair<Itor,Itor> overlays = overlays_.equal_range(loc);
 			overlays.first != overlays.second; ++overlays.first) {
 
 			surface overlay_surface(image::get_image(overlays.first->second.image,image_type));
@@ -1412,7 +1415,7 @@ void display::draw_tile(int x, int y, surface unit_image, fixed_t alpha, Uint32 
 				SDL_Rect dstrect = { xpos, ypos, 0, 0 };
 				SDL_BlitSurface(overlay_surface,NULL,dst,&dstrect);
 			}
-		}
+		}*/
 	} else {
 		//FIXME: shouldn't void.png and fog.png be in the program configuration?
 		surface surface(image::get_image("terrain/void.png"));
@@ -1445,7 +1448,7 @@ void display::draw_tile(int x, int y, surface unit_image, fixed_t alpha, Uint32 
 	if(!shrouded(x,y)) {
 		draw_terrain_on_tile(x,y,image_type,ADJACENT_FOGSHROUD);
 	}
-
+/*
 	//draw the time-of-day mask on top of the hex
 	if(tod_hex_mask1 != NULL || tod_hex_mask2 != NULL) {
 		if(tod_hex_mask1 != NULL) {
@@ -1464,7 +1467,7 @@ void display::draw_tile(int x, int y, surface unit_image, fixed_t alpha, Uint32 
 			SDL_BlitSurface(img,NULL,dst,&dstrect);
 		}
 	}
-
+*/
 	if(grid_) {
 		surface grid_surface(image::get_image("terrain/grid.png"));
 		if(grid_surface != NULL) {

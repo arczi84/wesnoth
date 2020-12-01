@@ -1,0 +1,4685 @@
+# 
+# 
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Battle for Wesnoth 0.9.5+CVS\n"
+"Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
+"POT-Creation-Date: 2005-12-06 17:30+0100\n"
+"PO-Revision-Date: 2005-08-18 18:43+0200\n"
+"Last-Translator: Anders K. Madsen <madsen@lillesvin.net>\n"
+"Language-Team: Danish <wesnoth-da@lillesvin.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/campaigns/Heir_To_The_Throne.cfg:6
+msgid "Heir to the Throne"
+msgstr "Tronarvingen"
+
+#: data/campaigns/Heir_To_The_Throne.cfg:10
+msgid "Fighter"
+msgstr "Soldat"
+
+#: data/campaigns/Heir_To_The_Throne.cfg:10
+msgid "(easiest)"
+msgstr "(nemmest)"
+
+#: data/campaigns/Heir_To_The_Throne.cfg:11
+msgid "Hero"
+msgstr "Helt"
+
+#: data/campaigns/Heir_To_The_Throne.cfg:12
+msgid "(hardest)"
+msgstr "(sværest)"
+
+#: data/campaigns/Heir_To_The_Throne.cfg:12
+msgid "Champion"
+msgstr "Mester"
+
+#: data/campaigns/Heir_To_The_Throne.cfg:13
+#, fuzzy
+msgid ""
+"Fight to regain the throne of Wesnoth, of which you are the legitimate heir."
+msgstr ""
+"Kæmp for at genvinde tronen af Wesnoth, som du er den retsmæssige arving til."
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:5
+msgid "A Choice Must Be Made"
+msgstr "En beslutning må tages"
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:23
+msgid "Defeat either of the enemy leaders"
+msgstr "Besejr én af fjendernes ledere"
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:27
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:67
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:31
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:33
+#: data/scenarios/Heir_To_The_Throne/Crossroads.cfg:20
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:30
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:29
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:30
+#: data/scenarios/Heir_To_The_Throne/Gryphon_Mountain.cfg:28
+#: data/scenarios/Heir_To_The_Throne/Hasty_Alliance.cfg:23
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:32
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:27
+#: data/scenarios/Heir_To_The_Throne/Isle_of_Anduin.cfg:27
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:31
+#: data/scenarios/Heir_To_The_Throne/Mountain_Pass.cfg:33
+#: data/scenarios/Heir_To_The_Throne/Muff_Malal_Peninsula.cfg:32
+#: data/scenarios/Heir_To_The_Throne/Northern_Winter.cfg:27
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:25
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:39
+#: data/scenarios/Heir_To_The_Throne/Return_to_Wesnoth.cfg:28
+#: data/scenarios/Heir_To_The_Throne/Sceptre.cfg:33
+#: data/scenarios/Heir_To_The_Throne/Snow_Plains.cfg:28
+#: data/scenarios/Heir_To_The_Throne/Swamp_Of_Dread.cfg:28
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:25
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:28
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:28
+msgid "Death of Konrad"
+msgstr "Konrad dør"
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:31
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:71
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:37
+#: data/scenarios/Heir_To_The_Throne/Crossroads.cfg:24
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:34
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:33
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:34
+#: data/scenarios/Heir_To_The_Throne/Gryphon_Mountain.cfg:32
+#: data/scenarios/Heir_To_The_Throne/Hasty_Alliance.cfg:27
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:36
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:31
+#: data/scenarios/Heir_To_The_Throne/Isle_of_Anduin.cfg:31
+#: data/scenarios/Heir_To_The_Throne/Mountain_Pass.cfg:37
+#: data/scenarios/Heir_To_The_Throne/Northern_Winter.cfg:31
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:29
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:43
+#: data/scenarios/Heir_To_The_Throne/Return_to_Wesnoth.cfg:32
+#: data/scenarios/Heir_To_The_Throne/Sceptre.cfg:37
+#: data/scenarios/Heir_To_The_Throne/Snow_Plains.cfg:32
+#: data/scenarios/Heir_To_The_Throne/Swamp_Of_Dread.cfg:32
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:29
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:32
+msgid "Death of Delfador"
+msgstr "Delfador dør"
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:35
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:75
+#: data/scenarios/Heir_To_The_Throne/Hasty_Alliance.cfg:31
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:40
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:35
+#: data/scenarios/Heir_To_The_Throne/Return_to_Wesnoth.cfg:36
+#: data/scenarios/Heir_To_The_Throne/Sceptre.cfg:41
+#: data/scenarios/Heir_To_The_Throne/Snow_Plains.cfg:36
+#: data/scenarios/Heir_To_The_Throne/Swamp_Of_Dread.cfg:36
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:91
+msgid "Death of Li'sar"
+msgstr "Li'sar dør"
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:39
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:79
+#: data/scenarios/Heir_To_The_Throne/Crossroads.cfg:28
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:38
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:38
+#: data/scenarios/Heir_To_The_Throne/Gryphon_Mountain.cfg:36
+#: data/scenarios/Heir_To_The_Throne/Hasty_Alliance.cfg:35
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:44
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:39
+#: data/scenarios/Heir_To_The_Throne/Mountain_Pass.cfg:41
+#: data/scenarios/Heir_To_The_Throne/Northern_Winter.cfg:35
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:33
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:47
+#: data/scenarios/Heir_To_The_Throne/Return_to_Wesnoth.cfg:40
+#: data/scenarios/Heir_To_The_Throne/Sceptre.cfg:45
+#: data/scenarios/Heir_To_The_Throne/Snow_Plains.cfg:40
+#: data/scenarios/Heir_To_The_Throne/Swamp_Of_Dread.cfg:40
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:33
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:36
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:95
+msgid "Death of Kalenz"
+msgstr "Kalenz dør"
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:50
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:96
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:47
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:55
+#: data/scenarios/Heir_To_The_Throne/Crossroads.cfg:46
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:50
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:46
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:52
+#: data/scenarios/Heir_To_The_Throne/Epilogue.cfg:44
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:47
+#: data/scenarios/Heir_To_The_Throne/Gryphon_Mountain.cfg:56
+#: data/scenarios/Heir_To_The_Throne/Hasty_Alliance.cfg:46
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:60
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:55
+#: data/scenarios/Heir_To_The_Throne/Isle_of_Anduin.cfg:47
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:56
+#: data/scenarios/Heir_To_The_Throne/Mountain_Pass.cfg:50
+#: data/scenarios/Heir_To_The_Throne/Muff_Malal_Peninsula.cfg:48
+#: data/scenarios/Heir_To_The_Throne/Northern_Winter.cfg:51
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:42
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:73
+#: data/scenarios/Heir_To_The_Throne/Return_to_Wesnoth.cfg:53
+#: data/scenarios/Heir_To_The_Throne/Sceptre.cfg:93
+#: data/scenarios/Heir_To_The_Throne/Snow_Plains.cfg:51
+#: data/scenarios/Heir_To_The_Throne/Swamp_Of_Dread.cfg:51
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:42
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:48
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:47
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:142
+msgid "Konrad"
+msgstr "Konrad"
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:60
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:139
+msgid "Urug-Telfar"
+msgstr "Urug-Telfar"
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:78
+msgid "Unan-Ka'tall"
+msgstr "Unan-Ka'tall"
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:138
+msgid ""
+"Well, thank you for helping me get back to the surface, but now I must take "
+"what is mine!"
+msgstr ""
+"Jamen, tak for hjælpen med at komme tilbage til overfladen, men nu må jeg "
+"tage hvad der er mit!"
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:142
+msgid "You still want to fight me, do you, Princess?"
+msgstr "Vil du stadig kæmpe med mig, prinsesse?"
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:146
+msgid "Did you think I was just playing around? I need to take my inheritance!"
+msgstr "Troede du at det var for sjov? Jeg er nødt til at kræve min arv!"
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:150
+msgid ""
+"It is not so simple! We are back on the surface, but we are hardly safe. We "
+"barely know where we are. Look to the north... there are orcs about! Look to "
+"the south... there are the hordes of the undead!"
+msgstr ""
+"Så simpelt er det ikke! Vi er tilbage på overfladen, men vi er langt fra "
+"sikre. Vi ved dårligt nok hvor vi er. Kig mod nord... der er orker rundt "
+"omkring! Kig mod syd... der er horder af udøde!"
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:154
+msgid ""
+"Indeed there are. We will have to fight our way out. Are you with us, "
+"Princess, or against us?"
+msgstr ""
+"Det er det bestemt. Vi er nødt til at kæmpe vores vej ud. Er du med os, "
+"prinsesse, eller er du imod os?"
+
+# > scepter kan ogsÃ¥ kaldes kongespir eller kongestav, men scepter lyder fedest :)
+# Ja, helt klart. Det vækker nok også mest genkendelse! :)
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:158
+msgid ""
+"Perhaps it is in both our best interests for us to remain allies for a "
+"little longer... but I do want that Scepter, and someday I will have it!"
+msgstr ""
+"Måske er det i vores fælles interesse at forblive allierede lidt endnu.. men "
+"jeg vil have det scepter, og en eller anden dag får jeg det!"
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:162
+msgid "Then let us devise a battle plan."
+msgstr "Så lad os lægge en kampplan."
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:171
+#, fuzzy
+msgid "Well, we escaped."
+msgstr "Jamen, vi.. vi.."
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:175
+msgid ""
+"Yes, we did. Now I suppose you want to use the Scepter against me, Princess?"
+msgstr ""
+"Ja vi gjorde. Nu går jeg så udfra at du vil bruge septeret mod mig, "
+"Prinsesse?"
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:179
+msgid ""
+"No, I was thinking... I don't really want to kill you. I have what I came to "
+"get. So if you promise never to come south of the great river, I will spare "
+"your life."
+msgstr ""
+"Nej, jeg tænkte... Jeg vil faktisk ikke slå dig ihjel. Jeg har fået hvad jeg "
+"kom efter, så hvis du lover aldrig at komme syd for den store flod, så lader "
+"jeg dig leve."
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:183
+msgid ""
+"With all due respect, Princess, it is once again we who will spare you, "
+"Scepter or no Scepter."
+msgstr ""
+"I al respekt, prinsesse, det er igen os der skåner dig. Scepter eller ej."
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:187
+msgid "Such words in the presence of royalty! Do you want me to fry you, Elf?"
+msgstr "Sådanne ord foran en kongelig?! Jeg burde riste dig, elver!"
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:191
+msgid ""
+"Friends, peace! Though we are out of the tunnels, we are hardly safe. We are "
+"somewhere in the arid and wild north lands, that is all we know. Behold! To "
+"the north, orcs, to the south, dark hordes. We must remain at peace with one "
+"another, or else all perish!"
+msgstr ""
+"Venner, fred! Selvom vi er ude af tunnelerne, er vi næppe i sikkerhed. Det "
+"eneste vi ved er at vi befinder os et sted i det golde og vilde nordland. "
+"Se! I nord er der orker, i syd er de mørke horder. Vi må holde fred blandt "
+"os, ellers dør vi alle."
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:195
+msgid ""
+"I suppose that helping each other for a while longer would be mutually "
+"beneficial. But what should we do? How should we defend ourselves?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:202
+msgid ""
+"I can tell where we are. That is the river that is known as Longlier to men, "
+"called Arkan-thoria in my people's ancient tongue. The home of my people "
+"lies to the east."
+msgstr ""
+"Jeg ved hvor vi er. Dette er floden der blandt mennesker er kendt som "
+"Longlier, Arkan Thoria på mit folks oprindelige sprog. Mit folks hjem ligger "
+"mod øst."
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:206
+msgid ""
+"Then perhaps we should head East along the river, and seek refuge and rest "
+"there for a time?"
+msgstr ""
+"Så skulle vi måske gå mod øst langs floden og søge ly og hvile der for en "
+"stund?"
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:210
+msgid ""
+"We should indeed seek refuge there, my lord, but not by going east along the "
+"river. Its name means 'The River of Bones'. Great and evil creatures lurk "
+"along its banks, its waters are not fit to drink, and it runs over the "
+"Cliffs of Thoria. It has been many centuries since any man or elf has passed "
+"over the Cliffs and survived. No, Prince, we must choose another way."
+msgstr ""
+"Ja, det bør vi, herre, men ikke langs floden. Dens navn betyder "
+"'Knoglefloden'. Store og onde væsner holder til ved breden, vandet er "
+"udrikkeligt og den løber over Thoria-klipperne. Det er mange århundreder "
+"siden nogen, menneske eller elver, har passeret klipperne og overlevet. Nej, "
+"vi må vælge en anden vej."
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:214
+msgid "But which way, Kalenz?"
+msgstr "Men hvilken vej, Kalenz?"
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:218
+#, fuzzy
+msgid ""
+"We may take two paths which avoid the river. North, through the ancient home "
+"of my people, and then east to where they now live. Or we can go south, "
+"passing through the Swamps, before turning east, and then north. We would "
+"cross the river one time more if we chose that route, but I know a safe "
+"place for the crossing."
+msgstr ""
+"Vi kan tage to veje for at undgå floden. Nord, gennem mit folks gamle hjem "
+"og videre øst, hvor de nu bor, eller vi kan gå mod syd, gennem sumpene, så "
+"mod øst og derefter nord. Vi skal over floden endnu engang, hvis vi vælger "
+"den sidste vej, men jeg kender et sikker sted at krydse den."
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:222
+msgid "And will you join us in seeking refuge with the North Elves, Princess?"
+msgstr "Og vil du følge os i at søge tilflugt hos nordelverne, prinsesse?"
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:226
+#, fuzzy
+msgid "If the Elves will promise me refuge and safe passage, then I will go."
+msgstr "Hvis elverne lover mig tilflugt og frit lejde, så går jeg med."
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:230
+msgid ""
+"That we will, Princess. Even though you are the daughter of the Queen, our "
+"enemy, we shall not harm you on this encounter, for you have helped us."
+msgstr ""
+"Det gør vi, Prinsesse. Selvom du er datter af Dronningen, vores fjende, vil "
+"vi ikke gøre dig fortræd for du har hjulpet os."
+
+#: data/scenarios/Heir_To_The_Throne/A_Choice_Must_Be_Made.cfg:234
+#, fuzzy
+msgid ""
+"So, we must choose. To the north past the Orcs, where lie the ancient snow "
+"plains of the Elves, or to the south, beyond the armies of the Walking Dead "
+"where the dreaded swamps await."
+msgstr ""
+"Så må vi vælge. Mod nord, forbi orkerne, over elvernes gamle snesletter "
+"eller mod syd, forbi de levende dødes hære, til de frygtede sumpe."
+
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:4
+msgid "The Battle for Wesnoth"
+msgstr "Kampen om Wesnoth"
+
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:12
+msgid ""
+"Here we overlook the city of Weldyn. The great city. The ancient city. The "
+"city of evil. The city of good. The city of men."
+msgstr ""
+"Her ser vi byen Weldyn. Den store by, den gamle by, den onde by, den gode by "
+"- menneskernes by."
+
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:16
+#, fuzzy
+msgid ""
+"I have not looked upon this city for seventeen years. Seventeen years ago, "
+"when I should have been at the height of my power. But my strength failed "
+"me. I failed, and I cannot atone for it."
+msgstr ""
+"Jeg har ikke set denne by i sytten år. For sytten år siden, hvor jeg skulle "
+"have været på magtens tinde. Min styrke svigtede mig. Jeg svigtede og jeg "
+"kan ikke gøre det godt igen."
+
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:20
+msgid ""
+"The battle had been long and hard. We had been defeated. Eldred was slain, "
+"but I knew that Asheviere's wrath would be great. That many innocents would "
+"be slain. I had to save the monarchy. I had to save the princes. I made "
+"haste to Weldyn, before the guards of Asheviere could get there, to carry "
+"out their evil orders."
+msgstr ""
+"Kampen var lang og hård. Vi var slået. Eldred var død, men jeg vidste at "
+"Ashevieres vrede ville være voldsom - mange uskyldige ville blive slået "
+"ihjel. Jeg måtte redde tronen, jeg måtte redde prinsessen. Jeg skyndte mig "
+"til Weldyn før Ashevieres vagter kunne nå dertil og fuldføre deres ordrer."
+
+# LÃ¸b ham igennem?
+# Gennemborede ham? <- JA! Eller "gav ham en omgang". :)
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:24
+msgid ""
+"But I failed. I was too late. I entered the chambers of the youngest prince, "
+"prince Konrad, just as one of the evil ones ran him through. All was lost. "
+"The heirs were slain. Only Asheviere and her daughter had any claim to the "
+"throne."
+msgstr ""
+"Men det fejlede. Jeg kom for sent. Jeg gik ind i den yngste prins' kammer, "
+"prins Konrad's, netop som en af de onde gennemborede ham. Alt var tabt. "
+"Arvingerne var slagne. Kun Asheviere og hendes datter kunne gøre krav på "
+"tronen."
+
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:28
+msgid ""
+"Of course, you are surprised by this, but it is the truth. In haste, I "
+"vanquished the evil ones who had committed this foul deed. Then I took the "
+"little prince's broken body, and away I rode. Far away, to the land of the "
+"Elves."
+msgstr ""
+"Dette overrasker jer selvfølgelig, men det er sandt. I al hast udryddede jeg "
+"de djævelske skabninger, der havde udført denne ondskabfulde gerning, "
+"derefter samlede jeg den kvæstede lille prinsesse op og red bort. Langt bort "
+"til elvernes land."
+
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:32
+#, fuzzy
+msgid ""
+"By strange and mysterious fortune, the Elf Lady Parandra had come across a "
+"human child. She knew not where he had come from, only that the Orcs would "
+"have eaten him if it weren't for her intervention. The Elves felt that great "
+"fortune smiled upon this man-child. Perhaps that is why this most truthful "
+"of peoples agreed to my plan."
+msgstr ""
+"Ved et mystisk tilfælde, havde Parandra fundet et menneskebarn. Hun vidste "
+"ikke hvor han var kommet fra, hun vidste kun at orkerne ville have ædt ham, "
+"hvis det ikke havde været for hendes indgriben. Elverne mente at stor lykke "
+"tilsmilede dette barn. Måske er det derfor dette sandfærdige folk gik med "
+"til min plan."
+
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:36
+msgid ""
+"After burying the little prince, we agreed never to speak of him again. "
+"Instead, this orphan child we would call Konrad, and he would be brought up "
+"to be king. I would say that I had slain the guards before they had carried "
+"out their evil deed, instead of after. No-one would ever have to know. And "
+"no-one did know for certain, until now."
+msgstr ""
+"Efter at have begravet den lille prins, blev vi enige om aldrig at tale om "
+"ham igen. I stedet ville vi kalde dette forældreløse barn Konrad og opdrage "
+"ham til at blive konge. Jeg ville sige at jeg havde drøb vagterne før de "
+"nåede at fuldføre deres udåd, i stedet for efter. Ingen behøvede nogensinde "
+"at kende sandheden. Ingen kendte den med sikkerhed - indtil nu."
+
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:40
+msgid ""
+"I had thought that we could one day make you king, Konrad. But now I see "
+"that fate has made a different choice. That despite all of Asheviere's evil, "
+"this Li'sar is fit for the throne. She is the rightful queen. From a long "
+"line of kings, stretching all the way back to the seafarers of old from the "
+"west."
+msgstr ""
+"Jeg havde troet at vi en dag kunne indsætte dig som konge, Konrad. Men, jeg "
+"ser nu at skæbnen har villet det anderledes. På trods af Ashevieres ondskab, "
+"er Li'sar værdig til tronen. Hun er den retmæssige dronning. Af en gammel "
+"kongeslægt, der strækker sig helt tilbage til de gamle søfarere fra vest."
+
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:44
+msgid ""
+"Now, let us not tarry here any longer! The dawn breaks! The time has come "
+"for the heir to the throne to claim it!"
+msgstr ""
+"Nå, lad os ikke spilde mere tid her! Daggryet kommer! Det er tid til at "
+"tronarvingen indtager sin plads!"
+
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:63
+msgid "Defeat Asheviere"
+msgstr "Besejr Asheviere"
+
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:83
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:35
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:37
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:48
+#: data/scenarios/Heir_To_The_Throne/Isle_of_Anduin.cfg:35
+#: data/scenarios/Heir_To_The_Throne/Muff_Malal_Peninsula.cfg:36
+#: data/scenarios/Heir_To_The_Throne/Northern_Winter.cfg:39
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:51
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:32
+#, fuzzy
+msgid "Turns run out"
+msgstr "Ikke flere ture"
+
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:109
+msgid "Haliel-Maga"
+msgstr "Haliel-Maga"
+
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:124
+msgid "Heford"
+msgstr "Heford"
+
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:138
+msgid "Sir Kalm"
+msgstr "Sir Kalm"
+
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:153
+msgid "Asheviere"
+msgstr "Asheviere"
+
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:178
+msgid ""
+"So, these rebels come at last to face me, while most of my army is off "
+"fighting the fickle clans."
+msgstr ""
+"Så disse rebeller kommer for at møde mig, mens det meste af min hær er ude "
+"at bekæmpe de vægelsindede klaner."
+
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:182
+#, fuzzy
+msgid ""
+"Surrender, mother. The land's blood is spent. I have come to take my "
+"rightful place."
+msgstr ""
+"Overgiv dig, moder. Du har udgydet for meget af landets blod. Jeg er kommet "
+"for at indtage min retmæssige plads."
+
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:186
+msgid ""
+"Ahh. My own daughter, a turncoat. So it is true. Such treason my reign must "
+"endure! But endure it will."
+msgstr ""
+"Åhh. Min egen datter, en forrædder - det er altså sandt. Mit styre må udstå "
+"meget! Men udstå gør det."
+
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:190
+msgid ""
+"How long must the people endure your rule? Give the throne to your daughter. "
+"She is the rightful heir. We even hold the scepter to prove it!"
+msgstr ""
+"Hvor længe skal dit folk lide under dit styre? Giv tronen til din datter, "
+"hun er den retmæssige arving. Vi har endda scepteret som bevis!"
+
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:194
+msgid ""
+"Delfador! My old tormentor! Treason! Men! Seize them! Kill them! Kill them "
+"all!"
+msgstr ""
+"Delfador! Min nemesis! Forræderi! Vagter! Grib dem! Dræb dem! Dræb dem alle!"
+
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:205
+msgid "Treason! The evil ones have slain me!"
+msgstr "Forræderi! De onde har besejret mig!"
+
+# dÃ¸r hun?
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:209
+msgid "And so passes Asheviere, the dark queen of Wesnoth."
+msgstr "Og således dør Asheviere, mørkets dronning af Wesnoth."
+
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:213
+msgid "We have won at last! Li'sar! You will be queen!"
+msgstr "Endelig! Vi vandt! Li'sar! Du skal være dronning!"
+
+#: data/scenarios/Heir_To_The_Throne/Battle_for_Wesnoth.cfg:217
+msgid ""
+"Yes, but I won't ever forget what you have done for me, Konrad, Delfador, "
+"and Kalenz."
+msgstr ""
+"Ja, men jeg glemmer aldrig hvad I har gjort for mig, Konrad, Delfador og "
+"Kalenz."
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:4
+msgid "The Bay of Pearls"
+msgstr "Perlebugten"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:23
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:23
+#: data/scenarios/Heir_To_The_Throne/Northern_Winter.cfg:23
+#: data/scenarios/Heir_To_The_Throne/Return_to_Wesnoth.cfg:24
+#: data/scenarios/Heir_To_The_Throne/Swamp_Of_Dread.cfg:24
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:21
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:24
+msgid "Defeat all enemy leaders"
+msgstr "Besejr alle fjendtlige ledere"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:27
+msgid "Defeat one enemy leader, and resist the other until time expires"
+msgstr ""
+"Besejr en fjendtlig leder og hold stand mod den anden til tiden løber ud"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:59
+msgid "Dwaba-Kukai"
+msgstr "Dwaba-Kukai"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:75
+msgid "Managa'Gwin"
+msgstr "Managa'Gwin"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:108
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:236
+msgid "Bugg"
+msgstr "Bugg"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:120
+msgid "Xnamas"
+msgstr "Xnamas"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:132
+msgid "Inalai"
+msgstr "Inalai"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:165
+msgid ""
+"So this is the Bay of Pearls. It looks like they have those mermen working "
+"hard!"
+msgstr ""
+"Så dette er Perlebugten. Det ser ud til at havmændene må arbejde hårdt!"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:169
+msgid ""
+"Indeed it does. It also looks like they have many, many troops. I should go "
+"around the bay and distract some of them. You and the rest rescue the mermen!"
+msgstr ""
+"Ja, det gør det. Det ser også ud til at de har rigtig mange tropper. Jeg "
+"rykker langs bugten og afleder dem, du og de andre må redde havmændene."
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:173
+msgid "Very well. Be careful!"
+msgstr "Meget vel. Vær forsigtig!"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:198
+msgid "But boss, why are we only using bats and nagas?"
+msgstr "Men boss, hvorfor bruger vi kun flagermus og nagaer?"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:204
+msgid ""
+"Because we need to control the seas and the merman folk, and nagas and bats "
+"are best for doing that!"
+msgstr ""
+"Fordi vi skal have kontrol over vandet og havmændene - flagermus og nagaer "
+"er bedst til det formål."
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:209
+msgid "But orcs are the most powerful race in all of..."
+msgstr "Men orker er den stærkeste race i hele..."
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:215
+msgid "Shut up, worm! I'm the boss!"
+msgstr "Klap i, orm! Jeg bestemmer!"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:240
+msgid "Ha ha ha! Now orcs will rule over land and sea!"
+msgstr "Ha ha ha! Nu skal orkerne herske både til lands og til vands."
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:246
+msgid "(Sigh) Will someone kill this idiot for me, please?"
+msgstr "(Suk!) Gider en eller anden slå den idiot ihjel for mig?"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:260
+msgid "But... but... how can this be happening to me?"
+msgstr "Men... Men... hvordan kan dette ske?"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:264
+msgid "Who was that idiot?"
+msgstr "Hvem var den idiot?"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:280
+msgid "Gwaba"
+msgstr "Gwaba"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:281
+msgid "Nepba"
+msgstr "Nepba"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:282
+msgid "Triram"
+msgstr "Triram"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:285
+msgid "Mriram"
+msgstr "Mriram"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:289
+msgid "Free at last! Now death to the Orcs!"
+msgstr "Endelig fri! Nu skal der bringes død over orkerne!"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:304
+msgid "Mabooa"
+msgstr "Mabooa"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:307
+msgid "Earooa"
+msgstr "Earooa"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:308
+msgid "Nethuns"
+msgstr "Nethuns"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:311
+msgid "Gwoama"
+msgstr "Gwoama"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:315
+msgid "Now that we are free, together we can defeat our oppressors!"
+msgstr "Nu hvor vi er fri, kan vi sammen bekæmpe undertrykkerne!"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:330
+msgid "Kaba"
+msgstr "Kaba"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:333
+msgid "Kwabao"
+msgstr "Kwabao"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:338
+msgid "Freedom! Now where are those Orcs? Let me at 'em!"
+msgstr "Frihed! Hvor er de orker nu? Lad mig komme efter dem!"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:353
+msgid "Gwimli"
+msgstr "Gwimli"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:354
+msgid "Jarla"
+msgstr "Jarla"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:357
+msgid "Gwarloa"
+msgstr "Gwarloa"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:361
+msgid ""
+"Thank you for rescuing us! Now we can help you fight the evil Orcs! The main "
+"cage where they keep most of the mermen is in the north-west!"
+msgstr ""
+"Tak fordi du reddede os! Nu kan vi hjælpe dig med at bekæmpe de onde orker. "
+"Hoved-burret, hvor de fleste havmænd er fanget, er i nordvest."
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:376
+msgid "Heldaga"
+msgstr "Heldaga"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:377
+msgid "Apalala"
+msgstr "Apalala"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:378
+msgid "Oceanus"
+msgstr "Oceanus"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:380
+msgid "Tini"
+msgstr "Tini"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:384
+msgid "Elcmar"
+msgstr "Elcmar"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:385
+msgid "Aigaion"
+msgstr "Aigaion"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:390
+msgid "Death to the orcs! Come, let us all fight them, men!"
+msgstr "Død over orkerne! Kom mænd, lad os kæmpe!"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:405
+msgid ""
+"At last, we have freed the mermen. Go back to the ocean and live in peace."
+msgstr "Endelig, havmændene er fri. Tag tilbage til havet og lev i fred."
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:413
+msgid ""
+"My lord! You may need the help of some of us who have skill in the sea in "
+"future. We would like to offer you help, and come with you."
+msgstr ""
+"Herre! Du får måske brug for hjælp fra nogle af os, der er dygtige i vandet. "
+"Vi vil gerne tilbyde vores hjælp og komme med dig."
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:417
+msgid "Now where is Delfador? I hope he's safe!"
+msgstr "Hvor er Delfador nu? Jeg håber han er i sikkerhed!"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:424
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:579
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:62
+msgid "Delfador"
+msgstr "Delfador"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:433
+msgid "I am perfectly safe, friend!"
+msgstr "Jeg er helt i sikkerhed, min ven!"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:437
+msgid ""
+"There you are! I am so glad you are all right! Now we may have a little rest."
+msgstr ""
+"Nå, der er du! Jeg er så glad for at du er ok! Nu kan vi tage et lille hvil."
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:441
+msgid ""
+"I am afraid there is no time for rest, Konrad. Asheviere has now laid siege "
+"to Elensefar, breaking the century-old treaty between Wesnoth and the Elense "
+"city-state. If the city falls, there is no telling how many other lands she "
+"may swallow up!"
+msgstr ""
+"Jeg er bange for at der ikke er tid til at hvile, Konrad. Asheviere har "
+"besat Elensefar og brudt den århundreder gamle aftale mellem Wesnoth og "
+"Elense bystaten. Hvis byen falder, er det ikke til at sige hvad hun så vil "
+"besætte."
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:446
+msgid "Oh no! What shall we do?"
+msgstr "Åh, nej! Hvad skal vi gøre?"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:451
+msgid ""
+"You must lead our men to the city, and help defend it. Or recapture it if it "
+"falls before you arrive."
+msgstr ""
+"Du skal lede vores hær til byen og hjælpe med at beskytte den eller "
+"genindtage den, hvis den falder før du når frem."
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:456
+msgid ""
+"I must do that? But what about you, Delfador? You're coming with me, right?"
+msgstr "Skal jeg det? Men hvad med dig, Delfador? Du kommer da med, ikke?"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:461
+msgid ""
+"I am afraid not, Konrad. I have come across some important documents, and "
+"must make haste with them to the Elven Council. It seems that the time to "
+"stop Asheviere is shorter than I had thought."
+msgstr ""
+"Desværre, Konrad. Jeg har fundet nogle vigtige dokumenter og må skynde mig "
+"at bringe dem til elverrådet. Det ser ud til at vi har kortere tid til at "
+"stoppe Asheviere end forventet."
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:466
+msgid "But Delfador! I can't do it on my own!"
+msgstr "Men Delfador, jeg kan ikke klare det alene!"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:475
+msgid "On your own? My lord! We, your loyal soldiers, will support you!"
+msgstr "Alene? Herre, vi, dine loyale soldater, vil støtte dig!"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:479
+#, fuzzy
+msgid ""
+"You will prevail. I have faith in you. Head north. Elensefar is but three "
+"days' travel if you make haste."
+msgstr ""
+"Du vil sejre - jeg stoler på dig. Drag mod nord, du kan nå til Elensefar på "
+"tre dage, hvis du skynder dig."
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:483
+msgid "Very well. But how do I get there?"
+msgstr "Godt godt, men hvordan kommer jeg dertil?"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:487
+msgid ""
+"It is north-west of here, a few leagues inland. There are two ways to go, by "
+"ship or on foot. Each has its own dangers. You must choose between them."
+msgstr ""
+"Der er mod nordvest, en 10-12 mil til lands. Der er to måder at nå dertil "
+"på, med skib eller til fods, hver med sine farer. Du må vælge."
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:489
+msgid "Ships? Ugh! I have been sea sick for the last time. We shall walk!"
+msgstr "Skibe? Føj! Jeg har været søsyg for sidste gang. Vi går!"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:493
+msgid "Safe journey to you, Konrad. Until we meet again!"
+msgstr "Hav en god og sikker rejse, Konrad! Vi ses!"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:507
+msgid ""
+"Going by ship we may at least get a little rest for ourselves. By sea it is!"
+msgstr "Med skib kan vi i det mindste hvile os lidt. Til søs!"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:511
+msgid "Safe voyage to you then, Konrad. May the weather be fair."
+msgstr "Rejs sikkert, Konrad! Må vejrguderne være med dig!"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:604
+msgid ""
+"Have you not been able to defeat our foes in all these days? They have "
+"summoned reinforcements. Surely now our doom is upon us!"
+msgstr ""
+"Har du, i al den tid, ikke besejret vores fjender? De har hidkaldt "
+"forstærkninger. Nu er dommedag over os!"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:617
+msgid ""
+"Konrad! We cannot spend any more time here. Though it would be good to "
+"defeat the Orcs and free more of their prisoners, more urgent business calls "
+"us!"
+msgstr ""
+"Konrad! Vi kan ikke bruge længere tid her. Selvom det ville være godt at "
+"nedkæmpe orkerne og befri flere fanger, så er der vigtigere ting at gøre!"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:621
+msgid ""
+"Delfador, thank goodness you have survived! This has been a tough battle, "
+"but why can we not finish it? Why must we leave?"
+msgstr ""
+"Delfador, gudskelov er du i live! Det har været en hård kamp, men kan vi "
+"ikke kæmpe den færdig? Hvorfor skal vi drage afsted?"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:625
+msgid ""
+"I bear ill tidings. Asheviere has now laid siege to Elensefar, breaking the "
+"century-old treaty between Wesnoth and the Elense city-state. If the city "
+"falls, there is no telling how many other lands she may swallow up!"
+msgstr ""
+"Jeg har dårligt nyt. Asheviere har besat Elensefar og brudt den Århundrede "
+"gamle pagt mellem Wesnoth og bystaten Elense. Hvis byen falder er det ikke "
+"til at vide hvilke lande hun så vender sig mod."
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:629
+msgid "I must do this? But you are coming with me, aren't you, Delfador?"
+msgstr "Skal jeg gøre det? Men kommer du ikke med mig, Delfador?"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:633
+msgid ""
+"I am afraid not, Konrad. I have found some important documents that need "
+"seeing to. I must ride at once to make council with the Elves. I will meet "
+"you in Elensefar, after you have secured it."
+msgstr ""
+"Beklager Konrad, jeg har fundet nogle vigtige papirer, som jeg bliver nødt "
+"til at kigge på. Jeg må afsted med det samme og holde råd med elverne. Vi "
+"kan mødes i Elensefar når du har sikret den."
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:637
+msgid ""
+"I fear I will struggle to do this on my own... but what must be must be. How "
+"do I get to Elensefar?"
+msgstr ""
+"Jeg er bange for at jeg kommer til at gøre dette alene... men det må blive "
+"som det bliver. Hvordan kommer jeg til Elensefar?"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:652
+#, fuzzy
+msgid ""
+"Since you have broken the Orcs' hegemony over the seas, going by ship would "
+"be safest. Sail along the coast, and you can land mere miles from Elensefar. "
+"Make haste!"
+msgstr ""
+"Da du har brudt orkernes dominans over havet, så er det sikrest at rejse til "
+"søs. Sejl langs kysten og du kan stævne ind få mil fra Elensefar. Skynd dig!"
+
+#: data/scenarios/Heir_To_The_Throne/Bay_of_Pearls.cfg:665
+msgid ""
+"With the Orcs controlling the seas, going by ship would not be safe. Travel "
+"by land, Elensefar is only six days' march up the coast. Make haste!"
+msgstr ""
+"Med orkernes dominans over farvandene, er det ikke sikkert at stikke til "
+"søs. Tag til lands, Elensefar ligger kun 6 dagsrejser, hvis du går langs "
+"kysten. Skynd dig!"
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:4
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:49
+msgid "Blackwater Port"
+msgstr "Mørkevandsporten"
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:25
+#: data/scenarios/Heir_To_The_Throne/Hasty_Alliance.cfg:19
+#: data/scenarios/Heir_To_The_Throne/Isle_of_Anduin.cfg:23
+#: data/scenarios/Heir_To_The_Throne/Snow_Plains.cfg:24
+msgid "Defeat the enemy leader"
+msgstr "NedkÃ¦mp fjendens leder"
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:29
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:27
+msgid "Resist until the end of the turns"
+msgstr "ModstÃ¥ indtil turene lÃ¸ber ud"
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:41
+msgid "Death of Sir Kaylan"
+msgstr "Sir Kaylans dÃ¸d"
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:69
+msgid "Sir Kaylan"
+msgstr "Sir Kaylan"
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:90
+msgid "Mokolo Qimur"
+msgstr "Mokolo Qimur"
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:112
+msgid "Veocyn"
+msgstr "Veocyn"
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:124
+msgid "Yran"
+msgstr "Yran"
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:133
+msgid "Haldiel"
+msgstr "Haldial"
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:152
+msgid ""
+"We should be able to board a ship at Blackwater Port, but it seems the Orcs "
+"are heading there too. Rebels who hate Asheviere and are loyal to the memory "
+"of the king desperately hold the port, as it is one of the only places where "
+"they can ship supplies and weapons."
+msgstr ""
+"Vi burde kunne få et skib i Sortevandshavn, men det ser ud til at orkerne "
+"også er på vej derhen. Rebeller, som er imod Asheviere og som er loyale mod "
+"den gamle konges minde, kæmper desperat for at beholde havnen, da den er et "
+"af de eneste steder hvorfra man kan sende forsyninger og våben."
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:156
+msgid "Delfador, some Orcs are following us! We must make haste!"
+msgstr "Delfador, nolge orker fÃ¸lger efter os! Vi mÃ¥ skynde os!"
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:160
+msgid ""
+"Delfador, my old friend! We had heard of your coming, and of the attacks on "
+"the Elves. It is good to see you again, although I would prefer it were not "
+"in such sad times."
+msgstr ""
+"Delfador, min gamle ven! Vi havde hørt at du var på vej og om angrebet på "
+"elverne. Det er godt at se dig, selvom jeg ville foretrække at det var under "
+"mindre sørgelige omstændigheder."
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:164
+msgid ""
+"Konrad, this is Kaylan, one of the mightiest of the horse lords, and one of "
+"the few who is willing to oppose the dark crown. Rumor has it that his lance "
+"has slain fifty men and a hundred orcs."
+msgstr ""
+"Konrad, dette er Kaylan, end af de mægtigste heste-herrer og en af de få der "
+"er villige til at modsætte sig mørkets krone. Rygtet siger at han, med sin "
+"lanse, har slået halvtreds mænd og hundrede orker."
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:168
+msgid ""
+"It seems the orcs have come here too, to try to wrest this port from our "
+"hands. Our defenses are still weak, but reinforcements will arrive soon!"
+msgstr ""
+"Det ser ud til at orkerne også er her - sikkert for at tage havnen fra os. "
+"Vores forsvar er stadig svagt, men der er forstærkninger på vej."
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:172
+msgid "We will help you fight them off until the reinforcements arrive."
+msgstr ""
+"Vi skal nok hjælpe dig med at holde dem væk til forstærningerne når frem."
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:176
+msgid ""
+"Hopefully with your help we can ward them off. But you must not tarry here "
+"long, for your survival is even more important to our cause than the "
+"strength of the port. A ship is due here in two days, surely it will be able "
+"to take you to safety."
+msgstr ""
+"Forhåbentlig, kan vi, med jeres hjælp, holde dem ude. Men, i må ikke blive "
+"her får længe, for jeres overlevelse er vigtigere for vores sag end denne "
+"havns styrke. Der skulle komme et skib om to dage, det kan sikkert sejle jer "
+"i sikkerhed."
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:180
+msgid "And the ship will take us to Anduin?"
+msgstr "Og vil skibet sejle os til Anduin?"
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:184
+msgid ""
+"Yes, we will sail to the Isle of Anduin, my home Konrad, and the home of "
+"many magi."
+msgstr ""
+"Ja, Konrad, vi sejler til øen Anduin, mit hjem. Og mange troldmænds hjem."
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:188
+msgid ""
+"I will send one of my horsemen to serve under you. I offer you my support "
+"Konrad, and the support of my men - from now on you will be able to recruit "
+"horsemen."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:192
+msgid ""
+"Thank you, sir. But how shall I best use these horsemen? How do they differ "
+"from Elves?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:197
+msgid ""
+"Elves are a powerful race, Konrad, more powerful than my own people usually "
+"acknowledge. But horsemen are powerful in a different way. They have no long "
+"range attack, but can charge into combat, inflicting double normal damage, "
+"though taking double damage in return. They are also lawful, meaning they "
+"are better by day, and worse at night. Horsemen are unmatched on open land, "
+"though Elves will serve you better in rugged terrain."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:202
+msgid ""
+"Elves may be the lords of the forest, but horsemen are powerful as well. On "
+"the plains under the midday sun they can fell the toughest foes with sharp "
+"spears and under heavy hoofs!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:207
+msgid ""
+"Recruit troops wisely, Konrad, and remember that you can recall experienced "
+"units from past battles to help you fight again."
+msgstr ""
+"Rekrutér omhyggeligt, Konrad, og husk at du kan tilbagekalde erfarne tropper "
+"fra tidligere slag."
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:215
+msgid ""
+"Reinforcements have arrived! Forward men! I expect each of you to bring me "
+"back the head of an orc!"
+msgstr ""
+"Forstærkningerne er kommet! Fremad mænd! Jeg vil se hver eneste af jer komme "
+"tilbage med en orks hoved!"
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:220
+msgid ""
+"So many foul humans riding on horses! There is no way we can defeat them. "
+"Quick, we must make our escape!"
+msgstr ""
+"Så mange ækle mennesker til hest. Dem har vi ikke en chance for at nedkæmpe. "
+"Hurtigt, vi må stikke af!"
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:225
+msgid "Yredd"
+msgstr "Yredd"
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:237
+msgid "Tarcyn"
+msgstr "Tarcyn"
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:249
+msgid "Syryn"
+msgstr "Syryn"
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:261
+msgid "Cicyn"
+msgstr "Cicyn"
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:273
+msgid "Ginvan"
+msgstr "Ginvan"
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:285
+msgid "Simyr"
+msgstr "Simyr"
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:303
+msgid ""
+"Thank you for the help, friends. The ship should arrive soon, it will take "
+"you to Anduin."
+msgstr ""
+"Tak for hjælpen, venner. Skibet burde være her snart, så kan i komme til "
+"Anduin."
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:315
+msgid "We should embark now."
+msgstr "Vi burde gå om bord nu."
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:319
+msgid ""
+"Safe voyage to you, friends. Rest assured that we will never surrender to "
+"the forces of the Dark Queen."
+msgstr ""
+"Rejs sikkert, venner. Vær forvisset om at vi aldrig vil overgive os til "
+"Mørkets Dronnings tropper."
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:330
+msgid "I have failed in my duty to protect the Rightful Heir and the port."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Blackwater_Port.cfg:334
+msgid ""
+"Without his help, we will be unable to use the ships. There is no hope..."
+msgstr ""
+"Uden hans hjælp er vi ikke i stand til at bruge skibene. Alt håb er ude..."
+
+#: data/scenarios/Heir_To_The_Throne/Crossroads.cfg:4
+msgid "Crossroads"
+msgstr "Korsveje"
+
+#: data/scenarios/Heir_To_The_Throne/Crossroads.cfg:16
+msgid "Defeat Kojun Herolm"
+msgstr "Besejr Kojun Herolm"
+
+#: data/scenarios/Heir_To_The_Throne/Crossroads.cfg:145
+msgid "Kojun Herolm"
+msgstr "Kojun Herolm"
+
+#: data/scenarios/Heir_To_The_Throne/Crossroads.cfg:159
+msgid "Mokho Kimer"
+msgstr "Mokho Kimer"
+
+#: data/scenarios/Heir_To_The_Throne/Crossroads.cfg:183
+msgid "Here we come to the great cross-roads. We should go north-east."
+msgstr "Nu kommer vi til den store korsvej. Vi skal mod nordøst."
+
+#: data/scenarios/Heir_To_The_Throne/Crossroads.cfg:187
+#, fuzzy
+msgid ""
+"Beware! These hills are not safe! The roads are important to Asheviere's "
+"strategy, and she has hired Orcs to guard them. We shall have to fight to "
+"travel through."
+msgstr ""
+"Pas på! Bakkerne er farlige! Vejene er vigtige for Ashevieres strategi og "
+"hun har hyret orker til at bevogte dem. Vi kommer til at kæmpe for at rejse "
+"langs dem."
+
+#: data/scenarios/Heir_To_The_Throne/Crossroads.cfg:191
+msgid "Then fight we shall. Let it begin!"
+msgstr "Så må vi kæmpe. Lad det begynde!"
+
+#: data/scenarios/Heir_To_The_Throne/Crossroads.cfg:210
+msgid "Victory is ours, men. Let us proceed north-east!"
+msgstr "Sejren er vor! Lad os fortsætte mod nordøst!"
+
+#: data/scenarios/Heir_To_The_Throne/Crossroads.cfg:226
+msgid "Niodien"
+msgstr "Niodien"
+
+#: data/scenarios/Heir_To_The_Throne/Crossroads.cfg:230
+msgid "Stay on the path! The hills here are not safe!"
+msgstr "Hold jer til vejen! Bakkerne her er ikke sikre!"
+
+#: data/scenarios/Heir_To_The_Throne/Crossroads.cfg:246
+msgid "Loflar"
+msgstr "Loflar"
+
+#: data/scenarios/Heir_To_The_Throne/Crossroads.cfg:250
+msgid ""
+"Beware the hills! There are many Orcs in hiding, preparing to ambush you!"
+msgstr ""
+"Pas på i bakkerne! Der er mange orker, der skjuler sig og venter på en "
+"chance for at lokke jer i et baghold."
+
+#: data/scenarios/Heir_To_The_Throne/Crossroads.cfg:268
+msgid ""
+"NE - Dan'Tonk\n"
+"SE - Fort Tahn"
+msgstr ""
+"NØ - Dan'Tonk\n"
+"SØ - Fort Tahn"
+
+#: data/scenarios/Heir_To_The_Throne/Crossroads.cfg:272
+msgid "Dan'Tonk, we are so close to Weldyn."
+msgstr "Dan'Tonk, vi er så tæt på Weldyn."
+
+#: data/scenarios/Heir_To_The_Throne/Crossroads.cfg:276
+msgid ""
+"We dare not confront Asheviere yet. We must retrieve the Scepter of Fire and "
+"gather more allies in the north."
+msgstr ""
+"Vi kan ikke konfrontere Asheviere endnu. Vi må have fat i Ildscepteret og få "
+"flere allierede i norden."
+
+#: data/scenarios/Heir_To_The_Throne/Crossroads.cfg:330
+#: data/scenarios/Heir_To_The_Throne/Crossroads.cfg:415
+msgid "Ambushed!"
+msgstr "Baghold!"
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:4
+msgid "The Dwarven Doors"
+msgstr "Dværgedørene"
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:26
+msgid "Move Konrad to entrance of the Dwarven Kingdom"
+msgstr "Flyt Konrad til Dværgerigets indgang"
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:60
+msgid "Knafa-Telfar"
+msgstr "Knafa-Telfar"
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:78
+msgid "Urug-Tan"
+msgstr "Urug-Tan"
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:97
+msgid "Shuuga-Mool"
+msgstr "Shuuga-Mool"
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:127
+msgid "The doors are closed and barred from the inside!"
+msgstr "Dørene er lukket og blokkeret indefra!"
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:131
+msgid "We can't get in! What should we do now?"
+msgstr "Vi kan ikke komme ind! Hvad skal vi gøre?"
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:135
+msgid ""
+"It is said that the orcs used an old mine tunnel to surprise the dwarves. It "
+"must be that one in the north-east."
+msgstr ""
+"Det siges at orkerne overraskede dværgene via en gammel minetunnel. Det må "
+"være den i nordøst."
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:139
+msgid "Then we must make it to that tunnel!"
+msgstr "Vi er nødt til at klare os frem til tunnelen!"
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:153
+msgid "This old mine seems to be connected to the main tunnels."
+msgstr "Den gamle mine ser ud til at være forbundet med hovedtunnelerne."
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:157
+msgid "I am hesitant to enter. It will be so difficult in the darkness!"
+msgstr "Jeg er ikke glad for at gå derind. Det bliver så svært i mørket!"
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:161
+msgid "There is no time for idle chatter or delay of any kind. Onward!"
+msgstr "Der er ikke tid til småsnak eller forsinkelse af nogen slags. Videre!"
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:179
+msgid ""
+"We have defeated the foul Orcs guarding this land, but we must continue "
+"without rest. More will surely come!"
+msgstr ""
+"Vi har besejret de ækle orker der bevogtede dette område, men vi må "
+"fortsætte uden hvile, for der kommer ganske sikkert flere."
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:183
+msgid ""
+"Indeed we must not delay. I remember now, the mines in the North-East are "
+"the best way to enter!"
+msgstr ""
+"Vi må bestemt ikke tøve. Jeg husker nu at minerne i nordøst er den bedste "
+"vej at komme ind!"
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:187
+msgid "But Konrad's party was not alone in entering the mines..."
+msgstr "Men Konrads gruppe var de eneste der gik ind i minerne..."
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:193
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:58
+#: data/scenarios/Heir_To_The_Throne/Hasty_Alliance.cfg:58
+#: data/scenarios/Heir_To_The_Throne/Hasty_Alliance.cfg:321
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:88
+msgid "Li'sar"
+msgstr "Li'sar"
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:196
+msgid "Royal Guard"
+msgstr "Kongelig vagt"
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:208
+msgid ""
+"Whew! We make our way through the dangerous fog of the mountains, and now "
+"there is all this chaos before us! Come on, men! We must make it to the "
+"mines, which lie ahead of us!"
+msgstr ""
+"Puha! Vi skærer os gennem bjergenes farlige tåger og nu venter et kæmpe kaos "
+"foran os! Kom, mænd! Vi må nå til minerne foran os."
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:218
+msgid ""
+"The defense of the dwarves must have been strong. Look at those ruined "
+"towers!"
+msgstr ""
+"Dværgenes forsvar må have været stærkt. Prøv at se på de ødelagte tårne!"
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:222
+msgid ""
+"The battle outside was fierce, and lasted a full half-year. But the battles "
+"inside the tunnels were worse."
+msgstr ""
+"Kampen udenfor var bitter og varede et halvt år, men kampene i tunnelerne "
+"var endnu værre."
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:234
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:282
+msgid "Cuttle Fish"
+msgstr "Kæmpeblæksprutte"
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:238
+msgid "Ruarrrrr!!!"
+msgstr "Ruarrrrr!!!"
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:242
+msgid "A monster was hiding in that lake!"
+msgstr "Der gemte sig et monster i den sø!"
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:250
+msgid ""
+"The legend was true! There are always tentacled creatures hiding in the "
+"lakes near the Dwarven Kingdoms."
+msgstr ""
+"Legenden talte sandt! Der gemmer sig altid tentakel-skabninger i søerne nær "
+"dværgenes kongeriger."
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:264
+msgid "At last, this is the entrance to the Dwarven Kingdoms."
+msgstr "Endelig! Dette er indgangen til dværgenes kongeriger."
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:268
+msgid "All can I see are ruins and poor villages."
+msgstr "Det eneste jeg kan se er ruiner og fattige landsbyer."
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:272
+msgid ""
+"The poor villagers that once lived here and traded with the dwarves are now "
+"held in slavery by the orcs."
+msgstr ""
+"Engang boede de fattige landsbyboere her og handlede med dværgene. Nu er de "
+"slaver for orkerne."
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:276
+msgid "Slaves to the evil orcs? We must liberate them!"
+msgstr "Slaver for de onde orker? We må befri dem!"
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:280
+msgid ""
+"That would not be a wise choice, for our mission is to retrieve the Scepter "
+"of Fire. If we tarry in this place, hordes of orcs will surround us."
+msgstr ""
+"Det ville ikke være et klogt valg, for vores mission er at få fat i "
+"Ildscepteret. Hvis vi bliver her for længe, vil horder af orker omringe os."
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:284
+msgid ""
+"Konrad, heed the words of Delfador. We shall return to wrest the grip of the "
+"orcs from these lands."
+msgstr ""
+"Konrad, lyt til Delfadors ord. Vi vil vende tilbage og løsne orkernes greb "
+"om landet."
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:288
+msgid "This does not please me, but I will listen to your advice."
+msgstr "Dette behager mig ikke, men jeg vil lytte dit råd."
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:306
+msgid ""
+"My uncle used to smuggle... err... I mean... trade food for the Dwarves. He "
+"could get grain carts in under the very noses of those ugly orcs."
+msgstr ""
+"Min onkel plejede at smugle... øh, jeg mener... handle med mad for dværgene. "
+"Han kunne snige kornvogne ind lige under snuderne på de grimme orker."
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:310
+msgid "He must be hiding in one of those villages."
+msgstr "Han må gemme sig i en af de landsbyer."
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:375
+msgid "Uncle Somf"
+msgstr "Onkel Somf"
+
+#: data/scenarios/Heir_To_The_Throne/Dwarven_Doors.cfg:379
+msgid "Haw! My niece's friends are mine friends too"
+msgstr "Goddaw! Min nieces venner er også mine venner."
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:4
+msgid "The Elven Council"
+msgstr "Elverrådet"
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:59
+msgid "Uradredia"
+msgstr "Uradredia"
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:66
+msgid "Parandra"
+msgstr "Parandra"
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:84
+msgid ""
+"Greetings, and welcome to our capital. You should feel honored. It has been "
+"half a century - a generation in the way your race counts time - since any "
+"man has been considered Elf-friend enough to stand here."
+msgstr ""
+"Vær hilset, og velkommen til vores hovedstad. Du bør være beæret, det er et "
+"halvt århundrede - en generation, sådan som din slags regner tiden - siden "
+"nogen mand er blevet vurderet elvervenlig nok til at være her."
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:88
+msgid "We are indeed honored."
+msgstr "Vi er skam beærede."
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:92
+#, fuzzy
+msgid ""
+"I might also say that it is you who are honored. It has been so long since "
+"you have been graced by the presence of a princess of Wesnoth."
+msgstr ""
+"Jeg må også tilføje, at I også er beærede. Det er virkelig længe siden I har "
+"haft fornøjelsen af Prinsessen af Wesnoths tilstedeværelse."
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:96
+msgid ""
+"Silence, foolish girl! With such arrogance, is it any surprise that the "
+"royal family of Wesnoth long ago saw their ancient alliances fall to pieces?"
+msgstr ""
+"Stille, dumme pige! Med den arrogance overrasker det ingen, at Wesnoths "
+"kongefamilie for længe siden måtte se deres ældgamle alliancer falde fra "
+"hinanden!"
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:100
+msgid ""
+"Yes... you are right, sir. It is I who am honored to be here, and I "
+"apologize for my discourtesy."
+msgstr ""
+"Ja.. du har ret, hr. Det er mig der er beæret over at være her og jeg "
+"undskylder for min mangel på respekt."
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:104
+msgid ""
+"Delfador the Great. As wise with his tongue in advice as he is strong with "
+"his staff in battle. A rare combination, especially among men."
+msgstr ""
+"Delfador den Store. Så viis en rådgiver og stærk i kamp. En sjælden "
+"kombination - specielt blandt mennesker."
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:108
+msgid ""
+"How quickly do the race of men mature! Only seventeen winters have passed "
+"since I last laid eyes on you, Konrad, yet you are now a grown man. A brave "
+"warrior stands before me!"
+msgstr ""
+"Mennesker vokser sandelig hurtig! Ikke mere end sytten vintre er gået siden "
+"jeg sidst så dig, Konrad, og nu er du en voksen mand. En tapper kriger står "
+"foran mig!"
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:112
+msgid "Forgive me, Elf, but I'm afraid I do not recall meeting you before."
+msgstr ""
+"Tilgiv mig, elver, men jeg mindes beklageligvis ikke at have mødt dig før."
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:116
+msgid ""
+"Konrad, this is Parandra. She helped me rescue you from the clutches of "
+"Asheviere."
+msgstr ""
+"Konrad, dette er Parandra. Hun hjalp mig med at redde dig fra Ashevieres "
+"kløer."
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:120
+msgid "I had no idea! Thank you, my lady. It is a pleasure to meet you again."
+msgstr ""
+"Det var jeg slet ikke klar over! Tak, min frue, det er en fornøjelse at møde "
+"dig igen."
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:124
+msgid ""
+"Rescued him from my mother? But seventeen years ago Konrad would have been "
+"an infant! What is this you are talking about?"
+msgstr ""
+"Reddede ham fra min mor? For sytten år siden var Konrad kun et barn! Hvad "
+"snakker du om?"
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:128
+msgid ""
+"Your mother has much blood upon her hands, child. She has had many killed "
+"unjustly. When Konrad was an infant, she ordered all the princes put to "
+"death, so she could seize control."
+msgstr ""
+"Din mor har meget blod på hænderne, barn. Hun dræbte mange uskyldige. Da "
+"Konrad var lille, beordrede hun at alle prinser slået ihjel, så hun kunne "
+"tage magten."
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:132
+msgid ""
+"She had them murdered? There were others too, not just Konrad? Surely you do "
+"not speak the truth! Parandra, what do you say?"
+msgstr ""
+"Fik hun dem slået ihjel? Var der også andre end Konrad? Det kan ikke være "
+"sandt! Parandra, hvad siger du?"
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:136
+msgid ""
+"Princess, when Delfador the Great speaks of the Queen Mother, Asheviere, "
+"ordering the princes of Wesnoth to be put to death, he speaks the truth."
+msgstr ""
+"Prinsesse, når Delfador den Store siger at dronningemoderen, Asheviere, "
+"beordrede at alle prinser af Wesnoth blev slået ihjel, så er det sandt."
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:140
+msgid "And what say you, Elf-king?"
+msgstr "Og hvad siger du, elverkonge?"
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:144
+msgid ""
+"I did not see it myself, Princess, but I have heard many reliable reports. "
+"Asheviere indeed has the blood of the princes on her hands. She has also "
+"allowed Orcs to desecrate the lands, abandoning all respect for the peoples "
+"around her."
+msgstr ""
+"Jeg så det ikke selv, prinsesse, men jeg har hørt det fra mange pålidelige "
+"kilder. Asheviere er ganske sikkert ansvarlig for prinsernes død. Hun har "
+"også, i mangel på respekt for folkeslagene omkring hende, tilladt orkerne at "
+"misbruge landet."
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:154
+#, fuzzy
+msgid ""
+"Well, that is why I must take the Scepter. I will return, and people will "
+"accept me as Queen. I will rule justly and fairly. My mother is only Queen "
+"Mother. The throne is rightfully mine, and with the Scepter I can prove it."
+msgstr ""
+"Ja, det er derfor jeg skal tage Scepteret. Jeg vender tilbage og folk vil "
+"acceptere mig som dronning. Jeg vil regere retfærdigt. Min moder er kun "
+"dronningemoder, tronen er retmæssigt min og med scepteret kan jeg bevise det."
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:158
+msgid ""
+"Princess, there is some good in you, but the throne is not yours to claim. "
+"Konrad has the Scepter. He will take the throne."
+msgstr ""
+"Prinsesse, der er meget godt i dig, men du er ikke den retmæssige "
+"tronarving. Konrad har Scepteret - han skal tage tronen."
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:164
+msgid ""
+"Well, I have the Scepter! I will return and the people will accept me as "
+"Queen! My mother is only Queen Mother. The Throne is rightfully mine, and I "
+"will rule from it with justice and fairness. I may even accept you as my "
+"adviser and counselor, Delfador."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:168
+msgid ""
+"Though you have the Scepter, Princess, it is rightfully Konrad's. You have "
+"it now only because we helped you get it."
+msgstr ""
+"Selvom du har Scepteret, prinsesse, så er det retmæssigt Konrads. Du har det "
+"kun fordi vi hjalp dig med at få det."
+
+# den/det ???
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:172
+msgid "And if I refuse to give it to him?"
+msgstr "Og hvis jeg nægter at give det til ham?"
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:176
+msgid ""
+"If it is necessary, princess, I will ask Konrad to fight you in a duel for "
+"it."
+msgstr ""
+"Om nødvendigt, prinsesse, vil jeg bede Konrad kæmpe mod dig i en duel for "
+"det."
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:180
+msgid ""
+"Delfador! Li'sar has become our friend. I don't want to fight her! As long "
+"as she rules well, what does it matter if she becomes queen?"
+msgstr ""
+"Delfador! Li'sar er blevet vores ven. Jeg vil ikke kæmpe mod hende! Så længe "
+"hun regerer godt, hvad gør det så at hun er dronning?"
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:184
+msgid "You are the rightful heir. You should be king, Konrad."
+msgstr "Du er den retmæssige tronfølger, Konrad, du skal være konge."
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:191
+msgid ""
+"Delfador, you have raised Konrad to be skillful and wise, honorable and "
+"just. A warrior who has respect, and appreciates peace. Yet the throne is "
+"not the place for him. You know of what I speak, Delfador."
+msgstr ""
+"Delfador, du har opdraget Konrad til at være dygtig og klog, ærefuld og "
+"retfærdig. En kriger med respekt og som værdsætter fred. Dog er tronen ikke "
+"noget for ham. Du ved hvad jeg taler om, Delfador?"
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:195
+msgid "But I do not! What is your meaning, Parandra?"
+msgstr "Nej, det gør jeg ikke. Hvad mener du, Parandra?"
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:199
+msgid ""
+"In time, things will be revealed, fair Princess. For the moment, go forth "
+"and claim the throne of Wesnoth."
+msgstr ""
+"Med tiden vil visse ting blive afsløret, søde prinsesse. For nu, må du gerne "
+"gøre krav på tronen."
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:203
+msgid ""
+"Parandra, what you say may seem right to some, but as long as you and I "
+"speak to no-one of what we know, I see no reason why Konrad would not best "
+"have the throne."
+msgstr ""
+"Parandra, det du siger virker måske rigtigt for nogle, men så længe du og "
+"jeg ikke fortæller hvad vi ved, så kan jeg ikke se hvorfor Konrad ikke bør "
+"tage tronen."
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:207
+msgid ""
+"In so many things you are right, Delfador, and your wisdom is unmatched in "
+"the world of men. But in this, you are mistaken. Li'sar is the heir. She "
+"should take the throne. Now that I have met her for myself, I am sure of it."
+msgstr ""
+"Du tager sjældent fejl, Delfador, og din visdom er højst af menneskers, men "
+"i denne sag tager du fejl. Li'sar er arvingen, hun bør tage tronen. Nu hvor "
+"jeg selv har mødt hende er jeg ikke længere i tvivl."
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:211
+msgid "She will claim the throne, and not me? What should I do?"
+msgstr "Hun tager tronen i stedet for mig? Hvad skal jeg så gøre?"
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:215
+msgid ""
+"Li'sar should be Queen, but you will go with her. Indeed, I suspect we could "
+"not convince you otherwise. I have seen the way you look at her, Konrad. I "
+"think that now you would follow her even to the ends of the earth."
+msgstr ""
+"Li'sar skal være dronning, men du skal drage med hende. Jeg tror ikke vi "
+"kunne overtale dig på andre måder. Jeg har set hvordan du ser på hende, "
+"Konrad, jeg tror at du, lige nu, ville følge hende til verdens ende."
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:219
+msgid ""
+"With all due respect, my lady, she is my cousin! There is nothing between us!"
+msgstr "I al respekt, frue, hun er min kusine! Der foregår intet mellem os!"
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:223
+msgid ""
+"Then if it is as you say, Konrad, perhaps you should stay here with us. It "
+"would surely be safer for you. The Elves could show you things that would "
+"amaze you, things that no man has seen before."
+msgstr ""
+"Hvis det er som du siger, Konrad, så vil du måske hellere blive hos os. Det "
+"ville være sikrere for dig. Elverne kunne vise dig ting, som ville betage "
+"dig, ting som intet menneske før har set."
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:227
+msgid ""
+"That is a generous offer, my lady, but you are indeed right, I would rather "
+"go with Li'sar."
+msgstr ""
+"Det er et meget generøst tilbud, frue, men du har ret. Jeg vil hellere drage "
+"med Li'sar."
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:231
+msgid "And what say you, Uradredia?"
+msgstr "Og hvad siger du, Uradredia?"
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:235
+msgid ""
+"Tell me, Li'sar, are you willing to fight your own mother for the throne?"
+msgstr ""
+"Sig mig, Li'sar, er du parat til at kæmpe med din egen moder for tronen?"
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:239
+msgid ""
+"It is for the good of the country. If it is necessary, I will fight her, Elf-"
+"king."
+msgstr ""
+"Det er for landets bedste. Hvis det bliver nødvendigt, vil jeg kæmpe mod "
+"hende, elverkonge."
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:243
+msgid ""
+"I feel that this lady speaks the truth. Delfador, although I know that you "
+"do not concur, the words of Parandra, daughter of Elandria are wise. Rest "
+"here for a time, and then go forth with them."
+msgstr ""
+"Jeg føler at denne dame taler sandt. Delfador, selvom jeg ved at du ikke er "
+"enig, så taler Parandra, datter af Elandria, viise ord. Hvil her for en "
+"stund og drag så med dem."
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:247
+msgid ""
+"And you have been with us for a time, Kalenz son of Kliada, what say you?"
+msgstr "Og du har fulgt os en tid, Kalenz, søn af Kliada, hvad siger du?"
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:251
+msgid ""
+"Wisdom has been spoken here today, Delfador. We have been with Li'sar in the "
+"most trying of times, and risked life and limb with her. Yet we still have "
+"both our lives and our limbs. She lacks experience, and has too much of the "
+"brashness of youth, but she will make a good Queen in time."
+msgstr ""
+"Der er blevet talt viist i dag, Delfador. Vi har været hos Li'sar gennem de "
+"hårdeste tider og risikeret liv og lemmer sammen med hende - og dog har vi "
+"stadig både liv og lemmer i behold. Hun mangler erfaring og har for megen "
+"ungdommelig ivrighed, men med tiden vil hun blive en stor dronning."
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:255
+msgid ""
+"So, the Elven Council has spoken. But which path should we take on our "
+"journey? The Ford of Abez will not be passable, for surely it will be "
+"watched and guarded by many men."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:259
+msgid ""
+"There is another way by which you can return to Wesnoth: past the mountains "
+"of the dragons and through the dark valley. To the land of the East, from "
+"there you can return to Wesnoth and surprise the Dark Queen, catching her "
+"off guard."
+msgstr ""
+"Der er en anden vej tilbage til Wesnoth: Forbi Dragernes Bjerge og gennem "
+"den mørke dal til Østlandet. Derfra kan i drage tilbage i Wesnoth og "
+"overrumple Mørkets Dronning."
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:263
+msgid ""
+"Mountains of the dragons? That sounds very dangerous! I didn't even think "
+"there were such things as dragons!"
+msgstr ""
+"Dragernes Bjerge? Det lyder farligt. Jeg troede ikke engang at drager "
+"eksisterede!"
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:267
+msgid ""
+"No dragon has been sighted in those mountains for many years, but they "
+"retain their name of old. Still, that path will be dangerous for us. Is "
+"there not another route we might take?"
+msgstr ""
+"Ingen har set drager i bjergene i mange år, men navnet hænger ved. Vejen vil "
+"dog stadig være farlig for os, er der ikke en anden rute vi kan tage?"
+
+#: data/scenarios/Heir_To_The_Throne/Elven_Council.cfg:271
+msgid ""
+"All routes are dangerous, though there is some hope along this path. Rest, "
+"and then go forth, friends. Fortune has smiled upon you so far, despite "
+"great dangers. Perhaps she will continue to do so."
+msgstr ""
+"Alle veje er farlige, der er dog håb ved denne vej. Hvil jer og drag så "
+"afsted, venner. Lykken har tilsmilet jer indtil videre, på trods af store "
+"farer. Måske det kan vare ved."
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:4
+msgid "The Elves Besieged"
+msgstr "Besættelsen af Elverne"
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:25
+msgid "Move Konrad to the signpost in the north-west"
+msgstr "Flyt Konrad til skiltet i nordvest."
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:158
+msgid "Knafa-Tan"
+msgstr "Knafa-Tan"
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:177
+msgid "Maga-Knafa"
+msgstr "Maga-Knafa"
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:197
+msgid "Galdrad"
+msgstr "Galdred"
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:211
+msgid "Chantal"
+msgstr "Chantal"
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:227
+msgid ""
+"Fourteen years into her rule, Asheviere turned her attention to the Elves, "
+"whom she despised. Orcish mercenaries were hired and dispatched to bring "
+"about their ruin."
+msgstr ""
+"Fjorten år efter hun tog tronen, vendte Asheviere blikket mod elverne, som "
+"hun altid har hadet. Orkiske lejesoldater blev hyret og sendt afsted for at "
+"udrydde dem."
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:231
+msgid ""
+"Master Delfador! Look, there are Orcs coming from all directions! What shall "
+"we do?"
+msgstr ""
+"Mester Delfador! Se, der kommer orker fra alle retninger! Hvad skal vi gøre?"
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:235
+msgid "There are too many to fight, far too many. We must escape!"
+msgstr "Der er for mange til at vi kan kæmpe, alt for mange. Vi må stikke af!"
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:239
+msgid "But to where? This is the only home we have! What about the Elves?"
+msgstr "Jamen, hvorhen? Dette er vores eneste hjem! Hvad med elverne?"
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:243
+msgid ""
+"We will fight them, but you must escape, Konrad. It is imperative that you "
+"escape!"
+msgstr ""
+"Vi kæmper, men du må stikke af, Konrad. Det er vigtigt at du kommer væk!"
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:247
+msgid ""
+"We will go north. Perhaps we can reach the Isle of Anduin. If we can make it "
+"there, surely we will be safe. Konrad, we must recruit some Elves to help "
+"us, and then you must make it to the sign post in the north-west. I will "
+"protect you!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:251
+msgid "Very well, let us hurry!"
+msgstr "Meget vel, lad os skynde os!"
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:256
+msgid ""
+"Attack the Elves, my grunts, and take their villages. Let us claim this land "
+"for the Queen!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:264
+msgid ""
+"Remember, it is rumored that the filthy mage and one that he protects are in "
+"these parts. They are the ones we want!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:270
+msgid "Ha ha! We will rip the filthy Elves to pieces!"
+msgstr "Ha ha! Vi slår de elversvin til fars!"
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:275
+msgid "Let them come. We will fight them with all we have!"
+msgstr "Lad dem komme. Vi vil kæmpe til det sidste!"
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:279
+msgid "Be careful, Konrad! Guard him well, Delfador!"
+msgstr "Vær forsigtig, Konrad! Pas godt på ham, Delfador!"
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:283
+msgid "And so it has begun!"
+msgstr "Og således er det begyndt..."
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:298
+msgid "OK, we have made it this far! But where do we go next?"
+msgstr "OK, så kom vi så langt, men hvor skal vi nu gå hen?"
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:302
+msgid ""
+"We must travel north, and try to make it to the Isle of Anduin. Hopefully we "
+"will find refuge there."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:306
+msgid ""
+"Of course you are right, Delfador. But what will become of the Elves here?"
+msgstr ""
+"Selvfølgelig, du har ret, Delfador, men hvad skal der ske med elverne her?"
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:310
+msgid ""
+"The Elves will fight. They may even prevail. But I fear things do not bode "
+"well for them. Let us not speak of it now. Onward!"
+msgstr ""
+"Elverne kæmper - de vinder måske endda. Men, jeg er bange at det ikke lover "
+"godt for dem. Lad os ikke tale om det nu, videre!"
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:314
+msgid "Good luck, Konrad! Don't worry about us, we will fight as best we can!"
+msgstr "Held og lykke, Konrad! Tænk ikke på os, vi kæmper så godt vi kan!"
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:329
+msgid "I... I don't think I can make it anymore."
+msgstr "Jeg... Jeg tror ikke jeg kan klare det længere."
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:333
+msgid "Prince... you must keep fighting! Nooooooo!"
+msgstr "Prins... Du må kæmpe videre! Neeeeeej!"
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:337
+msgid "It is over, I am doomed..."
+msgstr "Det er slut, jeg er dødsens.."
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:351
+msgid "I have... have failed in my duty to protect the prince! I am defeated."
+msgstr ""
+"Jeg... Jeg kunne ikke overholde mig løfte om at beskytte prinsen! Jeg er "
+"besejret."
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:355
+msgid "Don't die, Delfador! Please, you have to stay alive!"
+msgstr "Dø må ikke dø, Delfador! Hold dig i live!"
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:359
+msgid "Ugh"
+msgstr "Ugh"
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:370
+msgid ""
+"Oh, no! We have run out of time, they have arrived with reinforcements..."
+msgstr "Åh nej! Tiden er løbet fra os, de har hentet forstærkninger..."
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:382
+msgid "Die, Villain, die!"
+msgstr "Dø, slyngel, dø!"
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:393
+msgid "Only the foolish oppose me!"
+msgstr "Kun fjolser går mod mig!"
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:404
+msgid "I am Galdrad. You will have to fight me to get any further!"
+msgstr "Jeg er Galdrad. Du må kæmpe mod mig for at komme videre!"
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:415
+msgid "Only a fool would dare to attack me!"
+msgstr "Kun et fjols tør angribe mig!"
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:426
+msgid "I am Delfador the Great. Prepare to die!"
+msgstr "Jeg er Delfador den Store. Bered dig på at dø!"
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:437
+msgid "Let me through, you rogue!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:452
+msgid "They are destroying our home!"
+msgstr "De smadrer vores hjem!"
+
+#: data/scenarios/Heir_To_The_Throne/Elves_Besieged.cfg:456
+msgid "There can be no looking back. We must go quickly!"
+msgstr "Der er ikke tid til at se sig tilbage. Vi må skynde os afsted!"
+
+#: data/scenarios/Heir_To_The_Throne/Epilogue.cfg:4
+msgid "Epilogue"
+msgstr "Epilog"
+
+#: data/scenarios/Heir_To_The_Throne/Epilogue.cfg:11
+msgid ""
+"And so the Dark Queen's reign was ended, and Li'sar, daughter of Haldric was "
+"crowned Queen of Wesnoth, and the holder of the Scepter of Fire, which she "
+"would pass to all her successors."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Epilogue.cfg:15
+msgid "Her reign was long, and she undid the evil deeds of her mother."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Epilogue.cfg:19
+msgid ""
+"Konrad became a noble in Li'sar's court. He married Li'sar, and together "
+"they had two sons and a daughter."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Epilogue.cfg:23
+msgid ""
+"The bones of the young prince Konrad were retrieved from the Elves, and "
+"buried in the Royal Crypt in Weldyn, which Konrad visited to pay homage "
+"every week."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Epilogue.cfg:27
+msgid ""
+"Delfador became Li'sar's High Council, advising her in the most important "
+"matters of state. He lived until a ripe old age, and was given a Royal "
+"Funeral, after which he was buried in the Royal Crypt in Weldyn."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Epilogue.cfg:31
+msgid ""
+"Kalenz returned to his home in the North, and never returned to the land of "
+"men."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:4
+msgid "The Ford of Abez"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:26
+msgid "Move Konrad to the north side of the river"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:78
+msgid "Gaga-Breuk"
+msgstr "Gaga-Breuk"
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:176
+msgid ""
+"This is the Ford of Abez. When we ford this river, we will be leaving "
+"Wesnoth, and entering the lands of the North. The Dwarves once ruled these "
+"lands, but they are now filled only with chaos. This is where your father "
+"and uncle were betrayed, almost nineteen years ago now, Konrad."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:180
+msgid "Really? So what happened, Delfador?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:184
+msgid ""
+"The forces of the king were encamped here, and the forces of the north were "
+"on the north side of the river. For three days and three nights the armies "
+"faced each other, neither willing to ford the river. On the fourth day, the "
+"northern armies crossed and attacked us."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:188
+msgid "And then... we were defeated?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:192
+msgid "We were winning the battle. We were repelling them..."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:196
+msgid "And then the king's son, in the heat of battle, turned upon the king!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:200
+msgid "But you avenged the murder. You killed the prince. Right, Delfador?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:204
+msgid ""
+"When I saw the king betrayed and his banner fallen, I fled the battle. I "
+"know not now whether it was wisdom or cowardice, but I did flee, seeing no "
+"further hope on that day."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:208
+msgid ""
+"Oh, but the Elves always told me that you killed the prince, Delfador, even "
+"though you never talked about it."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:212
+msgid "That foolish boy killed himself."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:216
+msgid "What do you mean?"
+msgstr "Hvad mener du?"
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:220
+msgid ""
+"I mustered men to fight against the traitor-king, and of course Asheviere "
+"too, for she was behind it all. We were outnumbered, perhaps four to one. In "
+"the heat of battle, that boy, fool that he was, came charging at me, "
+"slashing wildly. I had little choice but to end his life."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:224
+msgid "So it is true, you did kill him?"
+msgstr "Så er det sandt, du slog ham ihjel?"
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:228
+msgid ""
+"He did die in battle at my hand. It is sad that your brothers did not have "
+"the opportunity to experience such an honorable death, Konrad."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:232
+msgid ""
+"With all respect, my lords, we must make haste. We have to ford the river "
+"immediately. And, look! It seems that the guard-towers on the river banks "
+"are manned!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:237
+msgid ""
+"Look! Some of the southerners, men of Wesnoth, are trying to cross into our "
+"lands! We will slaughter them by the river's edge!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:241
+msgid "Isn't there somewhere else we can cross? Maybe upstream?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:245
+msgid ""
+"Winter quickly bears down upon us. We have only a few days to make the "
+"crossing, and the nearest bridge is far upstream. To be trapped south of the "
+"river when winter arrives would be suicide. Asheviere would have us trapped "
+"like rats! Look to the west! Asheviere has a border fort, and it seems to be "
+"full of soldiers! We must cross here, and quickly!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:249
+msgid ""
+"There they are! So it is true, they foiled the undead. Now they are trying "
+"to leave Wesnoth. We can't let them cross the river. After them, men!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:253
+msgid "Not her again! Quickly! We must hurry!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:266
+msgid "Stop! You shall not pass! Quick, reinforcements, protect the Princess!"
+msgstr "Stop! I kommer ikke forbi! Hurtigt, forstærkning, beskyt prinsessen!"
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:279
+msgid "Sea Serpent"
+msgstr "Søslange"
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:302
+msgid "Ruaarrrrrrrr!"
+msgstr "Ruaarrrrrrrr!"
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:306
+msgid "What is that?"
+msgstr "Hvad er det?"
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:310
+msgid ""
+"Creatures of the deep are upon us! This may be very dangerous. Be quick! We "
+"must get to the other side with all haste!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:325
+msgid "We made it across the river safely! Where to now?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:330
+msgid ""
+"If we are to have any hope of penetrating into Knalga, we must continue "
+"north to seek help from the northern Dwarves."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:335
+msgid ""
+"I cannot believe it. They have made it away! We must make chase. After them, "
+"men! Let us cross the river too! We will meet again, foul impostor."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:340
+msgid "Do you think she's really going to chase us, Delfador?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Ford_of_Abez.cfg:345
+msgid ""
+"It surely looks like she will try, but the sea creatures will make it "
+"difficult for her. We must continue onward. If she makes it across before "
+"winter, then so be it!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Gryphon_Mountain.cfg:4
+msgid "Gryphon Mountain"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Gryphon_Mountain.cfg:24
+msgid "Defeat the mother gryphon and the enemy commander"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Gryphon_Mountain.cfg:67
+msgid "Robert"
+msgstr "Robert"
+
+#: data/scenarios/Heir_To_The_Throne/Gryphon_Mountain.cfg:81
+#, fuzzy
+msgid "Mother Gryphon"
+msgstr "Moder Gryphon"
+
+#: data/scenarios/Heir_To_The_Throne/Gryphon_Mountain.cfg:101
+msgid "Graak"
+msgstr "Graak"
+
+#: data/scenarios/Heir_To_The_Throne/Gryphon_Mountain.cfg:102
+msgid "Grook"
+msgstr "Grook"
+
+#: data/scenarios/Heir_To_The_Throne/Gryphon_Mountain.cfg:103
+msgid "Gruak"
+msgstr "Gruak"
+
+#: data/scenarios/Heir_To_The_Throne/Gryphon_Mountain.cfg:110
+msgid "What is this place? That is one big mountain!"
+msgstr "Hvad er der her for et sted? Det er et stort bjerg!"
+
+#: data/scenarios/Heir_To_The_Throne/Gryphon_Mountain.cfg:114
+msgid "That is the fabled Gryphon Mountain."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Gryphon_Mountain.cfg:118
+msgid ""
+"Gryphon Mountain! Maybe we could steal some eggs from the gryphons and train "
+"the young to be flying mounts. Would that work, Delfador?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Gryphon_Mountain.cfg:122
+msgid ""
+"We can try to do that, but we must be careful. To disturb the gryphons could "
+"prove dangerous... and yet such mounts could help us greatly later. Whatever "
+"we do, we must pass by this place."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Gryphon_Mountain.cfg:126
+msgid "Well, let's start climbing the mountain!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Gryphon_Mountain.cfg:142
+msgid "Here are the mother Gryphon's eggs!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Gryphon_Mountain.cfg:146
+msgid "Excellent! We should be able to breed Gryphons for our own uses now!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Gryphon_Mountain.cfg:165
+msgid ""
+"Ha ha! We have killed this foul beast of the air, and can deny the rebels "
+"its eggs!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Gryphon_Mountain.cfg:173
+msgid ""
+"It appears that we are not the only ones interested in this mountain. Once "
+"again the Queen opposes us!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Gryphon_Mountain.cfg:177
+msgid "Quickly, men! Onward!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Gryphon_Mountain.cfg:185
+msgid "We have defeated them! Now what do we do?"
+msgstr "Vi har besejret dem! Hvad gør vi nu?"
+
+#: data/scenarios/Heir_To_The_Throne/Gryphon_Mountain.cfg:189
+msgid ""
+"We must continue north. It is too late to return to the safety of Elensefar "
+"or Anduin before winter falls. We must therefore cross the great river and "
+"continue toward the land of the Dwarves. Hurry, let us go!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Gryphon_Mountain.cfg:199
+msgid ""
+"With these gryphon eggs we should be able to breed gryphons that will serve "
+"us. Then we can hire gryphon riders!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Gryphon_Mountain.cfg:208
+msgid ""
+"It is a shame we could not get those Gryphon eggs - they would surely have "
+"given us an advantage sometime. Still, we must continue."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Gryphon_Mountain.cfg:214
+msgid "Let us continue onward!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Gryphon_Mountain.cfg:228
+msgid "Rampant Graak"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Gryphon_Mountain.cfg:240
+msgid "Rampant Grook"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Gryphon_Mountain.cfg:253
+msgid "Rampant Gruak"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Hasty_Alliance.cfg:4
+msgid "Hasty Alliance"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Hasty_Alliance.cfg:75
+msgid "Haaf-Garga"
+msgstr "Haaf-Garga"
+
+#: data/scenarios/Heir_To_The_Throne/Hasty_Alliance.cfg:108
+msgid "Where are we? Which way now? I am tired of this darkness!"
+msgstr "Hvor er vi? Hvilken vej nu? Jeg er død træt af dette mørke!"
+
+#: data/scenarios/Heir_To_The_Throne/Hasty_Alliance.cfg:112
+msgid "I am not sure of the way. Let me think for a moment."
+msgstr "Jeg er ikke sikker på hvilken vej vi skal vælge. Lad mig tænke."
+
+#: data/scenarios/Heir_To_The_Throne/Hasty_Alliance.cfg:165
+msgid "En garde!"
+msgstr "En garde!"
+
+#: data/scenarios/Heir_To_The_Throne/Hasty_Alliance.cfg:169
+msgid "What in the world are you doing here?"
+msgstr "Hvad i alverden laver du her?"
+
+#: data/scenarios/Heir_To_The_Throne/Hasty_Alliance.cfg:173
+msgid "Tracking you down, of course! You have escaped me for the last time!"
+msgstr "Finder dig, selvfølgelig! Du har undsluppet mig for sidste gang!"
+
+#: data/scenarios/Heir_To_The_Throne/Hasty_Alliance.cfg:177
+msgid ""
+"Foolish girl! We are in the deepest of caverns, probably surrounded by all "
+"manner of creatures, and you still want to fight us? You will bring us all "
+"to ruin!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Hasty_Alliance.cfg:181
+msgid ""
+"Don't try to trick me! I know why you have come here! But I will put an end "
+"to you and your treason here. Then I will get the Scepter, and return to the "
+"daylight again!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Hasty_Alliance.cfg:190
+msgid "Troll"
+msgstr "Trold"
+
+#: data/scenarios/Heir_To_The_Throne/Hasty_Alliance.cfg:219
+msgid "Goblin Knight"
+msgstr "Goblinkriger"
+
+#: data/scenarios/Heir_To_The_Throne/Hasty_Alliance.cfg:271
+msgid "Surprise! Die, you sun-lovers!"
+msgstr "Snydt! Dø, I sol-elskere!"
+
+#: data/scenarios/Heir_To_The_Throne/Hasty_Alliance.cfg:275
+msgid ""
+"Now we are surrounded! Do you still want to fight us, Princess? Surely that "
+"would lead to doom for us all!"
+msgstr ""
+"Nu hvor vi har omringet! Vil De da stadig bekæmpe os Prinsesse? Det vil helt "
+"sikkert føre til vores allesammens endeligt!"
+
+#: data/scenarios/Heir_To_The_Throne/Hasty_Alliance.cfg:279
+msgid ""
+"I see we have little choice but to help each other. Let us fight together "
+"until we return to the surface. Agreed?"
+msgstr ""
+"Vi har intet andet valg end at hjælpe hinanden. Lad os kampen sammen indtil "
+"vi venden tilbage til overfladen. Enig?"
+
+#: data/scenarios/Heir_To_The_Throne/Hasty_Alliance.cfg:283
+msgid ""
+"Very well, I promise that you will reach the surface again, or we shall all "
+"perish together, Princess."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Hasty_Alliance.cfg:287
+msgid "But once we escape from this hole, I have a score to settle with you!"
+msgstr ""
+"Men så snart vi slipper væk fra dette hul, har jeg en høne at plukke med dig!"
+
+#: data/scenarios/Heir_To_The_Throne/Hasty_Alliance.cfg:296
+msgid ""
+"Well, we have helped each other survive so far, Princess. Now let's continue "
+"together. What do you say?"
+msgstr ""
+"Nuvel, vi har hjulpet hinanden til at overlevet så længe, prinsesse. Lad os "
+"fortsætte sammen. Hvad siger du?"
+
+#: data/scenarios/Heir_To_The_Throne/Hasty_Alliance.cfg:300
+msgid ""
+"Yes. We agreed to help each other get out of these pits alive, did we not? "
+"Let us continue to pool our resources. Here is my purse, full of gold."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Hasty_Alliance.cfg:304
+msgid "You receive 200 pieces of gold!"
+msgstr "Du har fået 200 guldstykker!"
+
+#: data/scenarios/Heir_To_The_Throne/Hasty_Alliance.cfg:314
+msgid "Thank you, Princess. Come, men. Let us find the Scepter!"
+msgstr "Tak, prinsesse. Kom, mænd! Lad os finde Scepteret!"
+
+#: data/scenarios/Heir_To_The_Throne/Hasty_Alliance.cfg:340
+#: data/scenarios/Heir_To_The_Throne/utils/deaths.cfg:24
+msgid "I can't believe it should end like this!"
+msgstr "Jeg nægter at tro på, at det ender sådan her!"
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:4
+msgid "Test of the Clan"
+msgstr "Klanens Test"
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:24
+msgid "Defeat 25 Units Followed by a Clan Leader (Bonus)"
+msgstr "Besejr 25 enheder efterfulgt af en klanleder (Bonus)"
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:28
+msgid "Defeat All Clan Leaders"
+msgstr "Besejr alle klanledere"
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:71
+msgid "Sir Alric"
+msgstr "Sir Alric"
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:97
+msgid "Sir Ruga"
+msgstr "Sir Ruga"
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:123
+msgid "Sir Daryn"
+msgstr "Sir Daryn"
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:149
+msgid "Lord Bayar"
+msgstr "Lord Bayar"
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:172
+msgid "A Knight"
+msgstr "En ridder"
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:178
+msgid "Delfador, don't you think it is time we settled this?"
+msgstr "Delfador, synes du ikke det er på tide at vi afgør det her?"
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:182
+msgid ""
+"Yes, it is time. It is time for the truth to be told. I had hoped to take "
+"this secret to my grave, but it isn't to be. You Elves live too long, and "
+"though I have tried hard to understand, your wisdom is foreign to me."
+msgstr ""
+"Jo, det er på tide. Det er på tide at sandheden kommer frem. Jeg havde håbet "
+"at jeg kunne tage denne hemmlighed med mig i graven, men sådan skal det ikke "
+"være. I elvere lever for længe, og selvom jeg har prøvet hårdt at forstå, er "
+"jeres kundskab fremmed for mig."
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:186
+msgid "Secret? What secret Delfador? What are you talking about?"
+msgstr "Hemmelighed? Hvilken hemmelighed? Hvad taler du om, Delfador?"
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:190
+msgid ""
+"We should not speak of it now. Instead come with me, Konrad and Li'sar, to "
+"the top of mount Elnar. To look at Weldyn. To make plans for the battle, and "
+"to talk."
+msgstr ""
+"Vi bør ikke tale om det nu. Konrad og Li'sar, kom i stedet med mig til "
+"toppen af Elnar for at kigge på Weldyn, for at lægge slagplaner og for at "
+"snakke."
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:221
+msgid ""
+"Stop! I cannot believe this! You have defeated us! Indeed, you are worthy, "
+"worthy even to claim the throne. The clans will help you. We will fight with "
+"you against the Queen."
+msgstr ""
+"Stop! Jeg nægter at tro det! Du har besejret os! Du er i sandhed værdig til "
+"at tage tronen. klanerne vil støtte dig og kæmpe med dig mod Dronningen."
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:225
+msgid "So you admit defeat! You will serve me in fighting the evil queen?"
+msgstr "Så i overgiver jer! Vil i tjene mig i kampen mod den onde dronning?"
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:230
+msgid "We will serve you, my lord. You will make a worthy king."
+msgstr "Ja, min herre, vi vil tjene sig. Du bliver en værdig konge."
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:235
+#, fuzzy
+msgid "I think you are mistaken! You will help me be queen!"
+msgstr "Jeg tror i tager fejl! I skal hjælpe mig med at blive dronning!"
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:240
+msgid "Who then is your leader? Who do we serve?"
+msgstr "Hvem er så jeres leder? Hvem skal vi tjene?"
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:245
+msgid ""
+"You will serve us. You will protect our flanks while we make way straight "
+"for the queen. With you on either flank, we can surely overcome her."
+msgstr ""
+"Du vil tjene us. Du vil beskytte vores flanker og rydde vejen til "
+"Dronningen. Med dig på begge flanker, kan vi med sikkerhed overvinde hende."
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:252
+msgid ""
+"Despite their bluster we have prevailed on the field of battle this day. "
+"However by defeating the leaders of the Clan we shall have nobody to guard "
+"our flanks. This is unfortunate as it complicates our march to confront the "
+"queen."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:256
+msgid ""
+"It is unfortunate. They would have been of great assistance in helping "
+"ensure a new King is given a chance to ascend the throne of Wesnoth."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:260
+msgid ""
+"I think you are mistaken! You mean they would have helped a new Queen claim "
+"the throne of Wesnoth!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:298
+msgid "Greetings, men of the plains."
+msgstr "Vær hilset, sletternes mænd."
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:302
+msgid ""
+"What do these intruders want? We did not invite them here, that is certain."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:306
+msgid ""
+"We come in peace! We wish for you to aid us in our struggle against "
+"Asheviere, the evil Queen Mother."
+msgstr ""
+"Vi kommer med fred! Vi ønsker at i skal hjælpe os vores kamp mod Asheviere, "
+"den onde Dronningemoder."
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:310
+msgid "We will not join you. You who are led by these youths and this old man."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:314
+msgid ""
+"You are for us or against us. If you do not join us to overthrow the evil "
+"Queen, we will strip you of your power, once the throne is rightfully "
+"reclaimed."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:318
+msgid ""
+"Hah! You think you can seize the throne? Defeat us in battle and we will "
+"join you, or leave now and never return!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:322
+msgid "Very well. We will fight you."
+msgstr "Meget vel. Vi vil kæmpe mod jer."
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:326
+msgid "Fools! We will run you down like dogs!"
+msgstr "Tåber! Vi vil jage jer som vildt!"
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:330
+msgid "There is no turning back for you now. This is a fight to the death!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:353
+msgid ""
+"I cannot believe this! You have defeated me! But the Clan shall fight on!"
+msgstr ""
+"Jeg kan ikke tro det! Du har besejret mig! Men klanen skal fortsætte kampen!"
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:357
+msgid "Their leader has fallen but still they fight!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:388
+msgid "You can defeat me, but more will take my place!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:400
+msgid "See, you cannot defeat me. There are too many in my clan."
+msgstr "Du kan ikke overvinde mig. Der er for mange i min klan."
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:425
+msgid "Argh! This is how I die? Well, it was for the glory of the Clan."
+msgstr "Argh! skal jeg dø således? Nå, det var i klanens ære."
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:437
+msgid "The clan rises. The more of us you kill, the stronger we get!"
+msgstr "Klanen rejser sig! Jo flere i dræber af os, jo stærkere bliver vi!"
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:462
+msgid ""
+"Although I die, it is for the Clan. You shall be defeated, and I will be "
+"right in saying you are no match for the Clan's might."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:474
+msgid ""
+"Well said, brother. The warriors of the Clan hear you, and are come to fight "
+"with us!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:491
+msgid "|$units_slain| Clan Members Defeated"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_Clan.cfg:511
+msgid ""
+"We are routing their forces! Let's see if the Clan has had enough. Their "
+"help in guarding our flanks would be invaluable. Let's take this fight to "
+"their leaders!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:4
+msgid "Home of the North Elves"
+msgstr "Nordelvernes Hjem"
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:23
+msgid "Reach the Elvish Forest, and resist until the end of turns"
+msgstr "Np til elverskoven og hold stand til der ikke er flere ture"
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:43
+msgid "Turns run out before reaching the forest"
+msgstr "Turene udløber før skoven er nået"
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:68
+msgid "Kior-Dal"
+msgstr "Kior-Dal"
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:93
+msgid "Herbert"
+msgstr "Herbert"
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:136
+msgid "El'rien"
+msgstr "El'rien"
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:159
+msgid ""
+"There you are! You must come quickly to the home of the Elves in the east!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:170
+msgid "There they are! Charge!"
+msgstr "Der er de! Angrib!"
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:181
+msgid ""
+"There are some Orcs! We must let them fight the men of Wesnoth, and avoid "
+"engaging them at all costs!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:199
+msgid ""
+"At last, friends, we have almost reached the home of my people, the North "
+"Elves."
+msgstr "Endelig venner, vi har næsten nået mit folks hjem - Nordelvernes hjem."
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:203
+msgid ""
+"After being in this wilderness for so long, it will be good to get some rest!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:207
+msgid ""
+"But there is a great fog around us again! We don't know what dangers may lie "
+"ahead!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:211
+msgid ""
+"So long as we move ahead with caution and prudence, I am sure we will reach "
+"the safety and hospitality of the Elves."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:226
+msgid "Eonihar"
+msgstr "Eonihar"
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:239
+msgid "My lords! I have found you at last."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:244
+msgid "Greetings, Eonihar, old friend! Why have you been searching for us?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:249
+msgid ""
+"When my lord learned of your coming, he sent riders out looking for you! "
+"There is trouble afoot!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:254
+msgid "Trouble? What kind of trouble?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:259
+msgid ""
+"We have sighted a great host to the south, a host of the men of Wesnoth. And "
+"we believe they are looking for you! There is not a moment to lose. You must "
+"make haste to the Elven forest. Only there will you be safe!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:264
+msgid "I only hope we can avoid them. We will have to bear north-east."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:269
+msgid ""
+"That is not all, my lord. The foul Orcs have heard of the coming of these "
+"men, and are even now gathering a great host to oppose them to the north! It "
+"is now certain that there will be a great battle."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:274
+msgid ""
+"This sounds very dangerous. Perhaps we should retreat to the West, and hide "
+"until the battle is over?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:279
+msgid ""
+"I think these wild lands are too dangerous for that! Anyhow... I expected "
+"you to be on the side of Wesnoth, Princess?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:284
+msgid ""
+"I am an honorable princess, not an impostor like you! I promised that I "
+"would be on your side until we made it out of these lands, and I will keep "
+"my promise!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:289
+msgid ""
+"Sir, madam, there is no time to lose! You must make it East, to the home of "
+"my people. Only there will you be safe!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:294
+msgid "Come then, Konrad, let us go."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:299
+msgid ""
+"My lord has begun assembling a party of Elves to come and escort you into "
+"the forest. Beware, for we are all in great danger!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:313
+msgid ""
+"Greetings, Elf-friend! Welcome to Emetria. You must take shelter here until "
+"the battle passes. If you stay with me here for a little while, we will all "
+"be safe."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:317
+msgid ""
+"Thank you, Lord El'rien. The hospitality of the North Elves is as generous "
+"as of your kin in the South! My men will help you hold out against our "
+"enemies."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:339
+msgid ""
+"We have not yet reached the forest, and the battle still rages. We will "
+"never get there now! We have been defeated!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:349
+msgid "Elf-friends, you have made it to safety!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:353
+msgid ""
+"El'rien, we have the Scepter of Fire with us! We must escort them to Elensia!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Home_North_Elves.cfg:357
+msgid "Indeed. We will escort you to our capital, where we will make Council."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_Anduin.cfg:4
+msgid "The Isle of Anduin"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_Anduin.cfg:63
+msgid "Usadar Q'kai"
+msgstr "Usadar Q'kai"
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_Anduin.cfg:105
+msgid ""
+"This is no time to return to our vessel! We must take control of the island!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_Anduin.cfg:177
+msgid "And so the party landed on the Isle of Anduin."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_Anduin.cfg:181
+msgid "So this is Anduin. It looks a little... desolate"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_Anduin.cfg:185
+msgid ""
+"I fear so, Konrad. It seems that the Orcs have come even here. Here to the "
+"place where I was born, where I was trained."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_Anduin.cfg:189
+msgid ""
+"Who is that? Oh, a party of elves has landed. We shall drive them back into "
+"the sea!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_Anduin.cfg:193
+msgid ""
+"I did not think the Orcs would have come here. This island used to be so "
+"beautiful. We must recapture it! To arms!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_Anduin.cfg:204
+msgid "Elrian"
+msgstr "Elrian"
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_Anduin.cfg:208
+msgid "I found someone hiding in the village!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_Anduin.cfg:212
+msgid ""
+"My lords, I have been hiding in the village from the orcs, like many of the "
+"other magi here. Perhaps we can work together to recapture the island!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_Anduin.cfg:216
+msgid "Certainly, let us join together to fight the evil ones."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_Anduin.cfg:220
+msgid "You can now recruit magi."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_Anduin.cfg:235
+msgid "Seimus"
+msgstr "Seimus"
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_Anduin.cfg:244
+msgid "Delfador, my old master! You have saved the island from the Orcs!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_Anduin.cfg:249
+msgid "My apprentice! How did the island fall to such as these?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_Anduin.cfg:254
+msgid ""
+"You have not heard, master Delfador? Asheviere is trying to control the "
+"entire western coast. She hired many Orcs and sent them here. They were "
+"holding me until a ship could arrive to take me to Weldyn where I am to "
+"stand trial for treason for training magi!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_Anduin.cfg:259
+msgid ""
+"We have come from fighting her forces at Blackwater. Where else has she "
+"attacked?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_Anduin.cfg:264
+msgid ""
+"She has taken control of the Bay of Pearls, long held by the Mermen, and has "
+"turned them into slaves. There they dive for pearls by which she grows "
+"richer every day. There are even rumors that she may break the ancient "
+"treaty and attack Elensefar!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_Anduin.cfg:269
+msgid ""
+"Can't we strike back at her? How many forces does she have at the Bay of "
+"Pearls? Can we take it back from her?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_Anduin.cfg:274
+msgid ""
+"We must indeed go there. Let us therefore rest here a little, and then set "
+"sail for the Bay. Hopefully we will defeat her forces there!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:5
+msgid "Isle of the Damned"
+msgstr "De Fordømtes Ø"
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:44
+msgid ""
+"But the voyage did not go as smoothly as had been hoped. A storm blew up and "
+"bore down on the ship. Though all hands were on deck working desperately, a "
+"sudden gust of wind flung Konrad overboard as he attempted to secure the "
+"sails..."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:49
+msgid ""
+"The mermen finally saved Konrad from the sea, but were unable to get him "
+"back to the ship. With great effort though, they reached a nearby island..."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:67
+msgid "Haf-Mal"
+msgstr "Haf-Mal"
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:82
+msgid "Jarmal-Gorg"
+msgstr "Jarmal-Gorg"
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:102
+msgid "Kalba"
+msgstr "Kalba"
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:103
+msgid "Gnaba"
+msgstr "Gnaba"
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:157
+msgid "Whew, I survived. But now where am I? Is this island inhabited?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:161
+msgid ""
+"We have heard only the worst things about this place, my lord. It is said "
+"that the fiends of the undead have come in great numbers and turned the "
+"island into an ugly wasteland."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:165
+msgid ""
+"Let's hope these rumors are not true! I have none of my men with me! How "
+"could I defend myself?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:169
+msgid ""
+"There are still some bands of humans hiding on the island, my lord. If you "
+"recruit some of them to help, we might have some hope of holding off the "
+"undead hordes!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:178
+msgid "Urlaf"
+msgstr "Urlaf"
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:182
+msgid "Maybe we can make a deal! Help us defeat those evil creatures!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:191
+msgid ""
+"There are some ancient temples to the south-west, I wonder what might be "
+"inside them!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:205
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:253
+msgid "Looks like there is somebody hidden in the temple."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:209
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:214
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:241
+msgid "Moremirmu"
+msgstr "Moremirmu"
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:238
+msgid ""
+"I was hiding in this holy place, planning how to defeat the evil undead. Now "
+"with your help, I can destroy them."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:259
+msgid "Xakae"
+msgstr "Xakae"
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:277
+msgid "Surprise! Searching for magi, and all I get is these foul humans!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:311
+msgid "The temple seems to be empty."
+msgstr "Templet ser ud til at være tomt."
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:323
+msgid "Fight on against the undead without me, friends!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:392
+msgid ""
+"We have wrested control of the island from the evil undead! Now all we have "
+"to do is wait for the ship to arrive, so we can make our way to Elensefar!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:406
+msgid ""
+"Together we have vanquished the foul undead! Come, I will join you on your "
+"noble quest."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:424
+msgid ""
+"Thank goodness we have found you, sir! Come aboard quickly, we shall take "
+"you away from this horrible island!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:428
+msgid ""
+"It's a shame complete victory could not be ours, but thank goodness I am "
+"rescued! On to Elensefar!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Isle_of_the_Damned.cfg:438
+msgid ""
+"Thank you for your assistance here brothers. I will stay to continue "
+"resisting the foul undead. May fate be with you in your noble quest, and may "
+"we meet again some day!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Mountain_Pass.cfg:4
+msgid "Mountain Pass"
+msgstr "Bjergpas"
+
+#: data/scenarios/Heir_To_The_Throne/Mountain_Pass.cfg:25
+msgid "Move Konrad to the end of the road in the north-west"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Mountain_Pass.cfg:29
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:79
+msgid "Defeat all enemies"
+msgstr "Besejr alle fjender"
+
+#: data/scenarios/Heir_To_The_Throne/Mountain_Pass.cfg:61
+msgid "Ro'Arthian"
+msgstr "Ro'Arthian"
+
+#: data/scenarios/Heir_To_The_Throne/Mountain_Pass.cfg:95
+msgid "Ro'Sothian"
+msgstr "Ro'Sothian"
+
+#: data/scenarios/Heir_To_The_Throne/Mountain_Pass.cfg:127
+msgid "Look, Konrad, before us lies the great road built by the dwarves!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Mountain_Pass.cfg:131
+msgid "But I can hardly see with all this mist around!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Mountain_Pass.cfg:135
+msgid ""
+"We must be wary... they say a wizard lives in these mountains, and he does "
+"not take kindly to visitors. It is he who causes the mists, so that "
+"travelers will lose their way and become prey for his creatures."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Mountain_Pass.cfg:139
+msgid "His... creatures? We must keep to the road, men!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Mountain_Pass.cfg:143
+msgid ""
+"He would be a mighty foe, Konrad. It is said when the dwarves built this "
+"road, they disturbed the resting place of the ancient mage, and ever since, "
+"he and his brother have traveled the mountain, wreaking havoc on the dwarven "
+"villages."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Mountain_Pass.cfg:147
+msgid "Let us then go carefully... but quickly, men!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Mountain_Pass.cfg:159
+msgid "Stalrag"
+msgstr "Stalrag"
+
+#: data/scenarios/Heir_To_The_Throne/Mountain_Pass.cfg:161
+msgid "Gomdrsil"
+msgstr "Gomdrsil"
+
+#: data/scenarios/Heir_To_The_Throne/Mountain_Pass.cfg:162
+msgid "Duldurus"
+msgstr "Duldurus"
+
+#: data/scenarios/Heir_To_The_Throne/Mountain_Pass.cfg:164
+msgid "Peldril"
+msgstr "Peldril"
+
+#: data/scenarios/Heir_To_The_Throne/Mountain_Pass.cfg:168
+msgid ""
+"Greetings, Travelers. I am Stalrag, chief of these villages! I warn you, a "
+"great wizard and his trolls are in the mountains and will surely attack. I "
+"will summon my tribesmen to aid you!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Mountain_Pass.cfg:172
+msgid ""
+"If this is true, Konrad, perhaps we should take another route and go around "
+"the mountain, rather than trying to defeat these new foes."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Mountain_Pass.cfg:176
+msgid "What do you say, Delfador?"
+msgstr "Hvad siger du Delfador?"
+
+#: data/scenarios/Heir_To_The_Throne/Mountain_Pass.cfg:180
+msgid ""
+"No! We do not have the time to waste. Let us make for the top of the pass, "
+"wary of mountain trolls, and taking care lest we come too close to the water!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Mountain_Pass.cfg:184
+msgid ""
+"The Shinsplitters will aid you in your quest. Look, they rise from the "
+"villages to the west, the mighty Shinsplitters! To battle!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Mountain_Pass.cfg:205
+msgid ""
+"Well, we have defeated our foes. Let us hope the mountain does not defeat us!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Mountain_Pass.cfg:209
+msgid ""
+"I wish you all the best on your journey, I must return to my village and "
+"take care of my family. Dwarven hospitality will welcome you wherever you "
+"go, friends!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Mountain_Pass.cfg:213
+msgid "Let us move onward!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Mountain_Pass.cfg:232
+msgid "Aaargh! I am done for! Fight on without me, Brethren!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Muff_Malal_Peninsula.cfg:4
+msgid "Muff Malal's Peninsula"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Muff_Malal_Peninsula.cfg:24
+msgid "Defeat Muff Malal (Bonus)"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Muff_Malal_Peninsula.cfg:28
+msgid "Escape down the road to Elensefar"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Muff_Malal_Peninsula.cfg:61
+msgid "Muff Malal"
+msgstr "Muff Malal"
+
+#: data/scenarios/Heir_To_The_Throne/Muff_Malal_Peninsula.cfg:105
+msgid ""
+"But the road to Elensefar was a treacherous one. Konrad and his men were set "
+"upon by the fiends of the undead."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Muff_Malal_Peninsula.cfg:109
+msgid "My lord! On yonder peninsula there seems to be some movement!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Muff_Malal_Peninsula.cfg:113
+msgid ""
+"It looks like there are undead there! If we can defeat the undead I'm sure "
+"the locals would be grateful. But I do not know if we have the strength or "
+"time to persevere against such a foe. Either way it looks like there will be "
+"a fight, prepare for battle men!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Muff_Malal_Peninsula.cfg:117
+msgid "To arms!"
+msgstr "Til våben!"
+
+#: data/scenarios/Heir_To_The_Throne/Muff_Malal_Peninsula.cfg:121
+msgid ""
+"Ahh, a party of Elves approaches. Soon we shall have Elven zombies serving "
+"us!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Muff_Malal_Peninsula.cfg:139
+msgid "To Elensefar"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Muff_Malal_Peninsula.cfg:163
+msgid "We do not have time to tarry here! On to Elensefar!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Muff_Malal_Peninsula.cfg:174
+msgid ""
+"Shirk not your duty! I will decide when it is time to leave for Elensefar."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Muff_Malal_Peninsula.cfg:187
+msgid ""
+"Victory is ours! Let us hope that this delay will not hamper our quest to "
+"save Elensefar, but at least we have freed these good people. We must move "
+"onward with haste!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Northern_Winter.cfg:4
+msgid "Northern Winter"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Northern_Winter.cfg:64
+#: data/scenarios/Heir_To_The_Throne/Northern_Winter.cfg:87
+msgid "Halgar Du'nar"
+msgstr "Halgar Du'nar"
+
+#: data/scenarios/Heir_To_The_Throne/Northern_Winter.cfg:127
+msgid ""
+"This winter is bitterly cold! Perhaps we should stop here and rest a while."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Northern_Winter.cfg:131
+msgid ""
+"Stop and rest? My lord, we must go hard after the Scepter of Fire, lest it "
+"fall into the hands of our enemies!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Northern_Winter.cfg:135
+msgid ""
+"We have had a hard march ever since we were besieged by the undead in that "
+"foul valley. Now winter bears down upon us, and we have spent most of our "
+"money. This land looks fertile enough. Surely we can settle here for the "
+"winter!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Northern_Winter.cfg:139
+msgid ""
+"Yes, let us rest a while! I am sure there are many challenges ahead, and I "
+"do not think I could endure another like the fording of the river for many "
+"days."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Northern_Winter.cfg:143
+msgid ""
+"We are chasing the Scepter of Fire, the fate of the realm is in our hands, "
+"and you humans want to stop and rest? Onward, I say!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Northern_Winter.cfg:147
+msgid ""
+"They are right, Kalenz. I had wanted to acquire the Scepter within a moon, "
+"but it is not to be. Our soldiers will begin to desert if they do not rest "
+"soon. But in these wild north lands, we must fight even for the right to "
+"rest. Look to the north! Those foul orcs will not allow us any peace!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Northern_Winter.cfg:151
+msgid "Then we shall wrest control of the land from them. To arms men!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Northern_Winter.cfg:169
+msgid "More snow is falling. We must finish this battle quickly. Onward men!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Northern_Winter.cfg:187
+msgid "We must make haste before the snow overwhelms us!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Northern_Winter.cfg:195
+msgid ""
+"Victory is ours! We have secured the land from the Orcs. Now we can rest "
+"here while the cold winter passes."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Northern_Winter.cfg:199
+msgid ""
+"Let us not rest for too long though, friends. We must still reach the "
+"ancient Dwarven lands before our foes do."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Northern_Winter.cfg:203
+msgid ""
+"And so after many days of rest, the party set out once again for the Dwarven "
+"kingdom..."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:4
+msgid "Plunging into the Darkness"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:21
+msgid "Find the Dwarves"
+msgstr "Find dværgene!"
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:107
+msgid "Hywyn"
+msgstr "Hywyn"
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:112
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:54
+msgid "Geldar"
+msgstr "Geldar"
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:280
+msgid "It's so dark in here I can hardly see!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:284
+msgid ""
+"It is dark indeed. We shall have to light torches, and tread slowly and "
+"carefully. Hopefully there are still Dwarves down here who can aid us!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:288
+msgid "Indeed. We Elves are not well skilled in these dark pits."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:302
+msgid "Who are these that approach? Surface-dwellers! On your guard, men!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:307
+msgid "We come in peace, friends. We come in peace!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:312
+msgid ""
+"Oh, do you? I see that you are accompanied by Elves. Can we Dwarves not live "
+"in peace without the treacherous Elves coming to bother us?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:317
+msgid "Why such harsh words, Dwarf? Elves have never done you any harm."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:322
+msgid ""
+"'Never done us any harm?' Why I was there myself, when the Elves did not "
+"come to honor our alliance. Many Dwarves were slaughtered, and you cowardly "
+"Elves did nothing to help!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:327
+msgid ""
+"You go too far! I am Kalenz, a mighty Elvish lord! How dare such as you, "
+"snivelling in his tunnel, call me a coward?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:332
+msgid ""
+"Peace, friends! Peace! The evil Orcs roam the lands above us, we must not "
+"fight among ourselves."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:337
+msgid ""
+"Very well! Explain your presence here then, human. Who are you? Why have you "
+"risked life and limb to come to Knalga, home of the Dwarves?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:342
+msgid "Well, we... we..."
+msgstr "Jamen, vi.. vi.."
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:347
+msgid ""
+"We have come so that an heir may claim his inheritance, that a king may "
+"claim his throne. We seek the Scepter of Fire."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:352
+msgid ""
+"The Scepter of Fire? Are you out of your minds? Surely you speak in jest!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:357
+msgid ""
+"We jest not, friend. We seek the Scepter of Fire. We seek the help of the "
+"Dwarves in finding it. But know that we will find it, whether you help us or "
+"not."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:362
+msgid ""
+"Your speech is like that of a fool. No-one even knows if the Scepter of Fire "
+"exists. And who is this heir, this king that you speak of?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:367
+msgid "I am, sir."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:372
+msgid ""
+"You? Ha ha! This boy that stands before me is the king of Wesnoth? Ha ha! I "
+"haven't had such a laugh in a long time. And who are you, old man?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:377
+msgid ""
+"I am Delfador, Delfador the Great, Arch Mage to King Garard, and Protector "
+"of his heir."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:382
+msgid ""
+"You... you are Delfador? I saw Delfador when I was but a young Dwarf, and I "
+"will tell you, old man, you are not Delfador. Men! Take these liars out of "
+"my sight. Delfador perished many years ago."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:412
+msgid "I am Delfador the Great! Any who dare oppose me shall perish!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:417
+msgid ""
+"You... you really are Delfador! But we had news that you were dead, years "
+"ago!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:422
+msgid "They thought I was dead. They hoped I was dead. Yet still I live."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:427
+msgid "And you really think that you can find the Scepter of Fire?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:432
+msgid ""
+"Yes, I do. If you help us, friend, all the treasures of Knalga that we find "
+"are yours. We want only the Scepter. It will be dangerous. Make no mistake "
+"about that: Dwarves will be killed, perhaps many Dwarves. But surely it is "
+"better than hiding from the Orcs like worms."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:437
+msgid ""
+"You are right, friend. I will put my best men at your disposal. We know not "
+"where the Scepter is though. Legend says it is hidden in the eastern tunnels."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:442
+msgid "Then to the eastern tunnels we shall go!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:460
+msgid "Hmm... there seems to be a secret passage behind these rocks!"
+msgstr "Hmm... der ser ud til at være en hemmelig passage bag disse klipper!"
+
+#: data/scenarios/Heir_To_The_Throne/Plunging_Into_the_Darkness.cfg:482
+msgid ""
+"There is a great fortune in this chest of treasure! I can count two hundred "
+"pieces of gold!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:4
+msgid "The Princess of Wesnoth"
+msgstr "Prinsessen af Wesnoth"
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:10
+msgid ""
+"...but one of the Orcs survived long enough to send the news to the queen..."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:14
+msgid "...and she sent her most able commander."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:35
+msgid "Force Li'sar's surrender"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:61
+msgid "Elmar's Crossing"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:66
+msgid "Elbridge"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:158
+msgid ""
+"On the road to Knalga, the party was opposed by the forces of Asheviere."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:162
+msgid "The Queen has sent me to stop you, you impostor!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:166
+msgid ""
+"That's the princess, Li'sar. The daughter of the Queen, and her successor!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:170
+msgid "I'm no impostor. It seems that your mother has lied to you."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:175
+msgid "This is treason! Your lies will perish with you!"
+msgstr "Dette er forræderi! Dine løgne vil gå til grunde med dig!"
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:179
+msgid ""
+"There is no use in reasoning. She will understand only one thing. To arms!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:186
+msgid "Jibb"
+msgstr "Jibb"
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:187
+msgid "Monry"
+msgstr "Monry"
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:188
+msgid "Gleran"
+msgstr "Gleran"
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:192
+msgid "This is taking too much time, I had best call some reinforcements!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:197
+msgid "Rogerus"
+msgstr "Rogerus"
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:198
+msgid "Rurcyn"
+msgstr "Rurcyn"
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:199
+msgid "Blyr"
+msgstr "Blyr"
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:203
+msgid "Maybe I was not using enough forces..."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:213
+msgid "I surrender! Don't hurt me, Impostor."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:217
+msgid ""
+"I said before I'm not an impostor, but if you yield, I will spare your life."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:221
+msgid "Let me go!"
+msgstr "Lad mig gå!"
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:225
+msgid "Think about the story of the old king. Ask somebody who knew of him."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:229
+msgid ""
+"The old king? I have heard about that, but I know it is not true. My mother "
+"told me."
+msgstr ""
+"Den gamle konge? jeg har hørt om det, men det passer ikke. Det siger min mor!"
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:233
+msgid ""
+"Your mother has lied to you, child. Now I suggest you reconsider, and either "
+"join us, or flee an exile. There will be a great battle soon, and if you are "
+"on the wrong side of it, we may not have the opportunity to spare your life "
+"a second time."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:238
+msgid ""
+"I am not a child, and I do not want to talk about it! You said you would "
+"spare me, so be on your way. The northern road should be safe for you."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:242
+msgid "Good day then, Princess. Come, men, to the northern road!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:246
+msgid ""
+"(He he, little do they know just how many undead have wandered the northern "
+"road of late. Surely they are doomed!)"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:304
+msgid ""
+"Your forces draw near impostor! I'll not be defeated in my own back yard so "
+"easily... Come forth and attack my loyal duelist!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:317
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:370
+msgid "Ronry"
+msgstr "Ronry"
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:324
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:327
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:384
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:387
+msgid "Ligwyn"
+msgstr "Ligwyn"
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:328
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:388
+msgid "Owaryn"
+msgstr "Owaryn"
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:333
+msgid "I'll seize their keep my Lady!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:363
+msgid "It sounds like there is something in the mine shaft."
+msgstr "Det lyder som om der er noget i mineskakten."
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:380
+msgid "You've discovered my ploy! It doesn't matter, I'll still rout you!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Princess_of_Wesnoth.cfg:393
+msgid "The trap is foiled but I'll still flush this rabble from their keep!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Return_to_Wesnoth.cfg:4
+msgid "Return to Wesnoth"
+msgstr "Tilbage til Wesnoth"
+
+#: data/scenarios/Heir_To_The_Throne/Return_to_Wesnoth.cfg:64
+msgid "Josephus"
+msgstr "Josephus"
+
+#: data/scenarios/Heir_To_The_Throne/Return_to_Wesnoth.cfg:80
+msgid "Dwar-Ni"
+msgstr "Dwar-Ni"
+
+#: data/scenarios/Heir_To_The_Throne/Return_to_Wesnoth.cfg:95
+msgid "Malatus"
+msgstr "Malatus"
+
+#: data/scenarios/Heir_To_The_Throne/Return_to_Wesnoth.cfg:120
+msgid "Halt! Who goes there?"
+msgstr "Stop! Hvem der?"
+
+#: data/scenarios/Heir_To_The_Throne/Return_to_Wesnoth.cfg:124
+msgid ""
+"Look! It is the traitor Li'sar, with the old mage and the filthy Elven lord. "
+"Quickly, capture them! The Queen wishes to make them her prisoners."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Return_to_Wesnoth.cfg:128
+msgid ""
+"What? Me, a traitor? It is the Queen who is a traitor, for not obeying the "
+"wishes of King Garard II. We have the Scepter of Fire, so let us in!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Return_to_Wesnoth.cfg:132
+msgid "You leave us no choice but to kill you."
+msgstr "Du giver ikke os andet valg end at dræbe dig."
+
+#: data/scenarios/Heir_To_The_Throne/Return_to_Wesnoth.cfg:144
+msgid ""
+"These intruders are stronger than we expected. Call in the reinforcements!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Return_to_Wesnoth.cfg:147
+msgid "Dacayan"
+msgstr "Dacayan"
+
+#: data/scenarios/Heir_To_The_Throne/Return_to_Wesnoth.cfg:148
+msgid "Ceomyr"
+msgstr "Ceomyr"
+
+#: data/scenarios/Heir_To_The_Throne/Return_to_Wesnoth.cfg:149
+msgid "Gwellyn"
+msgstr "Gwellyn"
+
+#: data/scenarios/Heir_To_The_Throne/Return_to_Wesnoth.cfg:154
+msgid "The Queen has sent us to aid you in capturing these rebels."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Return_to_Wesnoth.cfg:158
+msgid "We have changed the plan. Now we are killing them."
+msgstr "Vi har ændret planen. Nu dræber vi dem."
+
+#: data/scenarios/Heir_To_The_Throne/Return_to_Wesnoth.cfg:166
+msgid ""
+"We must make haste! Far greater challenges lie before us, by tarrying here "
+"we're diminishing our resources."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Sceptre.cfg:4
+#: data/scenarios/Heir_To_The_Throne/Sceptre.cfg:13
+msgid "The Scepter of Fire"
+msgstr "Ildscepteret"
+
+#: data/scenarios/Heir_To_The_Throne/Sceptre.cfg:29
+msgid "Capture the Scepter of Fire with Konrad or Li'sar"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Sceptre.cfg:66
+msgid "The Scepter must be getting close now! Where shall we go?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Sceptre.cfg:70
+msgid "Yes, I feel it is near here! We must search for it carefully."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Sceptre.cfg:301
+msgid "Scepter of Fire"
+msgstr "Ildscepter"
+
+#: data/scenarios/Heir_To_The_Throne/Sceptre.cfg:304
+msgid ""
+"This ancient Scepter was forged by the Dwarves. A symbol of the kingship of "
+"Wesnoth, the Scepter has the power to shoot fireballs at enemies of the "
+"bearer!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Sceptre.cfg:305
+msgid ""
+"This is the Scepter of Fire. Only a true successor to the throne can "
+"possibly dare to take this!"
+msgstr ""
+"Dette er Ildens Scepter. Der er kun muligt for den sande tronfølger at turde "
+"tage det!"
+
+#: data/scenarios/Heir_To_The_Throne/Sceptre.cfg:328
+msgid "Here it is at last, I have the Scepter!"
+msgstr "Endelig, her er det! Jeg har Scepteret!"
+
+#: data/scenarios/Heir_To_The_Throne/Sceptre.cfg:332
+msgid "So it is in our hands! Now let us leave this stinking pit."
+msgstr "So er det i vores besiddelse. Lad os forlade dette stinkende hul."
+
+#: data/scenarios/Heir_To_The_Throne/Sceptre.cfg:336
+msgid ""
+"I think that if we travel just a little north, we might be able to get out."
+msgstr "Jeg tror at hvis vi rejse en smule mod nord kan vi måske komme ud."
+
+#: data/scenarios/Heir_To_The_Throne/Sceptre.cfg:356
+msgid "At last! I have the Scepter!"
+msgstr "Endelig! Jeg har scepteret!"
+
+#: data/scenarios/Heir_To_The_Throne/Sceptre.cfg:360
+msgid "Indeed. You managed to reach it Li'sar. I hope you shall use it wisely."
+msgstr ""
+"Bestemt. Det er lykkedes dig at nå frem til det, Li'sar. Jeg håber du vil "
+"bruge det med kløgt."
+
+#: data/scenarios/Heir_To_The_Throne/Sceptre.cfg:364
+msgid ""
+"Well my first use for it is going to be to help us get out of this hole! I "
+"hope you consider that wise."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Sceptre.cfg:368
+msgid ""
+"The Scepter makes its wielder powerful, but hardly immortal, child. Use it "
+"prudently. Now come, I believe there is an exit to the north!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Sceptre.cfg:372
+msgid "I think I know what I'm doing. Come, let us go!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Snow_Plains.cfg:4
+msgid "Snow Plains"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Snow_Plains.cfg:61
+msgid "Urag-Tifer"
+msgstr "Urag-Tifer"
+
+#: data/scenarios/Heir_To_The_Throne/Snow_Plains.cfg:102
+msgid ""
+"These fields of snow were once the home of my people. We left here centuries "
+"ago. Legends say a great sword of fire was left behind."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Snow_Plains.cfg:106
+msgid ""
+"This sword may prove useful on our journey ahead. I wonder where it could be "
+"hidden."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Swamp_Of_Dread.cfg:4
+msgid "Swamp Of Dread"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Swamp_Of_Dread.cfg:79
+msgid "Clarustus"
+msgstr "Clarustus"
+
+#: data/scenarios/Heir_To_The_Throne/Swamp_Of_Dread.cfg:95
+msgid "Merlunius"
+msgstr "Merlunius"
+
+#: data/scenarios/Heir_To_The_Throne/Swamp_Of_Dread.cfg:108
+msgid "Aimucasur"
+msgstr "Aimucasur"
+
+#: data/scenarios/Heir_To_The_Throne/Swamp_Of_Dread.cfg:121
+msgid "Secadius"
+msgstr "Secadius"
+
+#: data/scenarios/Heir_To_The_Throne/Swamp_Of_Dread.cfg:137
+msgid "Dafeis"
+msgstr "Dafeis"
+
+#: data/scenarios/Heir_To_The_Throne/Swamp_Of_Dread.cfg:160
+msgid ""
+"This land is cursed. The Liches have lived here for years amassing great "
+"armies and fortunes."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Swamp_Of_Dread.cfg:164
+msgid ""
+"The Liches are all over this swamp. I hope I have made a wise choice in "
+"taking this path."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:4
+msgid "The Lost General"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:65
+msgid "Brugg"
+msgstr "Brugg"
+
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:79
+msgid "Lionel"
+msgstr "Lionel"
+
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:106
+msgid "These are some of the main Dwarvish caverns."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:110
+msgid ""
+"Underground roads once led to the different parts of the complex, but now "
+"everything lies in ruins."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:123
+msgid "The sign says 'Guest quarters'."
+msgstr "Der står 'Gæsteværelser' på skiltet."
+
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:135
+msgid "Burlin"
+msgstr "Burlin"
+
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:139
+msgid "My uncle's family drowned after the orcs flooded that cavern..."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:152
+msgid "These passages seem to have been used recently."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:165
+msgid "There is a big cave-in south of here."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:177
+msgid "RUMBLE! RUMBLE! RUMBLE!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:181
+msgid "The rocks are moving!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:245
+msgid "Who goes there? Friend or foe?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:249
+msgid ""
+"We are desperately trying to rid these tunnels of the foul Orcs! Please help "
+"us in our quest."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:260
+msgid "Ah, a foul Orc! Let us rid these tunnels of its kind!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:271
+msgid "I did not know that the undead were in these pits!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:282
+msgid "Who is this foul enemy that we fight?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:286
+msgid "I am Lionel. I am the Lost General. I will avenge myself upon you all!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:290
+msgid "Avenge? What have we done to you that you must avenge?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:294
+msgid "Lionel? A General? I remember that name..."
+msgstr "Lionel? En general? Jeg mindes det navn..."
+
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:298
+msgid ""
+"Remember me, do you? Aye. I was the king's finest general, sent down to "
+"these pits to retrieve the Scepter. But the Orcs trapped me and my men in "
+"this cavern, to starve to death. The Dwarves were no help, leaving me to "
+"die. Now I will get revenge on you all!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:317
+msgid ""
+"Argh! I am vanquished! But at least by worthy foes, instead of those foul "
+"Orcs."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:321
+msgid "Rest in peace, Lionel. The poor, lost general."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:325
+msgid ""
+"I am destroyed, but my mission must be completed. Though you are foes, you "
+"are at least worthy ones, so I will tell you that the Scepter is east from "
+"here, the way you have come from, deep in the caverns. I made the mistake of "
+"not asking for directions when I became lost. May you have better fortune in "
+"your quest than I did!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Lost_General.cfg:366
+msgid "The earth shakes."
+msgstr "Jorden skælver."
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:4
+msgid "The Siege of Elensefar"
+msgstr "Besættelsen af Elensefar"
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:63
+msgid "Agadla"
+msgstr "Agadla"
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:96
+msgid "Muff Jaanal"
+msgstr "Muff Jaanal"
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:156
+msgid ""
+"The party arrived at Elensefar at last, but found that the city had already "
+"fallen to the evil Orcs."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:160
+msgid "My lord! It seems the city has already fallen!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:164
+msgid "This is terrible news! We must retake the city!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:168
+msgid ""
+"There are so many of them. This will not be easy! And look to the north! It "
+"seems that the undead are allied with the Orcs!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:172
+msgid ""
+"Here come the Elves! With our newly forged alliance with the Orcs, we will "
+"crush them with ease!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:176
+msgid ""
+"We must take the city, and destroy the evil undead before reinforcements "
+"arrive!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:184
+msgid "Reglok"
+msgstr "Reglok"
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:222
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:359
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:455
+msgid "Gelgar"
+msgstr "Gelgar"
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:234
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:371
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:468
+msgid "Gamlel"
+msgstr "Gamlel"
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:250
+msgid "As night began to fall, three dark figures crept out of the forest."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:254
+msgid "Halt! Who goes there, friend or foe?"
+msgstr "Stop! Hvem der, ven eller fjende?"
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:258
+msgid ""
+"Greetings, friend. We are from the Elensefar Thieves' Guild. We would like "
+"to help you against the Orcs!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:262
+msgid "Thieves, hmmm? Who says we can trust such as you?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:266
+msgid ""
+"We would understand if you didn't trust us, of course, but it is in our "
+"mutual interest to rid the city of the Orcs!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:270
+msgid "Very well. You may join us."
+msgstr "Godt, godt. Du må gerne slutte dig til os."
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:274
+msgid ""
+"We will serve you well, for we respect the help you are providing to our "
+"city. You shall find that there is honor, even among thieves."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:278
+msgid "Yes, but where is your fighting force? How can you help us?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:282
+msgid ""
+"We survive by stealth. We can help you sneak into the city and surround the "
+"orcs. Alternatively, we can lay in wait until you give us a signal then "
+"ambush the orcs' rear."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:286
+msgid "Hmm... I have to consider this..."
+msgstr "Hmm.. Det er jeg nødt til at overveje..."
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:288
+msgid "Help us infiltrate the city. We can do the rest."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:292
+msgid ""
+"Excellent. Two hours past midnight meet us on the west bank of the river, "
+"across from Elensefar's docks."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:304
+msgid "I want you to reinforce us once we break through their line."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:308
+msgid ""
+"Very well. When you raise your red banner over any building in the city "
+"proper, we will see the sign and attack from the city's northern gate."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:312
+msgid "Agreed. But, will you be able to see our flag if it's dark?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:316
+msgid ""
+"Yes, we will see it. In fact, we prefer to fight at night. I pray you do not "
+"lead us into slaughter."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:320
+msgid ""
+"Do not fear, friends. There will be a slaughter here, but it will be orcish "
+"blood staining the streets."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:335
+msgid ""
+"As the banner was raised, sounds of fighting could be heard from across the "
+"city."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:383
+msgid "Darglen"
+msgstr "Darglen"
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:395
+msgid "Let's expel these invaders! Today, the city is ours again!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:428
+msgid ""
+"On the banks of Elensefar's port district, three shadowy figures appeared."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:432
+msgid ""
+"To Konrad's surprise, they quickly made their way across the river's mouth. "
+"The turbulent waters hid a nearly invisible ford, wide enough for two "
+"soldiers to march shoulder-to-shoulder."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:487
+msgid ""
+"Very few people know that the river can be forded here. The orcs have yet to "
+"discover this place. Bring your forces into the city, quickly now, and you "
+"can flank them."
+msgstr ""
+
+# > Lyder lidt som noget fra Rasmus Klump.
+# > Andre gange lyder det der ", min ven" eller ", ven" som
+# > eksotiske danskere eller gadesælgere i Tyrkiet :)
+# True that... Men, nogle af alle de der, "min ven", "min herre", "min frue" osv.,
+# kan sagtens udelades.
+# 
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:499
+msgid "Finally, we have retaken the city! Let us rest here, friends."
+msgstr "Endelig har vi generobret byen! Lad os hvile her, venner."
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:507
+msgid "Victory! The thieves of Elensefar will be in your service, my lord"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:511
+msgid "The party rested for three days, after which an old friend returned."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:530
+msgid "Kalenz"
+msgstr "Kalenz"
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:546
+msgid ""
+"Greetings, friends. I see that you have rescued the city! I knew that you "
+"could do it."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:551
+msgid "Delfador! So good to see you! Where have you been?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:556
+msgid ""
+"I have been meeting with the Great Elven Council. This is Kalenz, a lord of "
+"the Northern Elves who came to the Council to offer us the support of the "
+"North Elves."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:561
+msgid "Greetings, friend."
+msgstr "Vær hilset, ven."
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:566
+msgid ""
+"Delfador, we have captured this city, but surely Asheviere's men will come "
+"and attack us! What should we do?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:571
+msgid "The Council has met and decided: we must capture the Scepter of Fire."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:576
+msgid "The Scepter of Fire? What's that?"
+msgstr "Ildscepteret? Hvad er det?"
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:581
+msgid ""
+"During the reign of Garard I, your grandfather, the dwarves of Knalga agreed "
+"to make the king a magnificent scepter. It took their finest smiths years to "
+"make it. But soon after it was completed, Orcs invaded the tunnels of "
+"Knalga. Now Knalga is in chaos, and, though some Dwarves still live in parts "
+"of it, at constant war with the Orcs, the Scepter was lost somewhere in the "
+"great caverns."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:586
+msgid "But what has this to do with me?"
+msgstr "Men hvad har det med mig at gøre?"
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:591
+msgid ""
+"When Garard II, your uncle, was deciding upon a successor, he issued an "
+"edict that whichever member of the royal family could retrieve the Scepter "
+"of Fire would rule the land."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:596
+msgid "Oh, and you want me to get this scepter?"
+msgstr "Åh, og du vil have mig til at få fat i det scepter?"
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:601
+#, fuzzy
+msgid "We will help you retrieve it, my lord."
+msgstr "Vi vil hjælpe dig med at få det, herre."
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:606
+msgid ""
+"Time is short. We think that Asheviere is also searching for the Scepter, to "
+"help seal her place as ruler. But if you find the Scepter first, the people "
+"will support you as the king."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:611
+msgid "Me? King?"
+msgstr "Mig? Konge?"
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:616
+msgid "Yes, Konrad. I believe you will be king one day. Now let us make haste!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/The_Siege_of_Elensefar.cfg:630
+msgid "So you endeavor to fight me in my home. Foolish."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:4
+msgid "The Valley of Death - The Princess's Revenge"
+msgstr "Dødens dal - Prinsessens hævn"
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:24
+msgid "Survive for two days"
+msgstr "Overlev i to dage"
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:72
+msgid "Galga"
+msgstr "Galga"
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:113
+msgid "Na-alga"
+msgstr "Na-alga"
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:144
+msgid "Selda-Mana"
+msgstr "Selda-Mana"
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:202
+msgid ""
+"My lord! This road does not seem as safe as we had hoped. Look around us at "
+"the hills - there are undead about!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:206
+msgid "Who are these who approach? Let us kill them all!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:210
+msgid "To arms, men! The undead hordes approach!"
+msgstr "Til våben, mænd! De udøde horder nærmer sig!"
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:215
+msgid ""
+"Let us never surrender to these foul beasts of the pit! We fight until "
+"victory, or until every one of us is slain!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:223
+msgid "There are just so many! What shall we do?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:227
+msgid "Let us hold them off as long as we can!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:251
+msgid "Heldra"
+msgstr "Heldra"
+
+# Lidt fristet til at skrive "Markus"
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:252
+msgid "Marcus"
+msgstr "Marcus"
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:253
+msgid "Haldar"
+msgstr "Haldar"
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:257
+msgid "I have come once again to aid you, friends!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:261
+msgid "White magi? Come to help us? But what are they doing here?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:265
+msgid ""
+"That is Moremirmu! He helped us fight the undead in the Isles of the Damned, "
+"let us hope he can help us once more!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:276
+msgid ""
+"The sun rises in the east. Surely the undead do not have the power to "
+"continue their onslaught through another day!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:280
+msgid "Indeed not! I feel we have survived this battle."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:284
+msgid "Whew! That was a difficult battle, but they are retreating at last!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:307
+msgid "Yes! We have fought them off!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:321
+msgid "Thank you for returning to help us, Moremirmu."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:325
+msgid ""
+"It is both my duty and pleasure, my lord! We were dining with some royal "
+"guards of the princess, taking a rest from our pilgrimage, when they spoke "
+"of how you were tricked into traveling these dangerous lands. We could do "
+"nothing but help you!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:329
+msgid ""
+"So, she tricked us into coming this way! Where may we go now? Which way will "
+"be safe for us?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:333
+msgid ""
+"You must get out of the clutches of that vile Queen, my lord. If you take a "
+"course bearing north-east, on past the mountain of gryphons, you will be "
+"able to ford the great river at Abez. Make haste though, for you will not be "
+"able to ford the river in winter!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:337
+msgid ""
+"Thank you for your counsel, good friend! May our paths meet again in happier "
+"times!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:352
+msgid ""
+"It greatly saddens me that Moremirmu was slain on the field, after he helped "
+"us."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:356
+msgid "May he rest peacefully!"
+msgstr "Må han hvile i fred!"
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:360
+msgid ""
+"He died fighting for you, Prince, just as any of us would be willing to die "
+"for you."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:366
+msgid ""
+"This place makes me feel uneasy, even with the undead retreating. Where may "
+"we go now?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:370
+msgid ""
+"The land of Wesnoth is not safe for us. The Queen's forces reach every "
+"corner. We must make haste to the north lands, across the great river. Let "
+"us go quickly!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Death.cfg:374
+msgid "Indeed! Let us go from here!"
+msgstr "Bestemt! Lad os drage væk!"
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:4
+msgid "The Valley of Statues"
+msgstr "Statuernes dal"
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:83
+msgid "Death of Konrad, or having him turned to stone"
+msgstr "Konrad dør eller bliver gjort til sten"
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:87
+msgid "Death of Delfador, or having him turned to stone"
+msgstr "Delfador dør eller bliver gjort til sten"
+
+# Den afskyelige snemand er vist en Yeti.
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:121
+msgid "A Yeti"
+msgstr "En Yeti"
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:135
+msgid "Be warned, a great monster lives in the hills ahead."
+msgstr "Vær varsom, et mægtigt monster bor i bakkerne forude."
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:155
+msgid "Haldiel-Aga"
+msgstr "Haladiel-Aga"
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:176
+msgid "Maldiel-Haga"
+msgstr "Maldiel-Haga"
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:204
+msgid "Urug-Halaki"
+msgstr "Urug-Halaki"
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:299
+msgid "Look ahead of us, Orcs and Trolls!"
+msgstr "Se foran os, orker og trolde!"
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:303
+msgid "But they look strange -- look, they're just statues!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:307
+msgid ""
+"That's very strange, why would someone make statues of such foul creatures?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:311
+msgid "Who are these that approach our valley, my apprentice?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:315
+msgid "Halt! You will not pass by this way!"
+msgstr "Stop! Du kan ikke passere ad denne vej!"
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:319
+msgid "We seek only free passage through your valley. We mean no harm."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:323
+msgid "No-one passes by us. We rule this valley, and you cannot defeat us!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:327
+msgid ""
+"If you do not let us through, we will pierce you with sword and bow! Come, "
+"let us take up arms against them!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:331
+msgid ""
+"Do you really think by mere force of arms you can defeat us? Some Orcs were "
+"once foolish enough to think that as well..."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:335
+msgid "Does he mean that these who stand in front of us were once live Orcs?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:339
+msgid ""
+"Careful, I have heard of such things. We must proceed with caution, and try "
+"to discover the nature of the power these wizards wield."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:343
+msgid "This place feels eerie. Is there no other way?"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:347
+msgid ""
+"I for one am not afraid of these who would oppose us. I feel certain that "
+"once a sword is driven through them, they will threaten us no more."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:351
+msgid "There is no other way, but it is carefully that we shall proceed."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:368
+msgid "All I can see in here is a large mirror!"
+msgstr "Det eneste jeg kan se er et stort spejl!"
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:372
+#, fuzzy
+msgid ""
+"I have heard of such things. Perhaps the power of the Cockatrices is tied to "
+"it!"
+msgstr ""
+"Jeg har hørt om sådanne ting---hurtig, smadr det! Måske er basiliskernes "
+"kraft bundet til det!"
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:376
+msgid "Very well, I'll smash it!"
+msgstr "Godt, jeg smadrer det!"
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:383
+msgid "No! The power of my creations is destroyed!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:390
+msgid "Free from this prison of stone at last! Now we will gain revenge!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:394
+msgid "First we have to fight these silly birds, and now foul Orcs!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:398
+msgid "Fall on them men!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:419
+msgid "With Konrad turned into a statue, surely all is lost!"
+msgstr "Med Konrad forvandlet til en statue, er alt tabt!"
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:433
+msgid ""
+"No! Delfador has been turned to stone! Without him we have no chance of "
+"unmaking the wizard's spell. All is lost!"
+msgstr ""
+"Nej! Delfador er blevet forvandlet til sten! Uden ham har vi ikke en chance "
+"for at hæve troldmandens besværgelse. Alt er tabt!"
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:444
+msgid "What happened there?"
+msgstr "Hvad skete der?"
+
+#: data/scenarios/Heir_To_The_Throne/Valley_of_Statues.cfg:448
+msgid ""
+"These Cockatrices will turn all our troops to stone, as they have the Orcs "
+"if we cannot find a way to undo their power!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/utils/deaths.cfg:9
+msgid "We are vanquished, for I have been defeated!"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/utils/deaths.cfg:38
+msgid "Argh! I am finished!"
+msgstr "Argh! Jeg er færdig!"
+
+#: data/scenarios/Heir_To_The_Throne/utils/deaths.cfg:51
+msgid "No! This is the end! We have been defeated!"
+msgstr "Nej! Det er slut! Vi er blevet overvundet!"
+
+#: data/scenarios/Heir_To_The_Throne/utils/intro.cfg:5
+msgid ""
+"In the twenty-seventh year of the reign of Garard II, king of Wesnoth, the "
+"kingdom was plunged into a bitter war with the Peoples of the North."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/utils/intro.cfg:9
+msgid ""
+"The Northern host encamped at Galcadar, by the ford of Abez, and the king "
+"led his forces to meet them. Splitting his army in two, he led one half "
+"while his son, the crown prince Eldred, led the other."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/utils/intro.cfg:13
+msgid ""
+"Eldred was a brave and courageous warrior, able to lead his soldiers well. "
+"Unfortunately for Garard, his son was also ambitious... and treacherous. In "
+"the heat of battle, Eldred's men turned on the king. And so, Garard was "
+"slain in battle that day, along with his brother and all his sons but Eldred."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/utils/intro.cfg:17
+msgid ""
+"Garard's queen, Asheviere, looked on with glee, having come to watch the "
+"battle from a nearby hill. The rule of her son would surely satisfy her lust "
+"for power far better than her husband's had."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/utils/intro.cfg:21
+msgid ""
+"In exchange for tribute, the Northern king happily made peace with Eldred, "
+"who proclaimed himself king and led his army back to Weldyn."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/utils/intro.cfg:25
+msgid ""
+"But Garard's arch-mage, Delfador, had escaped the battle and, riding with "
+"haste, reached Weldyn first. He mustered a force of loyalists to fight "
+"Eldred and avenge the king's death."
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/utils/intro.cfg:29
+msgid ""
+"Eldred made war upon Delfador and his forces with his mother's advice "
+"ringing in his ears: 'Fight no one great or small except the old mage, whose "
+"head should be severed from his shoulders.'"
+msgstr ""
+
+#: data/scenarios/Heir_To_The_Throne/utils/intro.cfg:33
+msgid ""
+"And Eldred did indeed meet Delfador face-to-face in battle that day. Sword "
+"clashed against staff, as the wise old mage fought the brash young warrior."
+msgstr ""
+"Og Eldred mødte Delfador ansigt til ansigt i kamp den dag. Sværd bragede "
+"imod stav, da den gamle viise troldmand kæmpede mod den unge kriger."
+
+#: data/scenarios/Heir_To_The_Throne/utils/intro.cfg:37
+#, fuzzy
+msgid ""
+"In the end Delfador's men were defeated and routed, but Asheviere found her "
+"son's lifeless body, fixed to the ground by the great mage's staff."
+msgstr ""
+"Til sidst blev Delfadors mænd overmandet og jaget på flugt, men Asheviere "
+"fandt sin søns livløse krop, slået til jorden af store toldmands stav."
+
+#: data/scenarios/Heir_To_The_Throne/utils/intro.cfg:41
+#, fuzzy
+msgid ""
+"Asheviere herself then took command of the army, and led it back to Weldyn. "
+"Knowing that the king's young nephews were next in line to the throne, she "
+"ordered them all killed, and declared herself Queen of Wesnoth."
+msgstr ""
+"Asheviere overtog komandoen over hæren og førte den tilbage til Weldyn. "
+"Velvidende om at kongens unge nevø var den retsmæssige tronarving beordrede "
+"hun dem alle dræbt og erklærede sig selv Dronning af Wesnoth."
+
+#: data/scenarios/Heir_To_The_Throne/utils/intro.cfg:45
+msgid ""
+"Soon after news of Asheviere's orders reached Delfador, he secretly entered "
+"the palace and stole away Konrad, the youngest of Garard's nephews, thereby "
+"saving him from death."
+msgstr ""
+"Snart efter at nyhederne om Ashevieres ordrer nåede Delfador sneg han sig i "
+"al hemmelighed ind i paladset og bortførte Konrad, den yngste af Garards "
+"nevøer, og frelste derved hans liv."
+
+#: data/scenarios/Heir_To_The_Throne/utils/intro.cfg:49
+#, fuzzy
+msgid ""
+"Fleeing to the forests of the West, Delfador raised the child Konrad under "
+"the protection of the Elves, watching sadly as Asheviere's reign of terror "
+"over the land began..."
+msgstr ""
+"Flygtende mod Vestskoven, opdrog Delfedor Konrad under elvernes beskyttelse "
+"og så sørgende til, mens Ashevieres rædselsregime tog form..."
+
+#~ msgid "Well, we got out alive."
+#~ msgstr "Nå, vi kom ud i live."

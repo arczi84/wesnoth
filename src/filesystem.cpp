@@ -156,7 +156,8 @@ void get_files_in_dir(const std::string& directory,
 		//if we have a path to find directories in, then convert relative
 		//pathnames to be rooted on the wesnoth path
 		if(!directory.empty() && directory[0] != '/' && !game_config::path.empty()){
-			const std::string& dir = game_config::path + "/" + directory;
+			const std::string& dir = game_config::path + "/" + directory; //arti "/"
+
 			if(is_directory(dir)) {
 				get_files_in_dir(dir,files,dirs,mode);
 				return;
@@ -238,23 +239,23 @@ void get_files_in_dir(const std::string& directory,
 
 std::string get_prefs_file()
 {
-	return get_user_data_dir() + "/preferences";
+	return get_user_data_dir() + "preferences";
 }
 
 std::string get_save_index_file()
 {
-	return get_user_data_dir() + "/save_index";
+	return get_user_data_dir() + "save_index";
 }
 
 std::string get_saves_dir()
 {
-	const std::string dir_path = get_user_data_dir() + "/saves";
+	const std::string dir_path = get_user_data_dir() + "saves";
 	return get_dir(dir_path);
 }
 
 std::string get_cache_dir()
 {
-	const std::string dir_path = get_user_data_dir() + "/cache";
+	const std::string dir_path = get_user_data_dir() + "cache";
 	return get_dir(dir_path);
 }
 
@@ -279,7 +280,7 @@ std::string get_intl_dir()
 
 std::string get_screenshot_dir()
 {
-	const std::string dir_path = get_user_data_dir() + "/screenshots";
+	const std::string dir_path = get_user_data_dir() + "screenshots";
 	return get_dir(dir_path);
 }
 
@@ -407,9 +408,12 @@ std::string get_user_data_dir()
 	return be_path.Path();
 #else
 
-	static const char* const current_dir = ".";
-
+	static const char* const current_dir = "";
+#ifdef __AMIGA__
+	const char* home_str = "PROGDIR:"; // arti
+#else
 	const char* home_str = getenv("HOME");
+#endif
 	if(home_str == NULL)
 		home_str = current_dir;
 
@@ -419,14 +423,18 @@ std::string get_user_data_dir()
 #define PREFERENCES_DIR ".wesnoth"
 #endif
 
+#ifdef __AMIGA__
+	const std::string dir_path = home + PREFERENCES_DIR + std::string("/");//arti
+#else
 	const std::string dir_path = home + std::string("/") + PREFERENCES_DIR;
+#endif
 	DIR* dir = opendir(dir_path.c_str());
 	if(dir == NULL) {
 		const int res = mkdir(dir_path.c_str(),AccessMode);
 
 		//also create the maps directory
-		mkdir((dir_path + "/editor").c_str(),AccessMode);
-		mkdir((dir_path + "/editor/maps").c_str(),AccessMode);
+		mkdir((dir_path + "editor").c_str(),AccessMode);
+		mkdir((dir_path + "editor/maps").c_str(),AccessMode);
 		if(res == 0) {
 			dir = opendir(dir_path.c_str());
 		} else {
@@ -802,13 +810,14 @@ const std::vector<std::string>& get_binary_paths(const std::string& type)
 std::string get_binary_file_location(const std::string& type, const std::string& filename)
 {
 	const std::vector<std::string>& paths = get_binary_paths(type);
+
 	for(std::vector<std::string>::const_iterator i = paths.begin(); i != paths.end(); ++i) {
 		const std::string file = *i + filename;
 		if(file_exists(file) || is_directory(file)) {
 			return file;
 		}
 	}
-
+	//std::cerr << "could not open image '" << filename << "'\n"; arti
 	return "";
 }
 

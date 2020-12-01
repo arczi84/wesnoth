@@ -19,6 +19,8 @@
 #include <cstdlib>
 #include <iostream>
 
+#include <math.h>
+
 terrain_type::terrain_type() : symbol_image_("void"), letter_(' '), type_(" "),
                                height_adjust_(0), submerge_(0.0),
                                heals_(false), village_(false), castle_(false), keep_(false)

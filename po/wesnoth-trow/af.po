@@ -6,6 +6,7 @@ msgstr ""
 "PO-Revision-Date: 2006-06-04 18:06+0200\n"
 "Last-Translator: \n"
 "Language-Team: Afrikaans\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -3098,8 +3099,8 @@ msgstr ""
 
 #: data/scenarios/The_Rise_of_Wesnoth/Return_to_Oldwood.cfg:221
 msgid "I propose we join forces, and make a break for Clearwater Port."
-msgstr "Ek stel voor ons span ons magte saam en kies koers na Helderwater "
-"Hawe."
+msgstr ""
+"Ek stel voor ons span ons magte saam en kies koers na Helderwater Hawe."
 
 #: data/scenarios/The_Rise_of_Wesnoth/Return_to_Oldwood.cfg:225
 msgid ""
@@ -3834,9 +3835,9 @@ msgid ""
 "Ruby, even with it in my pack. Let's work out what it does, before we decide "
 "what to do with it."
 msgstr ""
-"Ons het die Sielsuiger se boek en ek kan letterlik die krag van die "
-"Robyn aanvoel selfs al is dit in my sak. Kom ons probeer agterkom wat dit "
-"kan doen, voordat ons besluit wat om daarmee te maak."
+"Ons het die Sielsuiger se boek en ek kan letterlik die krag van die Robyn "
+"aanvoel selfs al is dit in my sak. Kom ons probeer agterkom wat dit kan "
+"doen, voordat ons besluit wat om daarmee te maak."
 
 #: data/scenarios/The_Rise_of_Wesnoth/Sewer.cfg:230
 msgid "Hmm. He seems to have had a map, and some gold!"
@@ -5689,8 +5690,7 @@ msgstr "Mag die Here van die Lig ons almal beskerm."
 
 #: data/scenarios/The_Rise_of_Wesnoth/utils/trow-deaths.cfg:113
 msgid "Without him the bottoms of our ships will be completely vulnerable..."
-msgstr ""
-"Sonder hom sal die onderkante van ons skepe totaal blootgestel wees..."
+msgstr "Sonder hom sal die onderkante van ons skepe totaal blootgestel wees..."
 
 #: data/scenarios/The_Rise_of_Wesnoth/utils/trow-intro.cfg:5
 msgid ""

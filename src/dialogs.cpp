@@ -332,7 +332,7 @@ void save_preview_pane::draw_contents()
 			map_surf = itor->second;
 		} else if(map_ != NULL) {
 			try {
-#ifdef USE_TINY_GUI
+#if 1//def USE_TINY_GUI
 				const int minimap_size = 60;
 #else
 				const int minimap_size = 100;

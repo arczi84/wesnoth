@@ -30,6 +30,12 @@
 #include <map>
 #include <string>
 
+extern "C"{
+#include <sys/time.h>
+
+struct timeval tval_before, tval_after, tval_result;
+}
+
 #define LOG_DP LOG_STREAM(info, display)
 #define ERR_DP LOG_STREAM(err, display)
 
@@ -211,11 +217,13 @@ bool locator::value::operator<(const value& a) const
 	}
 }
 
+
 surface locator::load_image_file() const
 {
 	surface res;
 
 	std::string const &location = get_binary_file_location("images", val_.filename_);
+
 	if (!location.empty()) {
 #ifdef USE_ZIPIOS
 		std::string const &s = read_file(location);
@@ -225,12 +233,23 @@ surface locator::load_image_file() const
 			SDL_FreeRW(ops);
 		}
 #else
-		res = IMG_Load(location.c_str());
+		gettimeofday(&tval_before, NULL);
+		if (val_.filename_ != "")
+			res = IMG_Load(location.c_str());
+
+		std::cout << " open image '" << val_.filename_  << "'\n";
+		gettimeofday(&tval_after, NULL);
+
+		timersub(&tval_after, &tval_before, &tval_result);
+
+		printf("Time elapsed: %ld.%06ld\n", (long int)tval_result.tv_sec, (long int)tval_result.tv_usec);
+
 #endif
 	}
 
-	if (res.null())
-		ERR_DP << "could not open image '" << val_.filename_ << "'\n";
+	if (res.null()){
+		ERR_DP << "could not open image '" << val_.filename_ << location.c_str() << "'\n";
+	}
 
 	return res;
 }
@@ -351,7 +370,7 @@ manager::~manager()
 
 void set_wm_icon()
 {
-#if !(defined(__APPLE__))
+#if (!(defined(__APPLE__))||!(defined(__AMIGA__)))
 	surface icon(get_image(game_config::game_icon,UNSCALED));
 	if(icon != NULL) {
 		::SDL_WM_SetIcon(icon,NULL);

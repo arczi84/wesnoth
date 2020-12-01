@@ -146,7 +146,7 @@ bool game::take_side(network::connection player, const config& cfg)
 		if(side_num < 1 || side_num > 9)
 			return false;
 	}
-	catch(bad_lexical_cast& bad_lexical) {
+	catch(bad_lexical_cast& bad_lexical) {	printf(" line %d in file %s\n", __LINE__, __FILE__);
 		return false;
 	}
 
@@ -164,7 +164,7 @@ bool game::take_side(network::connection player, const config& cfg)
 					if(side_num < 1 || side_num > 9)
 						return false;
 				}
-				catch(bad_lexical_cast& bad_lexical) {
+				catch(bad_lexical_cast& bad_lexical) {	printf(" line %d in file %s\n", __LINE__, __FILE__);
 					return false;
 				}
 				// check if the side is taken if not take it
@@ -220,7 +220,7 @@ void game::update_side_data()
 				if(side_num < 1 || side_num > 9)
 					continue;
 			}
-			catch(bad_lexical_cast& bad_lexical) {
+			catch(bad_lexical_cast& bad_lexical) {	printf(" line %d in file %s\n", __LINE__, __FILE__);
 				continue;
 			}
 			side_index = static_cast<size_t>(side_num - 1);
@@ -272,7 +272,7 @@ const std::string& game::transfer_side_control(const config& cfg)
 		if(side_num < 1 || side_num > 9)
 			return invalid;
 	}
-	catch(bad_lexical_cast& bad_lexical) {
+	catch(bad_lexical_cast& bad_lexical) {	printf(" line %d in file %s\n", __LINE__, __FILE__);
 		return invalid;
 	}
 	const size_t nsides = level_.get_children("side").size();

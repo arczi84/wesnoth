@@ -1,0 +1,1 @@
+m68k-amigaos-gcc-3 -c src/amiga/audio.c -o audio.o -I/e/usr/local/amiga/include -I/e/usr/local/amiga/m68k-amigaos/include -I/e/usr/local/amiga/m68k-amigaos/sys-include -O3 -fomit-frame-pointer  -m68060 -ffast-math

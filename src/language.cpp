@@ -32,6 +32,8 @@
 #include <cstring>
 #include <iostream>
 
+#include <iostream>
+
 namespace {
 	language_def current_language;
 	string_map strings_;
@@ -40,36 +42,36 @@ namespace {
 language_def known_languages[] = {
 	language_def("", N_("System default language")),
 	language_def("af_ZA", "Afrikaans"),
-	language_def("bg_BG", "Български (Bulgarski)"),
-	language_def("ca_ES", "Català"),
-	language_def("cs_CZ", "Čeština"),
+	language_def("bg_BG", "Đ‘ŃŠĐ»ĐłĐ°Ń€Ń�ĐşĐ¸ (Bulgarski)"),
+	language_def("ca_ES", "CatalĂ "),
+	language_def("cs_CZ", "ÄŚeĹˇtina"),
 	language_def("da_DK", "Dansk"),
 	language_def("de_DE", "Deutsch"),
-	language_def("el_GR", "Ελληνικά (Ellinika)"),
+	language_def("el_GR", "Î•Î»Î»Î·Î˝ÎąÎşÎ¬ (Ellinika)"),
 	language_def("et_EE", "Eesti"),
 	language_def("en_GB", "English [GB]"),
 	language_def("C",     "English [US]"),
-	language_def("es_ES", "Español"),
+	language_def("es_ES", "EspaĂ±ol"),
         language_def("eo_EO", "Esperanto"),
 	language_def("eu_ES", "Euskera"),
-	language_def("fr_FR", "Français"),
+	language_def("fr_FR", "FranĂ§ais"),
 	language_def("it_IT", "Italiano"),
 	language_def("la_IT", "Latina"),
 	language_def("hu_HU", "Magyar"),
 	language_def("nl_NL", "Nederlands"),
-	language_def("ja_JP", "日本語 (Nihongo)"),
+	language_def("ja_JP", "ć—Ąćś¬čŞž (Nihongo)"),
 	language_def("no_NO", "Norsk"),
         language_def("oc_FR", "Occitan"),
 	language_def("pl_PL", "Polski"),
-	language_def("pt_BR", "Português do Brasil"),
-	language_def("ru_RU", "Русский (Russkij)"),
-	language_def("sk_SK", "Slovenčina"),
-	language_def("sl_SI", "Slovenščina"),
+	language_def("pt_BR", "PortuguĂŞs do Brasil"),
+	language_def("ru_RU", "Đ Ń�Ń�Ń�ĐşĐ¸Đą (Russkij)"),
+	language_def("sk_SK", "SlovenÄŤina"),
+	language_def("sl_SI", "SlovenĹˇÄŤina"),
 	language_def("sr_CS", "Srpski"),
-	language_def("tr_TR", "Türkçe"),
+	language_def("tr_TR", "TĂĽrkĂ§e"),
 	language_def("fi_FI", "Suomi"),
 	language_def("sv_SE", "Svenska"),
-	language_def("zh_CN", "中文 (Zhongwen)"),
+	language_def("zh_CN", "ä¸­ć–‡ (Zhongwen)"),
 
 	// end of list marker, do not remove
 	language_def("", "")
@@ -134,7 +136,9 @@ static void wesnoth_setlocale(int category, std::string const &slocale)
 	// FIXME: add configure check for unsetenv
 #ifndef _WIN32
 #ifndef SOLARIS
+#ifndef __AMIGA__ 	//arti
 	unsetenv ("LANGUAGE"); // void so no return value to check
+#endif
 #endif
 #endif
 
@@ -144,7 +148,7 @@ static void wesnoth_setlocale(int category, std::string const &slocale)
 	if(setenv ("LC_ALL", locale, 1) == -1)
 		std::cerr << "setenv LC_ALL failed: " << strerror(errno);
 #endif
-#ifdef __APPLE__
+#if defined __APPLE__ || defined __AMIGA__ //arti
 	if(setenv ("LANGUAGE", locale, 1) == -1)
 		std::cerr << "setenv LANGUAGE failed: " << strerror(errno);
 	if(setenv ("LC_ALL", locale, 1) == -1)
@@ -177,7 +181,8 @@ static void wesnoth_setlocale(int category, std::string const &slocale)
 		locale = xlocale.c_str();
 	}
 #endif
-	char* res = setlocale (category, locale);
+	char* res = "1";// setlocale (category, locale);
+
 	if (res == NULL)
 		std::cerr << "WARNING: setlocale() failed for "
 			  << locale << ".\n";

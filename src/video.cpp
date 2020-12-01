@@ -27,6 +27,79 @@
 
 #define TEST_VIDEO_ON 0
 
+#include <clib/exec_protos.h>
+
+#define GAME_SCREEN_WIDTH         (960)
+#define GAME_SCREEN_HEIGHT        (540)
+#define GAME_SCREEN_BITSPERPIXEL  (16)
+#define GAME_SCREEN_BYTESPERPIXEL (2)
+#define GAME_memsize              (GAME_SCREEN_WIDTH * GAME_SCREEN_HEIGHT * GAME_SCREEN_BYTESPERPIXEL)
+
+#define SAGA_VIDEO_PLANEPTR       0xDFF1EC
+#define SAGA_VIDEO_MODE           0xDFF1F4
+#define SAGA_VIDEO_YBEAM_POS      0xDFF204
+
+
+ULONG  x_MemSize = ((GAME_memsize *  4) + 32);
+ULONG *x_MemAddr = NULL;
+ULONG *x_FBAddr1 = NULL;
+ULONG *x_FBAddr2 = NULL;
+ULONG *x_FBAddr3 = NULL;
+ULONG *x_Pixels  = NULL;
+
+
+void InitBuffers(void)
+{
+	/* Allocate Drawing Buffers (Triple-Buffer) */
+	x_MemAddr = (ULONG*)AllocMem(x_MemSize,	 MEMF_LOCAL| MEMF_FAST|MEMF_CLEAR);
+
+	// Fatal Exit on error
+	if(x_MemAddr == NULL) {
+		printf("Failed to allocmem for screens\n");
+		exit(1);
+	}
+
+	// Aligned Drawing Buffers 1,2,3 */
+	x_FBAddr1 = (ULONG*)((((ULONG)x_MemAddr) + 31)& ~31);
+	x_FBAddr2 = x_FBAddr1 + GAME_memsize;
+	x_FBAddr3 = x_FBAddr2 + GAME_memsize;
+}
+
+short freed = 0;
+
+void FreeBuffers(void)
+{
+	if(x_MemAddr != NULL)
+	{
+		if (freed == 0)
+			FreeMem(x_MemAddr, x_MemSize);
+	freed = 1;
+	}
+}
+
+extern "C"
+{
+
+#include <dos/dos.h>
+#include <exec/exec.h>
+
+extern struct ExecBase *SysBase;
+short ac68080 = 1;
+bool checked = false;
+
+void check_sys()
+{
+	if (!checked) {
+		if(SysBase->AttnFlags & (1<<10)) {
+				ac68080 = 1;
+				printf("Vampire acceleretion detected.\n");
+			}
+		checked = true;
+	}
+}
+
+}
+
 #if (TEST_VIDEO_ON==1)
 
 #include <stdlib.h>
@@ -75,7 +148,7 @@ unsigned int get_flags(unsigned int flags)
 	//SDL under Windows doesn't seem to like hardware surfaces for
 	//some reason.
 #if !(defined(_WIN32) || defined(__APPLE__))
-		flags |= SDL_HWSURFACE;
+		flags |= SDL_HWSURFACE/*|SDL_DOUBLEBUF*/;
 #endif
 	if((flags&SDL_FULLSCREEN) == 0)
 		flags |= SDL_RESIZABLE;
@@ -223,11 +296,20 @@ CVideo::CVideo( int x, int y, int bits_per_pixel, int flags)
 		ERR_DP << "Could not set Video Mode\n";
 		throw CVideo::error();
 	}
+
+	check_sys();
+
+	if (ac68080)
+		InitBuffers();
+
 }
 
 CVideo::~CVideo()
 {
 	LOG_DP << "calling SDL_Quit()\n";
+	if (ac68080)
+		FreeBuffers();
+
 	SDL_Quit();
 	LOG_DP << "called SDL_Quit()\n";
 }
@@ -273,6 +355,7 @@ int CVideo::setMode( int x, int y, int bits_per_pixel, int flags )
 
 	if( frameBuffer != NULL ) {
 		image::set_pixel_format(frameBuffer->format);
+
 		return bits_per_pixel;
 	} else	return 0;
 }
@@ -326,13 +409,52 @@ int CVideo::getBlueMask()
 	return frameBuffer->format->Bmask;
 }
 
+
+void flipSAGA1()
+{
+	x_Pixels  = (ULONG *)frameBuffer->pixels;
+	/* Swap Drawing Buffers */
+	x_FBAddr3 = x_FBAddr2;
+	x_FBAddr2 = x_FBAddr1;
+	x_FBAddr1 = x_Pixels ;
+
+	/* Make Drawing Buffer visible */
+	*(volatile ULONG*)SAGA_VIDEO_PLANEPTR = (ULONG)x_Pixels;
+
+	 frameBuffer->pixels = (void *)x_FBAddr3;
+}
+
+#include <clib/graphics_protos.h> //WaitTOF
+
+void flipSAGA()
+{
+    /* Get current buffer */
+    x_Pixels = (ULONG *)frameBuffer->pixels;
+
+    /* Make Drawing Buffer visible */
+    *(volatile ULONG*)SAGA_VIDEO_PLANEPTR = (ULONG)x_Pixels;
+
+    /* Rotate the Buffers */
+    ULONG *temp = x_FBAddr1;
+    x_FBAddr1 = x_FBAddr2;
+    x_FBAddr2 = x_FBAddr3;
+    x_FBAddr3 = temp;
+
+    frameBuffer->pixels = (void *)x_FBAddr1;
+    //WaitTOF();
+}
+
 void CVideo::flip()
 {
 	if(fake_screen)
 		return;
 
 	if(update_all) {
-		::SDL_Flip(frameBuffer);
+		if (ac68080)
+			flipSAGA();
+		else
+			::SDL_Flip(frameBuffer);
+
 	} else if(update_rects.empty() == false) {
 		size_t sum = 0;
 		for(size_t n = 0; n != update_rects.size(); ++n) {
@@ -341,8 +463,15 @@ void CVideo::flip()
 
 		const size_t redraw_whole_screen_threshold = 80;
 		if(sum > ((getx()*gety())*redraw_whole_screen_threshold)/100) {
-			::SDL_Flip(frameBuffer);
+			if (ac68080)
+				flipSAGA();
+			else
+				::SDL_Flip(frameBuffer);
+
 		} else {
+			//if (ac68080)
+			//	flipSAGA();
+
 			SDL_UpdateRects(frameBuffer,update_rects.size(),&update_rects[0]);
 		}
 	}

@@ -122,6 +122,7 @@ wesnoth_SOURCES = \
 	widgets/widget.cpp \
 	zipios++/xcoll.cpp \
 	sdl_ttf/SDL_ttf.c \
+	amiga/ac68080_support.c \	
 	about.hpp \
 	actions.hpp \
 	ai.hpp \

@@ -2,8 +2,8 @@
 # Copyright (C) 2004 Wesnoth development team
 # This file is distributed under the same license as the Battle for Wesnoth package.
 # Automatically generated, 2004.
-# 
-# 
+#
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Battle for Wesnoth 0.8.2-CVS\n"
@@ -12,6 +12,7 @@ msgstr ""
 "PO-Revision-Date: 2005-12-12 01:18+0900\n"
 "Last-Translator: Automatically generated <>\n"
 "Language-Team: none\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1352,11 +1353,12 @@ msgstr ""
 "colonizar algumas terras dos orcs, levando estes a ocupar colinas desoladas."
 
 #: data/scenarios/Son_Of_The_Black_Eye/utils/story.cfg:15
+#, fuzzy
 msgid ""
 "Of course, this caused violent orcish riots as orcs systematically "
 "slaughtered human colonies and villages that were on their lands. Then, Earl "
 "Lanbec'h decided to definitively address the Orcish menace and conferred a "
-"small army on his son-in-law, Baron Albert."
+"small army on his son-in-law Baron Albert."
 msgstr ""
 "É claro, isso causou violentas revoltas orcs, conforme esses "
 "sistematicamente exterminavam as colônias e vilas humanas que estivessem em "

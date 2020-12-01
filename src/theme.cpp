@@ -452,8 +452,8 @@ bool theme::set_resolution(const SDL_Rect& screen)
 	config::child_list::const_iterator i;
 	config::child_list::const_iterator current = resolutions.end();
 	for(i = resolutions.begin(); i != resolutions.end(); ++i) {
-		const int width = atoi((**i)["width"].c_str());
-		const int height = atoi((**i)["height"].c_str());
+		const int width = 960;//atoi((**i)["width"].c_str()); //arti
+		const int height = 540;//atoi((**i)["height"].c_str());
 		LOG_DP << "comparing resolution " << screen.w << "," << screen.h << " to " << width << "," << height << "\n";
 		if(screen.w >= width && screen.h >= height) {
 			LOG_DP << "loading theme: " << width << "," << height << "\n";

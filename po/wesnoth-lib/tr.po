@@ -7,8 +7,8 @@
 # Automatically generated <(null)>, 2005.
 # İhsan Akın <ihsan_akin@yahoo.com>, 2005.
 # ihsan Haluk AKIN <ihsan_akin@yahoo.com>, 2005.
-# 
-# 
+#
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: tr\n"
@@ -17,6 +17,7 @@ msgstr ""
 "PO-Revision-Date: 2005-08-30 03:34+0200\n"
 "Last-Translator: ihsan Haluk AKIN <ihsan_akin@yahoo.com>\n"
 "Language-Team: Turkish <farsakoglu@web.de>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
