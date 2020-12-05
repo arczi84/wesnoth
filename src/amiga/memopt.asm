@@ -9,14 +9,14 @@
 
     XREF    ___real_memcpy
     XDEF    ___wrap_memcpy
-    
-    XREF    ___real_memset
+
+    XREF    _memset
     XDEF    ___wrap_memset
-    
+
 *   XREF    ___real_memcmp
     XDEF    ___wrap_memcmp
     
-    XDEF    _ConvertUInt16BufferAMMX
+	XDEF    _ConvertUInt16BufferAMMX
     XDEF    _ConvertUInt32BufferAMMX
     XDEF    _ConvertUInt64BufferAMMX
     XREF    _ac68080_ammx
@@ -29,7 +29,7 @@ memcpy_68k
 ___wrap_memcpy
 
       rsreset
-      rs.l  1
+	  rs.l  1
 .dst  rs.l  1
 .src  rs.l  1
 .len  rs.l  1
@@ -45,11 +45,42 @@ ___wrap_memcpy
     move.l  .len(sp),d1   ; p1 3    
     movea.l d0,a1
     
-.loop
-    load    (a0)+,e0
-    storec  e0,d1,(a1)+
-    subq.l  #8,d1
-    bhi.s   .loop
+	cmp.l #8,d0		; max. 8 left, 7 right and at least 8 in the middle (the latter two are checked against 0)
+	blt   .zend
+
+    btst   #0,a1
+    beq    .aligned1
+    move.b (a0)+,(a1)+
+    subq.l  #1,d0
+.aligned1
+    btst   #1,a1
+    beq    .aligned2
+    move.w (a0)+,(a1)+
+    subq.l  #2,d0
+.aligned2
+    btst   #2,a1
+    beq    .aligned4
+    move.l (a0)+,(a1)+
+    subq.l  #4,d0
+.aligned4
+	move.l  d0,d1		; bytes remaining after phase 1
+	and.l 	#7,d0		; leftover bytes for phase 3
+	lsr.l 	#3,d1		; remaining bytes / 8 (for main phase)
+	beq	.zend
+
+	; phase 2: main copy loop (8 Bytes)
+.xloop
+	move.l (a0)+,(a1)+
+	move.l (a0)+,(a1)+
+	subq.l #1,d1
+	bne.s   .xloop
+
+	bra.s  .zend
+
+.zloop
+	move.b (a0)+,(a1)+
+.zend
+	dbf d0,.zloop
 
 .exit
 * remove initial comparison so that it now only costs 1 cycle
@@ -59,7 +90,7 @@ ___wrap_memcpy
     rts                         ; no need to ClearCacheU on apollo!
 
 memset_68k
-    jmp     ___real_memset
+    jmp     _memset
     
 ___wrap_memset
       rsreset

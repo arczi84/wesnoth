@@ -658,9 +658,11 @@ S["LIBZIPIOS"]=""
 S["FREETYPE_LIBS"]=" -lfreetype -lpng16 -lz -lm"
 S["PKG_CONFIG"]="/bin/pkg-config"
 S["SDL_NET_LIBS"]="-lSDL_net"
-S["SDL_MIXER_LIBS"]=""
+S["SDL_MIXER_LIBS"]="amiga/audio.ao"
 S["SDL_IMAGE_LIBS"]="-lSDL_image -ljpeg"
-S["SDL_LIBS"]="-L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -Wl,--wrap=memcpy ../memopt.ao ../audio.o -lSDL.mort3 -ldebug -lamiga -lpthread -lintl -liconv -lstdc++4"
+S["SDL_LIBS"]="-L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -lSDL.ammx.gcc6 -ldebug -lamiga -lpthread -lintl -liconv -lstdc++4 " \
+"-Wl,--wrap=SDL_RLEAlphaBlit -Wl,--wrap=memcpy -Wl,--wrap=free -Wl,--wrap=malloc  -Wl,--wrap=calloc  -Wl,--wrap=realloc " \
+" amiga/memopt.ao amiga/RLEAlphaBlit565.ao amiga/VBLServerHandler.ao"
 S["LDPREFIX"]=""
 #-lSDL.ammx.gcc6 
 S["LTOOL"]="/bin/libtool"

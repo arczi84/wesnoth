@@ -1,7 +1,7 @@
 /*
  * Various support functions or the amiga
  */
-
+#if 1
 //#include <malloc.h>
 #include <time.h>
 
@@ -26,7 +26,7 @@ const char version[] = "\0$VER:Battle for Wesnoth v1.0.2"                 "(" __
 
 #include <SDL.h>
 
-
+#include "RLEAlphaBlit565.h"
 
 UBYTE ac68080_saga = 0;
 UBYTE ac68080_ammx = 0;
@@ -44,18 +44,80 @@ extern struct ExecBase *SysBase;
 extern struct IntuitionBase *IntuitionBase;
 
 /*****************************************************************************/
+/* VBL Server */
+
+
+#include <stdlib.h>
+#include <inttypes.h>
+
+#include <proto/exec.h>
+#include <exec/interrupts.h>
+#include <hardware/intbits.h>
+#include "VBLServer.h"
+
+static struct Interrupt *VblNode;
+static volatile int32_t frameSig = 0;
+
+void ApolloInitVBLServer()
+{
+	VblNode = (struct Interrupt *)AllocVec(sizeof(struct Interrupt), MEMF_PUBLIC | MEMF_CLEAR);
+	VblNode->is_Node.ln_Type = NT_INTERRUPT;
+	VblNode->is_Node.ln_Pri = 21;
+	VblNode->is_Node.ln_Name = "ApolloVBLServer";
+	VblNode->is_Data = (APTR)&frameSig;
+	VblNode->is_Code = ApolloVerticalBlankServer;
+
+	AddIntServer(INTB_VERTB, VblNode); // This syncs to the native monitor
+}
+
+void ApolloShutdownVBLServer()
+{
+	if(VblNode)
+	{
+		RemIntServer(INTB_VERTB, VblNode);
+		FreeVec(VblNode);
+	}
+}
+
+
+void ApolloWaitVBLPassed()
+{
+	while(!frameSig)
+		;
+	frameSig = 0;
+}
+
+
+/*****************************************************************************/
 /* stack requirements */
 
 #define MINSTACK (128*1024)         /* 128kb */
 size_t __stack = MINSTACK;          /* ixemul, vbcc */
 
 /*****************************************************************************/
+/* Ammx RLEAlphaBlit565 */
+
+
+void __wrap_SDL_RLEAlphaBlit(void *source __asm("a0"), void *dest __asm("a1"), Uint32 dstModulo __asm("d0"), Uint32 width __asm("d1"), Uint32 height __asm("d2"))
+{
+	//ApolloRLEAlphaBlit565(source ,dest , dstModulo, width , height );
+}
+
+/*****************************************************************************/
+
+extern SDL_MixAudio_m68k_S16MSB(short* dst,short* src, long len, long volume);
+
+void __real_SDL_MixAudio_m68k_S16MSB(short* dst,short* src, long len, long volume)
+{
+
+	printf("SDL_MixAudio_m68k_S16MSB(dst, src, len, volume);\n");
+}
+
+/*****************************************************************************/
 /* malloc replacement */
 
 #define SANITY_CHK          0
 #define REPLACE_SYS_MALLOC  1#define HAVE_MORECORE       0
-#define HAVE_MORECORE       0
-
 
 #define USE_DL_PREFIX
 
@@ -103,15 +165,8 @@ void *__wrap_calloc(size_t num, size_t size)
 #endif
 }
 
-extern SDL_MixAudio_m68k_S16MSB(short* dst,short* src, long len, long volume);
-
-void __real_SDL_MixAudio_m68k_S16MSB(short* dst,short* src, long len, long volume)
-{
-
-	printf("SDL_MixAudio_m68k_S16MSB(dst, src, len, volume);\n");
-}
-#if 0
-
+#endif
+#if 0
 
 static void stop(void)
 {

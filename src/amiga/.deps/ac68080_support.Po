@@ -99,7 +99,10 @@ amiga/ac68080_support.o amiga/ac68080_support.o: amiga/ac68080_support.c \
   D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_loadso.h \
   D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_timer.h \
   D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_version.h \
-  amiga/malloc.c \
+  amiga/RLEAlphaBlit565.h \
+  D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_stdinc.h \
+  /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/../../../../m68k-amigaos/sys-include/hardware/intbits.h \
+  amiga/VBLServer.h amiga/malloc.c \
   /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/../../../../m68k-amigaos/include/errno.h \
   /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/../../../../m68k-amigaos/include/sys/mman.h \
   /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/../../../../m68k-amigaos/include/fcntl.h \
@@ -315,6 +318,14 @@ D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_loadso.h:
 D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_timer.h:
 
 D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_version.h:
+
+amiga/RLEAlphaBlit565.h:
+
+D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_stdinc.h:
+
+/cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/3.4.0/../../../../m68k-amigaos/sys-include/hardware/intbits.h:
+
+amiga/VBLServer.h:
 
 amiga/malloc.c:
 

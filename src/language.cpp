@@ -125,6 +125,7 @@ std::vector<language_def> get_languages()
 
 	return res;
 }
+bool setenv_once;
 
 static void wesnoth_setlocale(int category, std::string const &slocale)
 {
@@ -136,7 +137,7 @@ static void wesnoth_setlocale(int category, std::string const &slocale)
 	// FIXME: add configure check for unsetenv
 #ifndef _WIN32
 #ifndef SOLARIS
-#ifndef __AMIGA__ 	//arti
+#ifndef __AMIGA__
 	unsetenv ("LANGUAGE"); // void so no return value to check
 #endif
 #endif
@@ -148,11 +149,17 @@ static void wesnoth_setlocale(int category, std::string const &slocale)
 	if(setenv ("LC_ALL", locale, 1) == -1)
 		std::cerr << "setenv LC_ALL failed: " << strerror(errno);
 #endif
-#if defined __APPLE__ || defined __AMIGA__ //arti
-	if(setenv ("LANGUAGE", locale, 1) == -1)
-		std::cerr << "setenv LANGUAGE failed: " << strerror(errno);
-	if(setenv ("LC_ALL", locale, 1) == -1)
-		std::cerr << "setenv LC_ALL failed: " << strerror(errno);
+#if defined __APPLE__ || defined __AMIGA__
+//if (!setenv_once)
+	{
+		if(setenv ("LANGUAGE", locale, 1) == -1)
+			std::cerr << "setenv LANGUAGE failed: " << strerror(errno);
+		if(setenv ("LC_ALL", locale, 1) == -1)
+			std::cerr << "setenv LC_ALL failed: " << strerror(errno);
+	}
+	//else
+	//	setenv_once = true;
+
 #endif
 
 #ifdef _WIN32

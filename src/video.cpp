@@ -22,12 +22,17 @@
 #include "log.hpp"
 #include "video.hpp"
 
+#include <clib/exec_protos.h>
+
+extern "C"
+{
+#include "amiga/VBLServer.h"
+}
+
 #define LOG_DP LOG_STREAM(info, display)
 #define ERR_DP LOG_STREAM(err, display)
 
 #define TEST_VIDEO_ON 0
-
-#include <clib/exec_protos.h>
 
 #define GAME_SCREEN_WIDTH         (960)
 #define GAME_SCREEN_HEIGHT        (540)
@@ -51,8 +56,7 @@ ULONG *x_Pixels  = NULL;
 void InitBuffers(void)
 {
 	/* Allocate Drawing Buffers (Triple-Buffer) */
-	x_MemAddr = (ULONG*)AllocMem(x_MemSize,	 MEMF_LOCAL| MEMF_FAST|MEMF_CLEAR);
-
+	x_MemAddr = (ULONG*)AllocMem(x_MemSize,	 MEMF_LOCAL|MEMF_FAST|MEMF_CLEAR);
 	// Fatal Exit on error
 	if(x_MemAddr == NULL) {
 		printf("Failed to allocmem for screens\n");
@@ -63,6 +67,8 @@ void InitBuffers(void)
 	x_FBAddr1 = (ULONG*)((((ULONG)x_MemAddr) + 31)& ~31);
 	x_FBAddr2 = x_FBAddr1 + GAME_memsize;
 	x_FBAddr3 = x_FBAddr2 + GAME_memsize;
+
+	//ApolloInitVBLServer();
 }
 
 short freed = 0;
@@ -74,6 +80,8 @@ void FreeBuffers(void)
 		if (freed == 0)
 			FreeMem(x_MemAddr, x_MemSize);
 	freed = 1;
+
+	//ApolloShutdownVBLServer();
 	}
 }
 
@@ -441,7 +449,7 @@ void flipSAGA()
     x_FBAddr3 = temp;
 
     frameBuffer->pixels = (void *)x_FBAddr1;
-    //WaitTOF();
+
 }
 
 void CVideo::flip()
@@ -469,10 +477,12 @@ void CVideo::flip()
 				::SDL_Flip(frameBuffer);
 
 		} else {
-			//if (ac68080)
-			//	flipSAGA();
 
 			SDL_UpdateRects(frameBuffer,update_rects.size(),&update_rects[0]);
+			//if (ac68080)
+				//flipSAGA();
+			//*(volatile ULONG*)SAGA_VIDEO_PLANEPTR = (ULONG)frameBuffer->pixels;
+
 		}
 	}
 

@@ -475,8 +475,8 @@ RANLIB = m68k-amigaos-ranlib
 SDL_CFLAGS = -I/cygdrive/e/usr/local/amiga/m68k-amigaos/include -I/cygdrive/e/usr/local/amiga/m68k-amigaos/include-extra -I/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl -I/cygdrive/e/usr/local/amiga/m68k-amigaos/sys-include
 SDL_CONFIG = /cygdrive/e/usr/local/amiga/m68k-amigaos/bin/sdl-config
 SDL_IMAGE_LIBS = -lSDL_image -ljpeg
-SDL_LIBS = -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -Wl,--wrap=memcpy ../memopt.ao ../audio.o -lSDL.mort3 -ldebug -lamiga -lpthread -lintl -liconv -lstdc++4
-SDL_MIXER_LIBS = 
+SDL_LIBS = -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -lSDL.ammx.gcc6 -ldebug -lamiga -lpthread -lintl -liconv -lstdc++4 -Wl,--wrap=SDL_RLEAlphaBlit -Wl,--wrap=memcpy -Wl,--wrap=free -Wl,--wrap=malloc  -Wl,--wrap=calloc  -Wl,--wrap=realloc  amiga/memopt.ao amiga/RLEAlphaBlit565.ao amiga/VBLServerHandler.ao
+SDL_MIXER_LIBS = amiga/audio.ao
 SDL_NET_LIBS = -lSDL_net
 SET_MAKE = 
 SHELL = /bin/sh
@@ -966,7 +966,7 @@ wesnothd_SOURCES = \
 	serialization/string_utils.hpp \
 	zipios++/xcoll.hpp
 
-wesnothd_LDADD = -lSDL_net -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -Wl,--wrap=memcpy ../memopt.ao ../audio.o -lSDL.mort3 -ldebug -lamiga -lpthread -lintl -liconv -lstdc++4 $(LIBZIPIOS) $(LIBINTL)
+wesnothd_LDADD = -lSDL_net -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -lSDL.ammx.gcc6 -ldebug -lamiga -lpthread -lintl -liconv -lstdc++4 -Wl,--wrap=SDL_RLEAlphaBlit -Wl,--wrap=memcpy -Wl,--wrap=free -Wl,--wrap=malloc  -Wl,--wrap=calloc  -Wl,--wrap=realloc  amiga/memopt.ao amiga/RLEAlphaBlit565.ao amiga/VBLServerHandler.ao $(LIBZIPIOS) $(LIBINTL)
 
 #############################################################################
 #    Campaign Server                                                        #
@@ -1005,7 +1005,7 @@ campaignd_SOURCES = \
 	tstring.hpp \
 	zipios++/xcoll.hpp
 
-campaignd_LDADD = -lSDL_net -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -Wl,--wrap=memcpy ../memopt.ao ../audio.o -lSDL.mort3 -ldebug -lamiga -lpthread -lintl -liconv -lstdc++4 $(LIBZIPIOS) $(LIBINTL)
+campaignd_LDADD = -lSDL_net -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -lSDL.ammx.gcc6 -ldebug -lamiga -lpthread -lintl -liconv -lstdc++4 -Wl,--wrap=SDL_RLEAlphaBlit -Wl,--wrap=memcpy -Wl,--wrap=free -Wl,--wrap=malloc  -Wl,--wrap=calloc  -Wl,--wrap=realloc  amiga/memopt.ao amiga/RLEAlphaBlit565.ao amiga/VBLServerHandler.ao $(LIBZIPIOS) $(LIBINTL)
 
 #############################################################################
 #    Castle building helpers                                                #
@@ -1065,8 +1065,8 @@ cutter_SOURCES = \
 	tstring.hpp \
 	gettext.cpp
 
-exploder_LDADD = -lSDL_image -ljpeg -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -Wl,--wrap=memcpy ../memopt.ao ../audio.o -lSDL.mort3 -ldebug -lamiga -lpthread -lintl -liconv -lstdc++4 $(LIBZIPIOS) $(LIBINTL) $(PNG_LIBS)
-cutter_LDADD = -lSDL_image -ljpeg -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -Wl,--wrap=memcpy ../memopt.ao ../audio.o -lSDL.mort3 -ldebug -lamiga -lpthread -lintl -liconv -lstdc++4 $(LIBZIPIOS) $(LIBINTL) $(PNG_LIBS)
+exploder_LDADD = -lSDL_image -ljpeg -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -lSDL.ammx.gcc6 -ldebug -lamiga -lpthread -lintl -liconv -lstdc++4 -Wl,--wrap=SDL_RLEAlphaBlit -Wl,--wrap=memcpy -Wl,--wrap=free -Wl,--wrap=malloc  -Wl,--wrap=calloc  -Wl,--wrap=realloc  amiga/memopt.ao amiga/RLEAlphaBlit565.ao amiga/VBLServerHandler.ao $(LIBZIPIOS) $(LIBINTL) $(PNG_LIBS)
+cutter_LDADD = -lSDL_image -ljpeg -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -lSDL.ammx.gcc6 -ldebug -lamiga -lpthread -lintl -liconv -lstdc++4 -Wl,--wrap=SDL_RLEAlphaBlit -Wl,--wrap=memcpy -Wl,--wrap=free -Wl,--wrap=malloc  -Wl,--wrap=calloc  -Wl,--wrap=realloc  amiga/memopt.ao amiga/RLEAlphaBlit565.ao amiga/VBLServerHandler.ao $(LIBZIPIOS) $(LIBINTL) $(PNG_LIBS)
 AM_CXXFLAGS = -I $(srcdir)/sdl_ttf -I../intl -I$(top_srcdir)/intl -I/cygdrive/e/usr/local/amiga/m68k-amigaos/include -I/cygdrive/e/usr/local/amiga/m68k-amigaos/include-extra -I/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl -I/cygdrive/e/usr/local/amiga/m68k-amigaos/sys-include -DWESNOTH_PATH=\"$(pkgdatadir)\" \
 	-DLOCALEDIR=\"$(LOCALEDIR)\" -DHAS_RELATIVE_LOCALEDIR=$(HAS_RELATIVE_LOCALEDIR) -DFIFODIR=\"$(fifodir)\"
 

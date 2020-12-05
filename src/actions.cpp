@@ -177,7 +177,7 @@ std::string recruit_unit(const gamemap& map, int side,
 			events::pump();
 			disp->draw_tile(recruit_location.x,recruit_location.y,NULL,alpha);
 			disp->update_display();
-			//SDL_Delay(20); //arti
+			SDL_Delay(20);
 		}
 	}
 

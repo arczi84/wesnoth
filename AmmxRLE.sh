@@ -1,0 +1,1 @@
+vasmm68k_mot -m68080 -Faout -x -devpac ./src/amiga/RLEAlphaBlit565.asm -o RLEAlphaBlit565.ao

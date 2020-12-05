@@ -370,7 +370,7 @@ manager::~manager()
 
 void set_wm_icon()
 {
-#if (!(defined(__APPLE__))||!(defined(__AMIGA__)))
+#if ((!defined(__APPLE__))&&(!defined(__AMIGA__)))
 	surface icon(get_image(game_config::game_icon,UNSCALED));
 	if(icon != NULL) {
 		::SDL_WM_SetIcon(icon,NULL);

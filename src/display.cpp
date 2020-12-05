@@ -44,6 +44,11 @@
 #include <iostream>
 #include <sstream>
 
+extern "C"
+{
+#include "amiga/VBLServer.h"
+}
+
 #define ERR_DP LOG_STREAM(err, display)
 
 std::map<gamemap::location,fixed_t> display::debugHighlights_;
@@ -515,6 +520,7 @@ void display::scroll_to_tile(int x, int y, SCROLL_TYPE scroll_type, bool check_f
 			continue;
 		}
 
+		invalidate_all(); //1.2
 		draw();
 	}
 
@@ -616,6 +622,9 @@ void display::flip()
 	font::draw_floating_labels(frameBuffer);
 	events::raise_volatile_draw_event();
 	cursor::draw(frameBuffer);
+
+	//WaitTOF();
+	//ApolloWaitVBLPassed();
 
 	video().flip();
 
@@ -754,7 +763,6 @@ void display::draw(bool update,bool force)
 	//force a wait for 10 ms every frame.
 	//TODO: review whether this is the correct thing to do
 	SDL_Delay(maximum<int>(10,wait_time)); //arti
-	//WaitTOF();
 
 	if(update) {
 		lastDraw_ = SDL_GetTicks();
@@ -768,6 +776,7 @@ void display::draw(bool update,bool force)
 		}
 	}
 }
+
 
 void display::update_display()
 {
@@ -798,7 +807,6 @@ void display::update_display()
 		font::remove_floating_label(fps_handle_);
 		fps_handle_ = 0;
 	}
-
 	flip();
 }
 

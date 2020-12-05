@@ -170,6 +170,7 @@ display.o: display.cpp global.hpp actions.hpp map.hpp terrain.hpp \
   /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/include/assert.h \
   D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_image.h \
   D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL.h \
+  amiga/VBLServer.h \
   /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/sys-include/clib/graphics_protos.h \
   /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/sys-include/graphics/gfx.h \
   /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/sys-include/graphics/displayinfo.h \
@@ -604,6 +605,8 @@ wassert.hpp:
 D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL_image.h:
 
 D:/dev/msys64/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl/SDL.h:
+
+amiga/VBLServer.h:
 
 /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/sys-include/clib/graphics_protos.h:
 

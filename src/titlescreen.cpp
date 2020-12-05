@@ -324,7 +324,7 @@ TITLE_RESULT show_title(display& screen, config& tips_of_day, int* ntip)
 			return TITLE_CONTINUE;
 		}
 
-		//SDL_Delay(20); arti
+		SDL_Delay(20);
 	}
 
 	return QUIT_GAME;

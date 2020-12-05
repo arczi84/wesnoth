@@ -154,6 +154,7 @@ video.o: video.cpp global.hpp \
   /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/sys-include/exec/io.h \
   /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/sys-include/exec/semaphores.h \
   /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/sys-include/exec/avl.h \
+  amiga/VBLServer.h \
   /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/sys-include/dos/dos.h \
   /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/sys-include/exec/exec.h \
   /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/sys-include/exec/alerts.h \
@@ -509,6 +510,8 @@ video.hpp:
 /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/sys-include/exec/semaphores.h:
 
 /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/sys-include/exec/avl.h:
+
+amiga/VBLServer.h:
 
 /cygdrive/d/dev/msys64/cygdrive/e/usr/local/amiga/bin/../lib/gcc/m68k-amigaos/4.3.2/../../../../m68k-amigaos/sys-include/dos/dos.h:
 

@@ -208,8 +208,8 @@ RANLIB = m68k-amigaos-ranlib
 SDL_CFLAGS = -I/cygdrive/e/usr/local/amiga/m68k-amigaos/include -I/cygdrive/e/usr/local/amiga/m68k-amigaos/include-extra -I/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl -I/cygdrive/e/usr/local/amiga/m68k-amigaos/sys-include
 SDL_CONFIG = /cygdrive/e/usr/local/amiga/m68k-amigaos/bin/sdl-config
 SDL_IMAGE_LIBS = -lSDL_image -ljpeg
-SDL_LIBS = -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -Wl,--wrap=memcpy ../memopt.ao ../audio.o -lSDL.mort3 -ldebug -lamiga -lpthread -lintl -liconv -lstdc++4
-SDL_MIXER_LIBS = 
+SDL_LIBS = -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -lSDL.ammx.gcc6 -ldebug -lamiga -lpthread -lintl -liconv -lstdc++4 -Wl,--wrap=SDL_RLEAlphaBlit -Wl,--wrap=memcpy -Wl,--wrap=free -Wl,--wrap=malloc  -Wl,--wrap=calloc  -Wl,--wrap=realloc  amiga/memopt.ao amiga/RLEAlphaBlit565.ao amiga/VBLServerHandler.ao
+SDL_MIXER_LIBS = amiga/audio.ao
 SDL_NET_LIBS = -lSDL_net
 SET_MAKE = 
 SHELL = /bin/sh

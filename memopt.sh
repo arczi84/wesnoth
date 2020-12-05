@@ -1,0 +1,1 @@
+vasmm68k_mot -m68080 -Faout -x -devpac ./src/amiga/memopt.asm -o ./src/amiga/memopt.ao
