@@ -338,8 +338,8 @@ int CVideo::setMode( int x, int y, int bits_per_pixel, int flags )
 	fullScreen = (flags & FULL_SCREEN) != 0;
 	frameBuffer = SDL_SetVideoMode( x, y, bits_per_pixel, flags );
 	//SDL_LockSurface( frameBuffer );
-	frameBuffer->pixels = (void *)x_FBAddr1;
-	//x_Pixels = (ULONG *)frameBuffer->pixels;
+	//frameBuffer->pixels = (void *)x_FBAddr1;
+	//x_FBAddr3 = (ULONG *)frameBuffer->pixels;
 //	 SDL_UnlockSurface( frameBuffer );
 	if( frameBuffer != NULL ) {
 		image::set_pixel_format(frameBuffer->format);
@@ -422,7 +422,7 @@ void flipSAGA1()
 }
 
 
-void flipSAGA()
+void flipSAGA2()
 {
     /* Get current buffer */
     x_Pixels = (ULONG *)frameBuffer->pixels;
@@ -462,18 +462,32 @@ void flipSAGA3()
 
 }
 
+void flipSAGA()
+{
+	*(volatile ULONG*)SAGA_VIDEO_PLANEPTR = (ULONG)x_FBAddr3;
+    frameBuffer->pixels = (void *)x_FBAddr2;
+
+                x_Pixels  = x_FBAddr3;
+                x_FBAddr3 = x_FBAddr2;
+                x_FBAddr2 = x_FBAddr1;
+                x_FBAddr1 = x_Pixels ;
+
+
+}
+
 void CVideo::flip()
 {
 	if(fake_screen)
 		return;
 
-//	if(update_all) {
+	if(update_all) {
 		if (ac68080){
 			ApolloWaitVBLPassed();
 			flipSAGA();
 		}
 		else
 			::SDL_Flip(frameBuffer);
+	}
 #if 0
 	} else if(update_rects.empty() == false) {
 		size_t sum = 0;
@@ -528,7 +542,7 @@ void CVideo::unlock()
 
 int CVideo::mustLock()
 {
-	return false;//SDL_MUSTLOCK(frameBuffer);
+	return SDL_MUSTLOCK(frameBuffer);
 }
 
 surface CVideo::getSurface( void )
