@@ -35,17 +35,17 @@ LOCALEDIR = translations
 localedir = ${datadir}/${DATADIR}/${LOCALEDIR}
 gettextsrcdir = $(datadir)/gettext/po
 
-INSTALL = /bin/install -c
+INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
 MKINSTALLDIRS = $(top_builddir)/config/mkinstalldirs
 mkinstalldirs = $(SHELL) $(MKINSTALLDIRS)
 
-GMSGFMT = /bin/msgfmt
-MSGFMT = /bin/msgfmt
-XGETTEXT = /bin/xgettext
+GMSGFMT = /usr/bin/msgfmt
+MSGFMT = /usr/bin/msgfmt
+XGETTEXT = /usr/bin/xgettext
 WMLXGETTEXT := $(top_srcdir)/utils/wmlxgettext
 MSGMERGE = msgmerge
-MSGMERGE_UPDATE = /bin/msgmerge --update
+MSGMERGE_UPDATE = /usr/bin/msgmerge --update
 MSGINIT = msginit
 MSGCONV = msgconv
 MSGFILTER = msgfilter

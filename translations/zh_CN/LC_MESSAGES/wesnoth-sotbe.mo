@@ -1,0 +1,1 @@
+D:/dev/wesnoth-gcc4/po/wesnoth-sotbe/zh_CN.gmo

@@ -1,0 +1,1 @@
+D:/dev/wesnoth-gcc4/po/wesnoth-httt/en_GB.gmo

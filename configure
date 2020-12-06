@@ -9335,11 +9335,16 @@ fi
 { $as_echo "$as_me:${as_lineno-$LINENO}: checking for freetype2" >&5
 $as_echo_n "checking for freetype2... " >&6; }
 $PKG_CONFIG --exists freetype2
-#override stupid pkg-config 0=>1
-
+if test $? != 0 ; then
+    { $as_echo "$as_me:${as_lineno-$LINENO}: result: no" >&5
+$as_echo "no" >&6; }
+    as_fn_error $? "*** Unable to find FreeType2 library (https://www.freetype.org/)" "$LINENO" 5
+else
+    { $as_echo "$as_me:${as_lineno-$LINENO}: result: yes" >&5
+$as_echo "yes" >&6; }
     CPPFLAGS="$CPPFLAGS `$PKG_CONFIG --cflags freetype2`"
     FREETYPE_LIBS="`$PKG_CONFIG --libs freetype2`"
-
+fi
 
 
 
