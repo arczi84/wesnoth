@@ -1,0 +1,1 @@
+./configure --target=m68k-amigaos --build=x86_64-pc-cygwin --host=m68k-amigaos --prefix=/d/amiga-gcc2/  --enable-debug CXX="m68k-amigaos-g++ -std=c++03 -fbbb=- -fno-omit-frame-pointer -m68040 -ffast-math -O2  -mhard-float -g -pg -noixemul" CC="m68k-amigaos-gcc -fno-omit-frame-pointer -fbbb=- -m68040 -ffast-math -O2  -mhard-float -g -pg -noixemul"

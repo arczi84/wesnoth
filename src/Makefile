@@ -399,13 +399,13 @@ AUTOCONF = autoconf
 AUTOHEADER = autoheader
 AUTOMAKE = automake-1.16
 AWK = gawk
-CC = m68k-amigaos-gcc -fomit-frame-pointer  -m68040 -ffast-math -O2 -s -noixemul -w
+CC = m68k-amigaos-gcc -fomit-frame-pointer -m68060 -ffast-math -O3 -pipe -mnobitfield  -s -w
 CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2 $(am__append_7) $(am__append_9)
-CPP = m68k-amigaos-gcc -fomit-frame-pointer  -m68040 -ffast-math -O2 -s -noixemul -w -E
+CPP = m68k-amigaos-gcc -fomit-frame-pointer -m68060 -ffast-math -O3 -pipe -mnobitfield  -s -w -E
 CPPFLAGS = -I/e/usr/local/amiga/m68k-amigaos/include -I/d/amiga-gcc2/include/freetype2 -I/opt/netsurf/m68k-unknown-amigaos/env/include/libpng16 -I/opt/netsurf/m68k-unknown-amigaos/env/include
-CXX = m68k-amigaos-g++ -fomit-frame-pointer -m68040 -ffast-math -O2 -s -noixemul -w
-CXXCPP = m68k-amigaos-g++ -fomit-frame-pointer -m68040 -ffast-math -O2 -s -noixemul -w -E
+CXX = m68k-amigaos-g++-4.3.2 -fomit-frame-pointer -m68060 -ffast-math -O3 -pipe -mnobitfield -s -w
+CXXCPP = m68k-amigaos-g++-4.3.2 -fomit-frame-pointer -m68060 -ffast-math -O3 -pipe -mnobitfield -s -w -E
 CXXDEPMODE = depmode=gcc3
 CXXFLAGS =   -W -Wall -ansi  $(am__append_6) $(am__append_8)
 CYGPATH_W = cygpath -w
@@ -417,19 +417,19 @@ DESKTOPDIR =
 ECHO_C = 
 ECHO_N = -n
 ECHO_T = 
-EGREP = /usr/bin/grep -E
+EGREP = /bin/grep -E
 EXEEXT = 
 FONT_FILES = 
 FREETYPE_LIBS = -L/d/amiga-gcc2/lib -L/opt/netsurf/m68k-unknown-amigaos/env/lib -lfreetype -lpng16 -lz -lm -lz
 FULLLOCALEDIR = ${datadir}/${DATADIR}/${LOCALEDIR}
-GMSGFMT = /usr/bin/msgfmt
+GMSGFMT = /bin/msgfmt
 GNOME1_DESKTOP = 
 GNOME_CONFIG = none
-GREP = /usr/bin/grep
+GREP = /bin/grep
 HAS_RELATIVE_LOCALEDIR = 1
 ICONDIR = 
 IMAGE_FILES = 
-INSTALL = /usr/bin/install -c
+INSTALL = /bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
@@ -450,12 +450,12 @@ LOCALEDIR = translations
 LTLIBICONV = -L/e/usr/local/amiga/m68k-amigaos/lib -liconv
 LTLIBINTL = 
 LTLIBOBJS =  ${LIBOBJDIR}error$U.lo ${LIBOBJDIR}lstat$U.lo ${LIBOBJDIR}stat$U.lo
-LTOOL = /usr/bin/libtool
+LTOOL = /bin/libtool
 MAKEINFO = makeinfo
-MKDIR_P = /usr/bin/mkdir -p
+MKDIR_P = /bin/mkdir -p
 MKINSTALLDIRS = $(top_builddir)/config/mkinstalldirs
-MSGFMT = /usr/bin/msgfmt
-MSGMERGE = /usr/bin/msgmerge
+MSGFMT = /bin/msgfmt
+MSGMERGE = /bin/msgmerge
 MUSIC_FILES = 
 OBJEXT = o
 PACKAGE = wesnoth
@@ -466,16 +466,16 @@ PACKAGE_TARNAME = wesnoth
 PACKAGE_URL = 
 PACKAGE_VERSION = 1.0.2
 PATH_SEPARATOR = :
-PKG_CONFIG = /usr/bin/pkg-config
-PNG_CFLAGS = -I/mingw64/include/libpng16
-PNG_CONFIG = /d/dev/msys64/mingw64/bin/libpng-config
+PKG_CONFIG = /bin/pkg-config
+PNG_CFLAGS = -I/usr/local/amiga/m68k-amigaos/include/libpng16
+PNG_CONFIG = /cygdrive/e/usr/local/amiga/m68k-amigaos/bin/libpng-config
 PNG_LIBS = -lpng16
 POSUB = 
 RANLIB = m68k-amigaos-ranlib
-SDL_CFLAGS = -I/d/amiga-gcc2/include -I/d/amiga-gcc2/include -I/d/amiga-gcc2/m68k-amigaos/include/ -I/d/amiga-gcc2/m68k-amigaos/sys-include -I/d/amiga-gcc2/include/sdl -I/d/amiga-gcc2/sys-include
-SDL_CONFIG = /d/amiga-gcc2/m68k-amigaos/bin/sdl-config
+SDL_CFLAGS = -I/cygdrive/e/usr/local/amiga/m68k-amigaos/include -I/cygdrive/e/usr/local/amiga/m68k-amigaos/include-extra -I/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl -I/cygdrive/e/usr/local/amiga/m68k-amigaos/sys-include
+SDL_CONFIG = /cygdrive/e/usr/local/amiga/m68k-amigaos/bin/sdl-config
 SDL_IMAGE_LIBS = -lSDL_image
-SDL_LIBS = -L/d/amiga-gcc2/lib -L/d/amiga-gcc2/lib/ogg/new -lSDL_Mixer -lvorbisfile -lvorbis -logg -lsdl_image -ljpeg -lpng -lz -lm -lSDL -lsocket -lintl -ldebug
+SDL_LIBS = -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -lSDL_Mixer5 -lvorbisfile -lvorbis -logg -lsdl_image -ljpeg -lpng16 -lz -lm -lSDL.ix -lgl_dummy -ldebug -lamiga -lpthread -lintl -liconv -lstdc++4
 SDL_MIXER_LIBS = -lSDL_mixer
 SDL_NET_LIBS = -lSDL_net
 SET_MAKE = 
@@ -484,7 +484,7 @@ SOUND_FILES =
 STRIP = m68k-amigaos-strip
 USE_NLS = no
 VERSION = 1.0.2
-XGETTEXT = /usr/bin/xgettext
+XGETTEXT = /bin/xgettext
 XMKMF = 
 X_CFLAGS = 
 X_EXTRA_LIBS = 
@@ -966,7 +966,7 @@ wesnothd_SOURCES = \
 	serialization/string_utils.hpp \
 	zipios++/xcoll.hpp
 
-wesnothd_LDADD = -lSDL_net -L/d/amiga-gcc2/lib -L/d/amiga-gcc2/lib/ogg/new -lSDL_Mixer -lvorbisfile -lvorbis -logg -lsdl_image -ljpeg -lpng -lz -lm -lSDL -lsocket -lintl -ldebug $(LIBZIPIOS) $(LIBINTL)
+wesnothd_LDADD = -lSDL_net -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -lSDL_Mixer5 -lvorbisfile -lvorbis -logg -lsdl_image -ljpeg -lpng16 -lz -lm -lSDL.ix -lgl_dummy -ldebug -lamiga -lpthread -lintl -liconv -lstdc++4 $(LIBZIPIOS) $(LIBINTL)
 
 #############################################################################
 #    Campaign Server                                                        #
@@ -1005,7 +1005,7 @@ campaignd_SOURCES = \
 	tstring.hpp \
 	zipios++/xcoll.hpp
 
-campaignd_LDADD = -lSDL_net -L/d/amiga-gcc2/lib -L/d/amiga-gcc2/lib/ogg/new -lSDL_Mixer -lvorbisfile -lvorbis -logg -lsdl_image -ljpeg -lpng -lz -lm -lSDL -lsocket -lintl -ldebug $(LIBZIPIOS) $(LIBINTL)
+campaignd_LDADD = -lSDL_net -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -lSDL_Mixer5 -lvorbisfile -lvorbis -logg -lsdl_image -ljpeg -lpng16 -lz -lm -lSDL.ix -lgl_dummy -ldebug -lamiga -lpthread -lintl -liconv -lstdc++4 $(LIBZIPIOS) $(LIBINTL)
 
 #############################################################################
 #    Castle building helpers                                                #
@@ -1065,12 +1065,12 @@ cutter_SOURCES = \
 	tstring.hpp \
 	gettext.cpp
 
-exploder_LDADD = -lSDL_image -L/d/amiga-gcc2/lib -L/d/amiga-gcc2/lib/ogg/new -lSDL_Mixer -lvorbisfile -lvorbis -logg -lsdl_image -ljpeg -lpng -lz -lm -lSDL -lsocket -lintl -ldebug $(LIBZIPIOS) $(LIBINTL) $(PNG_LIBS)
-cutter_LDADD = -lSDL_image -L/d/amiga-gcc2/lib -L/d/amiga-gcc2/lib/ogg/new -lSDL_Mixer -lvorbisfile -lvorbis -logg -lsdl_image -ljpeg -lpng -lz -lm -lSDL -lsocket -lintl -ldebug $(LIBZIPIOS) $(LIBINTL) $(PNG_LIBS)
-AM_CXXFLAGS = -I $(srcdir)/sdl_ttf -I../intl -I$(top_srcdir)/intl -I/d/amiga-gcc2/include -I/d/amiga-gcc2/include -I/d/amiga-gcc2/m68k-amigaos/include/ -I/d/amiga-gcc2/m68k-amigaos/sys-include -I/d/amiga-gcc2/include/sdl -I/d/amiga-gcc2/sys-include -DWESNOTH_PATH=\"$(pkgdatadir)\" \
+exploder_LDADD = -lSDL_image -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -lSDL_Mixer5 -lvorbisfile -lvorbis -logg -lsdl_image -ljpeg -lpng16 -lz -lm -lSDL.ix -lgl_dummy -ldebug -lamiga -lpthread -lintl -liconv -lstdc++4 $(LIBZIPIOS) $(LIBINTL) $(PNG_LIBS)
+cutter_LDADD = -lSDL_image -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -lSDL_Mixer5 -lvorbisfile -lvorbis -logg -lsdl_image -ljpeg -lpng16 -lz -lm -lSDL.ix -lgl_dummy -ldebug -lamiga -lpthread -lintl -liconv -lstdc++4 $(LIBZIPIOS) $(LIBINTL) $(PNG_LIBS)
+AM_CXXFLAGS = -I $(srcdir)/sdl_ttf -I../intl -I$(top_srcdir)/intl -I/cygdrive/e/usr/local/amiga/m68k-amigaos/include -I/cygdrive/e/usr/local/amiga/m68k-amigaos/include-extra -I/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl -I/cygdrive/e/usr/local/amiga/m68k-amigaos/sys-include -DWESNOTH_PATH=\"$(pkgdatadir)\" \
 	-DLOCALEDIR=\"$(LOCALEDIR)\" -DHAS_RELATIVE_LOCALEDIR=$(HAS_RELATIVE_LOCALEDIR) -DFIFODIR=\"$(fifodir)\"
 
-AM_CFLAGS = -I $(srcdir)/sdl_ttf -I../intl -I$(top_srcdir)/intl -I/d/amiga-gcc2/include -I/d/amiga-gcc2/include -I/d/amiga-gcc2/m68k-amigaos/include/ -I/d/amiga-gcc2/m68k-amigaos/sys-include -I/d/amiga-gcc2/include/sdl -I/d/amiga-gcc2/sys-include -DWESNOTH_PATH=\"$(pkgdatadir)\" \
+AM_CFLAGS = -I $(srcdir)/sdl_ttf -I../intl -I$(top_srcdir)/intl -I/cygdrive/e/usr/local/amiga/m68k-amigaos/include -I/cygdrive/e/usr/local/amiga/m68k-amigaos/include-extra -I/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl -I/cygdrive/e/usr/local/amiga/m68k-amigaos/sys-include -DWESNOTH_PATH=\"$(pkgdatadir)\" \
 	-DLOCALEDIR=\"$(LOCALEDIR)\" -DHAS_RELATIVE_LOCALEDIR=$(HAS_RELATIVE_LOCALEDIR)
 
 CXXLD = $(LDPREFIX) $(CXX)

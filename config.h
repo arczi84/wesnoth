@@ -43,10 +43,10 @@
 /* #undef HAVE_NDIR_H */
 
 /* Define to 1 if you have the <poll.h> header file. */
-#define HAVE_POLL_H 1
+/* #undef HAVE_POLL_H */
 
 /* Define to 1 if you have the `socket' function. */
-/* #undef HAVE_SOCKET */
+#define HAVE_SOCKET 1
 
 /* Define to 1 if `stat' has the bug that it succeeds when given the
    zero-length file name argument. */
@@ -82,7 +82,7 @@
 /* #undef HAVE_SYS_NDIR_H */
 
 /* Define to 1 if you have the <sys/poll.h> header file. */
-#define HAVE_SYS_POLL_H 1
+/* #undef HAVE_SYS_POLL_H */
 
 /* Define to 1 if you have the <sys/select.h> header file. */
 #define HAVE_SYS_SELECT_H 1
