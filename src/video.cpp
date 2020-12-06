@@ -564,7 +564,7 @@ int CVideo::set_help_string(const std::string& str)
 		}
 	}
 
-	help_string_ = font::add_float ing_label(str,size,font::NORMAL_COLOUR,getx()/2,gety(),0.0,0.0,-1,screen_area(),font::CENTER_ALIGN,&colour,5);
+	help_string_ = font::add_floating_label(str,size,font::NORMAL_COLOUR,getx()/2,gety(),0.0,0.0,-1,screen_area(),font::CENTER_ALIGN,&colour,5);
 	const SDL_Rect& rect = font::get_floating_label_rect(help_string_);
 	font::move_floating_label(help_string_,0.0,-double(rect.h));
 	return help_string_;
