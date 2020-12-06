@@ -506,7 +506,7 @@ bool disconnect(connection s)
 		while(sockets.empty() == false) {
 			wassert(sockets.back() != 0);
 			while(disconnect(sockets.back()) == false) {
-				SDL_Delay(10);
+				//SDL_Delay(10);
 			}
 		}
 
@@ -564,7 +564,7 @@ connection receive_data(config& cfg, connection connection_num, int timeout)
 		}
 
 		if(timeout > 0) {
-			SDL_Delay(1);
+			//SDL_Delay(1);
 		}
 
 		const int ticks = SDL_GetTicks();

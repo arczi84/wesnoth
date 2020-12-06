@@ -407,8 +407,8 @@ bool event_handler::handle_event_command(const queued_event& event_info,
 	}
 
 	else if(cmd == "delay") {
-		const int delay_time = atoi(cfg["time"].c_str());
-		::SDL_Delay(delay_time);
+		//const int delay_time = atoi(cfg["time"].c_str());
+		//::SDL_Delay(delay_time);
 	}
 
 	else if(cmd == "scroll") {

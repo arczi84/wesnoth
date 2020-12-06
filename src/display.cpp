@@ -176,7 +176,7 @@ void display::new_turn()
 				const int cur_ticks = SDL_GetTicks();
 				const int wanted_ticks = starting_ticks + i*frame_time;
 				if(cur_ticks < wanted_ticks) {
-					SDL_Delay(wanted_ticks - cur_ticks); //arti
+					//SDL_Delay(wanted_ticks - cur_ticks); //arti
 				}
 			}
 		}
@@ -520,7 +520,7 @@ void display::scroll_to_tile(int x, int y, SCROLL_TYPE scroll_type, bool check_f
 			continue;
 		}
 
-		invalidate_all(); //1.2
+		//invalidate_all(); //1.2
 		draw();
 	}
 
@@ -762,7 +762,7 @@ void display::draw(bool update,bool force)
 
 	//force a wait for 10 ms every frame.
 	//TODO: review whether this is the correct thing to do
-	SDL_Delay(maximum<int>(10,wait_time)); //arti
+	////SDL_Delay(maximum<int>(10,wait_time)); //arti
 
 	if(update) {
 		lastDraw_ = SDL_GetTicks();
@@ -1188,8 +1188,8 @@ void display::draw_unit_on_tile(int x, int y, surface unit_image_override,
 			//flip_surface if the image has been over-ridden.
 			if(unit_image_override == NULL) {
 				unit_image.assign(image::reverse_image(unit_image));
-			} else {
-				unit_image.assign(flip_surface(unit_image));
+			//} else {
+			//	unit_image.assign(flip_surface(unit_image));
 			}
 		}
 	}

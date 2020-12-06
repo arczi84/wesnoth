@@ -2704,7 +2704,7 @@ void show_help(display &disp, const section &toplevel_sec, const std::string sho
 				}
 			}
 			disp.flip();
-			SDL_Delay(10);
+			//SDL_Delay(10);
 		}
 	}
 	catch (parse_error e) {

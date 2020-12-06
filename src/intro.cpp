@@ -199,7 +199,7 @@ bool show_intro_part(display &disp, const config& part,
 						return false;
 					}
 
-					SDL_Delay(delay/50);
+					//SDL_Delay(delay/50);
 
 					events::pump();
 					events::raise_process_event();
@@ -292,8 +292,8 @@ bool show_intro_part(display &disp, const config& part,
 		events::raise_draw_event();
 		disp.flip();
 
-		if(!skip || itor == utils::utf8_iterator::end(story))
-			SDL_Delay(20);
+		//if(!skip || itor == utils::utf8_iterator::end(story))
+			//SDL_Delay(20);
 	}
 
 	draw_solid_tinted_rectangle(0,0,video.getx()-1,video.gety()-1,0,0,0,1.0,
@@ -326,8 +326,8 @@ void the_end(display &disp)
 
 		SDL_FillRect(video.getSurface(),&area,0);
 
-		SDL_Delay(10);
+		//SDL_Delay(10);
 	}
 
-	SDL_Delay(4000);
+	//SDL_Delay(4000);
 }

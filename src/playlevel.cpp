@@ -679,7 +679,7 @@ redo_turn:
 					gui.invalidate_game_status();
 					gui.invalidate_all();
 					gui.draw();
-					SDL_Delay(500);
+					//SDL_Delay(500);
 				} else if(!replaying && team_it->is_network()) {
 					LOG_NG << "is networked...\n";
 

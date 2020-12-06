@@ -133,7 +133,7 @@ bool animate_unit_advancement(const game_data& info,unit_map& units, gamemap::lo
 			events::pump();
 			gui.draw(false);
 			gui.update_display();
-			SDL_Delay(30);
+			//SDL_Delay(30);
 		}
 	}
 
@@ -156,7 +156,7 @@ bool animate_unit_advancement(const game_data& info,unit_map& units, gamemap::lo
 			events::pump();
 			gui.draw(false);
 			gui.update_display();
-			SDL_Delay(30);
+			//SDL_Delay(30);
 		}
 	}
 

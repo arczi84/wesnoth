@@ -463,7 +463,7 @@ void show_about(display &disp)
 		// update screen and wait, so the text does not scroll too fast
 		update_rect(map_rect);
 		disp.flip();
-		SDL_Delay(20);
+		//SDL_Delay(20);
 
 	} while(!close.pressed());
 

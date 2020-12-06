@@ -52,39 +52,6 @@ ULONG *x_FBAddr2 = NULL;
 ULONG *x_FBAddr3 = NULL;
 ULONG *x_Pixels  = NULL;
 
-
-void InitBuffers(void)
-{
-	/* Allocate Drawing Buffers (Triple-Buffer) */
-	x_MemAddr = (ULONG*)AllocMem(x_MemSize,	 MEMF_LOCAL|MEMF_FAST|MEMF_CLEAR);
-	// Fatal Exit on error
-	if(x_MemAddr == NULL) {
-		printf("Failed to allocmem for screens\n");
-		exit(1);
-	}
-
-	// Aligned Drawing Buffers 1,2,3 */
-	x_FBAddr1 = (ULONG*)((((ULONG)x_MemAddr) + 31)& ~31);
-	x_FBAddr2 = x_FBAddr1 + GAME_memsize;
-	x_FBAddr3 = x_FBAddr2 + GAME_memsize;
-
-	//ApolloInitVBLServer();
-}
-
-short freed = 0;
-
-void FreeBuffers(void)
-{
-	if(x_MemAddr != NULL)
-	{
-		if (freed == 0)
-			FreeMem(x_MemAddr, x_MemSize);
-	freed = 1;
-
-	//ApolloShutdownVBLServer();
-	}
-}
-
 extern "C"
 {
 
@@ -106,47 +73,55 @@ void check_sys()
 	}
 }
 
-}
-
-#if (TEST_VIDEO_ON==1)
-
-#include <stdlib.h>
-
-//test program takes three args - x-res y-res colour-depth
-int main( int argc, char** argv )
+void InitBuffers(void)
 {
-	if( argc != 4 ) {
-		printf( "usage: %s x-res y-res bitperpixel\n", argv[0] );
-		return 1;
+	/* Allocate Drawing Buffers (Triple-Buffer) */
+	x_MemAddr = (ULONG*)AllocMem(x_MemSize,	/* MEMF_LOCAL|*/MEMF_FAST|MEMF_CLEAR);
+	// Fatal Exit on error
+	if(x_MemAddr == NULL) {
+		printf("Failed to allocmem for screens\n");
+		exit(1);
 	}
-	SDL_Init(SDL_INIT_VIDEO);
-	CVideo video;
 
-	printf( "args: %s, %s, %s\n", argv[1], argv[2], argv[3] );
+	// Aligned Drawing Buffers 1,2,3 */
+	x_FBAddr1 = (ULONG*)((((ULONG)x_MemAddr) + 31)& ~31);
+	x_FBAddr2 = x_FBAddr1 + GAME_memsize;
+	x_FBAddr3 = x_FBAddr2 + GAME_memsize;
+	
+	// surface frameBuffer = get_video_surface();
+	// frameBuffer->pixels = (void *)x_FBAddr1;
+	// x_Pixels = frameBuffer->pixels;
+	
+	printf("START x_FBAddr1=%lu \n",x_FBAddr1 );
+	printf("START x_FBAddr2=%lu \n",x_FBAddr2 );
+	printf("START x_FBAddr3=%lu \n",x_FBAddr3 );
 
-	printf( "(%d,%d,%d)\n", strtoul(argv[1],0,10), strtoul(argv[2],0,10),
-	                        strtoul(argv[3],0,10) );
-
-	if( video.setMode( strtoul(argv[1],0,10), strtoul(argv[2],0,10),
-	                        strtoul(argv[3],0,10), FULL_SCREEN ) ) {
-		printf( "video mode possible\n" );
-	} else  printf( "video mode NOT possible\n" );
-	printf( "%d, %d, %d\n", video.getx(), video.gety(),
-	                        video.getBitsPerPixel() );
-
-	for( int s = 0; s < 50; s++ ) {
-		video.lock();
-		for( int i = 0; i < video.getx(); i++ )
-				video.setPixel( i, 90, 255, 0, 0 );
-		if( s%10==0)
-			printf( "frame %d\n", s );
-		video.unlock();
-		video.update( 0, 90, video.getx(), 1 );
-	}
-	return 0;
+	if (ac68080)
+		ApolloInitVBLServer();
 }
 
-#endif
+short freed = 0;
+
+void FreeBuffers(void)
+{
+
+	if(x_MemAddr != NULL)
+	{
+		if (freed == 0)
+			FreeMem(x_MemAddr, x_MemSize);
+	freed = 1;
+
+	printf("END x_FBAddr1=%lu \n",x_FBAddr1 );
+	printf("END x_FBAddr2=%lu \n",x_FBAddr2 );
+	printf("END x_FBAddr3=%lu \n",x_FBAddr3 );
+
+	if (ac68080)
+		ApolloShutdownVBLServer();
+	}
+}
+
+
+}
 
 namespace {
 bool fullScreen = false;
@@ -209,13 +184,13 @@ SDL_Rect screen_area()
 
 void update_rect(size_t x, size_t y, size_t w, size_t h)
 {
-	const SDL_Rect rect = {x,y,w,h};
-	update_rect(rect);
+	//const SDL_Rect rect = {x,y,w,h};
+//	update_rect(rect);
 }
 
 void update_rect(const SDL_Rect& rect_value)
 {
-	if(update_all)
+	//if(update_all)
 		return;
 
 	SDL_Rect rect = rect_value;
@@ -284,6 +259,11 @@ CVideo::CVideo() : bpp(0), fake_screen(false), help_string_(0), updatesLocked_(0
 {
 	const int res = SDL_Init(SDL_INIT_VIDEO | SDL_INIT_NOPARACHUTE);
 
+	check_sys();
+
+	if (ac68080)
+		InitBuffers();
+
 	if(res < 0) {
 		ERR_DP << "Could not initialize SDL: " << SDL_GetError() << "\n";
 		throw CVideo::error();
@@ -305,10 +285,7 @@ CVideo::CVideo( int x, int y, int bits_per_pixel, int flags)
 		throw CVideo::error();
 	}
 
-	check_sys();
 
-	if (ac68080)
-		InitBuffers();
 
 }
 
@@ -360,7 +337,10 @@ int CVideo::setMode( int x, int y, int bits_per_pixel, int flags )
 
 	fullScreen = (flags & FULL_SCREEN) != 0;
 	frameBuffer = SDL_SetVideoMode( x, y, bits_per_pixel, flags );
-
+	//SDL_LockSurface( frameBuffer );
+	frameBuffer->pixels = (void *)x_FBAddr1;
+	//x_Pixels = (ULONG *)frameBuffer->pixels;
+//	 SDL_UnlockSurface( frameBuffer );
 	if( frameBuffer != NULL ) {
 		image::set_pixel_format(frameBuffer->format);
 
@@ -416,7 +396,16 @@ int CVideo::getBlueMask()
 {
 	return frameBuffer->format->Bmask;
 }
+void flipSAGA0()
+{
+	//x_FBAddr1 = x_FBAddr2;
+	//x_FBAddr2 = x_FBAddr3;
+//	x_FBAddr2 = (ULONG *)frameBuffer->pixels;
 
+	/* Make Drawing Buffer visible */
+	*(volatile ULONG*)SAGA_VIDEO_PLANEPTR = (ULONG)frameBuffer->pixels;
+
+}
 
 void flipSAGA1()
 {
@@ -432,7 +421,6 @@ void flipSAGA1()
 	 frameBuffer->pixels = (void *)x_FBAddr3;
 }
 
-#include <clib/graphics_protos.h> //WaitTOF
 
 void flipSAGA()
 {
@@ -448,7 +436,29 @@ void flipSAGA()
     x_FBAddr2 = x_FBAddr3;
     x_FBAddr3 = temp;
 
+   // SDL_LockSurface( frameBuffer );
+    //sleep(10);
     frameBuffer->pixels = (void *)x_FBAddr1;
+   // SDL_UnlockSurface( frameBuffer );
+
+}
+
+void flipSAGA3()
+{
+        x_Pixels  = (ULONG *)frameBuffer->pixels;
+        frameBuffer->pixels = (void *)x_FBAddr3;
+        /* Swap Drawing Buffers */
+//        if (x_FBAddr3 != x_FBAddr2)
+        	x_FBAddr3 = x_FBAddr2;
+//        else
+   //     if (x_FBAddr2 != x_FBAddr1)
+        	x_FBAddr2 = x_FBAddr1;
+ //       else
+   //     if (x_FBAddr1 != x_Pixels)
+        	x_FBAddr1 = x_Pixels ;
+
+        /* Make Drawing Buffer visible */
+        *(volatile ULONG*)SAGA_VIDEO_PLANEPTR = (ULONG)x_FBAddr3;
 
 }
 
@@ -457,12 +467,14 @@ void CVideo::flip()
 	if(fake_screen)
 		return;
 
-	if(update_all) {
-		if (ac68080)
+//	if(update_all) {
+		if (ac68080){
+			ApolloWaitVBLPassed();
 			flipSAGA();
+		}
 		else
 			::SDL_Flip(frameBuffer);
-
+#if 0
 	} else if(update_rects.empty() == false) {
 		size_t sum = 0;
 		for(size_t n = 0; n != update_rects.size(); ++n) {
@@ -487,8 +499,8 @@ void CVideo::flip()
 	}
 
 	clear_updates();
+#endif
 }
-
 void CVideo::lock_updates(bool value)
 {
 	if(value == true)
@@ -504,19 +516,19 @@ bool CVideo::update_locked() const
 
 void CVideo::lock()
 {
-	if( SDL_MUSTLOCK(frameBuffer) )
-		SDL_LockSurface( frameBuffer );
+	//if( SDL_MUSTLOCK(frameBuffer) )
+//		SDL_LockSurface( frameBuffer );
 }
 
 void CVideo::unlock()
 {
-	if( SDL_MUSTLOCK(frameBuffer) )
-		SDL_UnlockSurface( frameBuffer );
+//	if( SDL_MUSTLOCK(frameBuffer) )
+//		SDL_UnlockSurface( frameBuffer );
 }
 
 int CVideo::mustLock()
 {
-	return SDL_MUSTLOCK(frameBuffer);
+	return false;//SDL_MUSTLOCK(frameBuffer);
 }
 
 surface CVideo::getSurface( void )
@@ -552,7 +564,7 @@ int CVideo::set_help_string(const std::string& str)
 		}
 	}
 
-	help_string_ = font::add_floating_label(str,size,font::NORMAL_COLOUR,getx()/2,gety(),0.0,0.0,-1,screen_area(),font::CENTER_ALIGN,&colour,5);
+	help_string_ = font::add_float ing_label(str,size,font::NORMAL_COLOUR,getx()/2,gety(),0.0,0.0,-1,screen_area(),font::CENTER_ALIGN,&colour,5);
 	const SDL_Rect& rect = font::get_floating_label_rect(help_string_);
 	font::move_floating_label(help_string_,0.0,-double(rect.h));
 	return help_string_;

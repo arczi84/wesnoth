@@ -160,7 +160,7 @@ SOCKET_STATE send_buf(TCPsocket sock, std::vector<char>& buf) {
 					continue;
 #elif defined(__BEOS__)
 				// sleep for 100 milliseconds
-				SDL_Delay(100);
+				//SDL_Delay(100);
 				timeout -= 100;
 				continue;
 #endif

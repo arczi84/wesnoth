@@ -177,7 +177,7 @@ std::string recruit_unit(const gamemap& map, int side,
 			events::pump();
 			disp->draw_tile(recruit_location.x,recruit_location.y,NULL,alpha);
 			disp->update_display();
-			SDL_Delay(20);
+			//SDL_Delay(20);
 		}
 	}
 
@@ -1406,7 +1406,7 @@ void calculate_healing(display& disp, const gamestatus& status, const gamemap& m
 					events::pump();
 
 					sound::play_sound("heal.wav");
-					SDL_Delay(DelayAmount);
+					//SDL_Delay(DelayAmount);
 					disp.invalidate_unit();
 					disp.update_display();
 				}
@@ -1444,7 +1444,7 @@ void calculate_healing(display& disp, const gamestatus& status, const gamemap& m
 					disp.draw_tile(loc.x,loc.y);
 
 				events::pump();
-				SDL_Delay(DelayAmount);
+				//SDL_Delay(DelayAmount);
 				disp.update_display();
 			}
 
@@ -1463,7 +1463,7 @@ void calculate_healing(display& disp, const gamestatus& status, const gamemap& m
 
 				events::pump();
 
-				SDL_Delay(DelayAmount);
+				//SDL_Delay(DelayAmount);
 				disp.update_display();
 			}
 
