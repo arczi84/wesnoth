@@ -131,7 +131,7 @@ unsigned int get_flags(unsigned int flags)
 	//SDL under Windows doesn't seem to like hardware surfaces for
 	//some reason.
 #if !(defined(_WIN32) || defined(__APPLE__))
-		flags |= SDL_HWSURFACE/*|SDL_DOUBLEBUF*/;
+		flags |= SDL_HWSURFACE|SDL_ASYNCBLIT|SDL_RLEACCEL/*|SDL_DOUBLEBUF*/;
 #endif
 	if((flags&SDL_FULLSCREEN) == 0)
 		flags |= SDL_RESIZABLE;
@@ -315,7 +315,7 @@ void CVideo::blit_surface(int x, int y, surface surf, SDL_Rect* srcrect, SDL_Rec
 void CVideo::make_fake()
 {
 	fake_screen = true;
-	frameBuffer = SDL_CreateRGBSurface(SDL_SWSURFACE,1,1,24,0xFF0000,0xFF00,0xFF,0);
+	frameBuffer = SDL_CreateRGBSurface(SDL_SWSURFACE,16,16,24,0xFF0000,0xFF00,0xFF,0);
 	image::set_pixel_format(frameBuffer->format);
 }
 
@@ -396,7 +396,7 @@ int CVideo::getBlueMask()
 {
 	return frameBuffer->format->Bmask;
 }
-void flipSAGA0()
+void flipSAGA()
 {
 	//x_FBAddr1 = x_FBAddr2;
 	//x_FBAddr2 = x_FBAddr3;
@@ -462,7 +462,7 @@ void flipSAGA3()
 
 }
 
-void flipSAGA()
+void flipSAGA4()
 {
 	*(volatile ULONG*)SAGA_VIDEO_PLANEPTR = (ULONG)x_FBAddr3;
     frameBuffer->pixels = (void *)x_FBAddr2;
@@ -566,7 +566,7 @@ int CVideo::set_help_string(const std::string& str)
 {
 	font::remove_floating_label(help_string_);
 
-	const SDL_Color colour = {0x0,0x00,0x00,0x77};
+	const SDL_Color colour = { 0, 0, 0, 0xbb };
 
 	int size = font::SIZE_LARGE;
 

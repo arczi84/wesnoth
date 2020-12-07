@@ -163,12 +163,12 @@ struct surface_lock
 {
 	surface_lock(surface const &surf) : surface_(surf), locked_(false)
 	{
-		if(SDL_MUSTLOCK(surface_)) {
+	/*	if(SDL_MUSTLOCK(surface_)) {
 			const int res = SDL_LockSurface(surface_);
 			if(res == 0) {
 				locked_ = true;
 			}
-		}
+		}*/
 	}
 
 	~surface_lock()
