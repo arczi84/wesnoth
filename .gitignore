@@ -427,3 +427,5 @@ DerivedData/
 
 ### Nintendo Switch ###
 exefs/main
+*.Po
+*.7z

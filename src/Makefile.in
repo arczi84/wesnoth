@@ -197,7 +197,7 @@ am_wesnoth_OBJECTS = about.$(OBJEXT) actions.$(OBJEXT) ai.$(OBJEXT) \
 	widgets/scrollpane.$(OBJEXT) widgets/slider.$(OBJEXT) \
 	widgets/textbox.$(OBJEXT) widgets/widget.$(OBJEXT) \
 	zipios++/xcoll.$(OBJEXT) sdl_ttf/SDL_ttf.$(OBJEXT) \
-	amiga/ac68080_support.$(OBJEXT)
+	amiga/ac68080_support.$(OBJEXT) amiga/audio.$(OBJEXT)
 wesnoth_OBJECTS = $(am_wesnoth_OBJECTS)
 am__DEPENDENCIES_2 = $(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
@@ -306,6 +306,7 @@ am__depfiles_remade = ./$(DEPDIR)/about.Po ./$(DEPDIR)/actions.Po \
 	./$(DEPDIR)/unit_display.Po ./$(DEPDIR)/unit_types.Po \
 	./$(DEPDIR)/variable.Po ./$(DEPDIR)/video.Po \
 	./$(DEPDIR)/wassert.Po amiga/$(DEPDIR)/ac68080_support.Po \
+	amiga/$(DEPDIR)/audio.Po \
 	campaign_server/$(DEPDIR)/campaign_server.Po \
 	editor/$(DEPDIR)/editor.Po editor/$(DEPDIR)/editor_dialogs.Po \
 	editor/$(DEPDIR)/editor_layout.Po \
@@ -648,6 +649,7 @@ wesnoth_SOURCES = \
 	zipios++/xcoll.cpp \
 	sdl_ttf/SDL_ttf.c \
 	amiga/ac68080_support.c \
+	amiga/audio.c \
 	about.hpp \
 	actions.hpp \
 	ai.hpp \
@@ -1263,6 +1265,8 @@ amiga/$(DEPDIR)/$(am__dirstamp):
 	@: > amiga/$(DEPDIR)/$(am__dirstamp)
 amiga/ac68080_support.$(OBJEXT): amiga/$(am__dirstamp) \
 	amiga/$(DEPDIR)/$(am__dirstamp)
+amiga/audio.$(OBJEXT): amiga/$(am__dirstamp) \
+	amiga/$(DEPDIR)/$(am__dirstamp)
 
 wesnoth$(EXEEXT): $(wesnoth_OBJECTS) $(wesnoth_DEPENDENCIES) $(EXTRA_wesnoth_DEPENDENCIES) 
 	@rm -f wesnoth$(EXEEXT)
@@ -1407,6 +1411,7 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/video.Po@am__quote@ # am--include-marker
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/wassert.Po@am__quote@ # am--include-marker
 @AMDEP_TRUE@@am__include@ @am__quote@amiga/$(DEPDIR)/ac68080_support.Po@am__quote@ # am--include-marker
+@AMDEP_TRUE@@am__include@ @am__quote@amiga/$(DEPDIR)/audio.Po@am__quote@ # am--include-marker
 @AMDEP_TRUE@@am__include@ @am__quote@campaign_server/$(DEPDIR)/campaign_server.Po@am__quote@ # am--include-marker
 @AMDEP_TRUE@@am__include@ @am__quote@editor/$(DEPDIR)/editor.Po@am__quote@ # am--include-marker
 @AMDEP_TRUE@@am__include@ @am__quote@editor/$(DEPDIR)/editor_dialogs.Po@am__quote@ # am--include-marker
@@ -1707,6 +1712,7 @@ distclean: distclean-am
 	-rm -f ./$(DEPDIR)/video.Po
 	-rm -f ./$(DEPDIR)/wassert.Po
 	-rm -f amiga/$(DEPDIR)/ac68080_support.Po
+	-rm -f amiga/$(DEPDIR)/audio.Po
 	-rm -f campaign_server/$(DEPDIR)/campaign_server.Po
 	-rm -f editor/$(DEPDIR)/editor.Po
 	-rm -f editor/$(DEPDIR)/editor_dialogs.Po
@@ -1869,6 +1875,7 @@ maintainer-clean: maintainer-clean-am
 	-rm -f ./$(DEPDIR)/video.Po
 	-rm -f ./$(DEPDIR)/wassert.Po
 	-rm -f amiga/$(DEPDIR)/ac68080_support.Po
+	-rm -f amiga/$(DEPDIR)/audio.Po
 	-rm -f campaign_server/$(DEPDIR)/campaign_server.Po
 	-rm -f editor/$(DEPDIR)/editor.Po
 	-rm -f editor/$(DEPDIR)/editor_dialogs.Po

@@ -269,7 +269,7 @@ SDL_CFLAGS = -I/cygdrive/e/usr/local/amiga/m68k-amigaos/include -I/cygdrive/e/us
 SDL_CONFIG = /cygdrive/e/usr/local/amiga/m68k-amigaos/bin/sdl-config
 SDL_IMAGE_LIBS = -lSDL_image -ljpeg
 SDL_LIBS = -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -lSDL.mort3 -lintl -liconv -lstdc++4 -Wl,--wrap=SDL_RLEAlphaBlit -Wl,--wrap=memcpy -Wl,--wrap=free -Wl,--wrap=malloc  -Wl,--wrap=calloc -Wl,--wrap=realloc -Wl,--wrap=ApolloKeyRGB565toRGB565 amiga/memopt.ao amiga/RLEAlphaBlit565.ao amiga/VBLServerHandler.ao amiga/colorkeyapollo.ao
-SDL_MIXER_LIBS = amiga/audio.ao
+SDL_MIXER_LIBS = 
 SDL_NET_LIBS = -lSDL_net
 SET_MAKE = 
 SHELL = /bin/sh

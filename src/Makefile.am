@@ -123,6 +123,7 @@ wesnoth_SOURCES = \
 	zipios++/xcoll.cpp \
 	sdl_ttf/SDL_ttf.c \
 	amiga/ac68080_support.c \	
+	amiga/audio.c \	
 	about.hpp \
 	actions.hpp \
 	ai.hpp \

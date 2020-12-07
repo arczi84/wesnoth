@@ -337,7 +337,7 @@ surface greyscale_image(const surface &surf)
 //	return create_optimized_surface(nsurf);
 }
 
-surface brighten_image(surface const &surf, fixed_t amount)
+surface brighten_image(const surface &surf, fixed_t amount)
 {
 	if(surf == nullptr) {
 		return nullptr;
@@ -421,32 +421,34 @@ surface adjust_surface_alpha(const surface &surf, int amount)
 
 surface adjust_surface_alpha_add(surface const &surf, int amount)
 {
-	if(surf== NULL) {
-		return NULL;
+	if(surf== nullptr) {
+		return nullptr;
 	}
 
 	surface nsurf(make_neutral_surface(surf));
 
-	if(nsurf == NULL) {
+	if(nsurf == nullptr) {
 		std::cerr << "could not make neutral surface...\n";
-		return NULL;
+		return nullptr;
 	}
 
 	{
 		surface_lock lock(nsurf);
-		Uint32* beg = lock.pixels();
-		Uint32* end = beg + nsurf->w*surf->h;
+		uint32_t* beg = lock.pixels();
+		uint32_t* end = beg + nsurf->w*surf->h;
 
 		while(beg != end) {
-			Uint8 red, green, blue, alpha;
-			alpha = (*beg) >> 24;
-			red   = (*beg) >> 16;
-			green = (*beg) >> 8;
-			blue  = (*beg) >> 0;
+			uint8_t alpha = (*beg) >> 24;
 
-			alpha = Uint8(maximum<int>(0,minimum<int>(255,int(alpha) + amount)));
+			if(alpha) {
+				uint8_t r, g, b;
+				r = (*beg) >> 16;
+				g = (*beg) >> 8;
+				b = (*beg);
 
-			*beg = (alpha << 24) + (red << 16) + (green << 8) + blue;
+				alpha = uint8_t(std::max<int>(0,std::min<int>(255,static_cast<int>(alpha) + amount)));
+				*beg = (alpha << 24) + (r << 16) + (g << 8) + b;
+			}
 
 			++beg;
 		}

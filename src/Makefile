@@ -197,7 +197,7 @@ am_wesnoth_OBJECTS = about.$(OBJEXT) actions.$(OBJEXT) ai.$(OBJEXT) \
 	widgets/scrollpane.$(OBJEXT) widgets/slider.$(OBJEXT) \
 	widgets/textbox.$(OBJEXT) widgets/widget.$(OBJEXT) \
 	zipios++/xcoll.$(OBJEXT) sdl_ttf/SDL_ttf.$(OBJEXT) \
-	amiga/ac68080_support.$(OBJEXT)
+	amiga/ac68080_support.$(OBJEXT) amiga/audio.$(OBJEXT)
 wesnoth_OBJECTS = $(am_wesnoth_OBJECTS)
 am__DEPENDENCIES_2 = $(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
@@ -306,6 +306,7 @@ am__depfiles_remade = ./$(DEPDIR)/about.Po ./$(DEPDIR)/actions.Po \
 	./$(DEPDIR)/unit_display.Po ./$(DEPDIR)/unit_types.Po \
 	./$(DEPDIR)/variable.Po ./$(DEPDIR)/video.Po \
 	./$(DEPDIR)/wassert.Po amiga/$(DEPDIR)/ac68080_support.Po \
+	amiga/$(DEPDIR)/audio.Po \
 	campaign_server/$(DEPDIR)/campaign_server.Po \
 	editor/$(DEPDIR)/editor.Po editor/$(DEPDIR)/editor_dialogs.Po \
 	editor/$(DEPDIR)/editor_layout.Po \
@@ -476,7 +477,7 @@ SDL_CFLAGS = -I/cygdrive/e/usr/local/amiga/m68k-amigaos/include -I/cygdrive/e/us
 SDL_CONFIG = /cygdrive/e/usr/local/amiga/m68k-amigaos/bin/sdl-config
 SDL_IMAGE_LIBS = -lSDL_image -ljpeg
 SDL_LIBS = -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -lSDL.mort3 -lintl -liconv -lstdc++4 -Wl,--wrap=SDL_RLEAlphaBlit -Wl,--wrap=memcpy -Wl,--wrap=free -Wl,--wrap=malloc  -Wl,--wrap=calloc -Wl,--wrap=realloc -Wl,--wrap=ApolloKeyRGB565toRGB565 amiga/memopt.ao amiga/RLEAlphaBlit565.ao amiga/VBLServerHandler.ao amiga/colorkeyapollo.ao
-SDL_MIXER_LIBS = amiga/audio.ao
+SDL_MIXER_LIBS = 
 SDL_NET_LIBS = -lSDL_net
 SET_MAKE = 
 SHELL = /bin/sh
@@ -648,6 +649,7 @@ wesnoth_SOURCES = \
 	zipios++/xcoll.cpp \
 	sdl_ttf/SDL_ttf.c \
 	amiga/ac68080_support.c \
+	amiga/audio.c \
 	about.hpp \
 	actions.hpp \
 	ai.hpp \
@@ -1263,6 +1265,8 @@ amiga/$(DEPDIR)/$(am__dirstamp):
 	@: > amiga/$(DEPDIR)/$(am__dirstamp)
 amiga/ac68080_support.$(OBJEXT): amiga/$(am__dirstamp) \
 	amiga/$(DEPDIR)/$(am__dirstamp)
+amiga/audio.$(OBJEXT): amiga/$(am__dirstamp) \
+	amiga/$(DEPDIR)/$(am__dirstamp)
 
 wesnoth$(EXEEXT): $(wesnoth_OBJECTS) $(wesnoth_DEPENDENCIES) $(EXTRA_wesnoth_DEPENDENCIES) 
 	@rm -f wesnoth$(EXEEXT)
@@ -1407,6 +1411,7 @@ include ./$(DEPDIR)/variable.Po # am--include-marker
 include ./$(DEPDIR)/video.Po # am--include-marker
 include ./$(DEPDIR)/wassert.Po # am--include-marker
 include amiga/$(DEPDIR)/ac68080_support.Po # am--include-marker
+include amiga/$(DEPDIR)/audio.Po # am--include-marker
 include campaign_server/$(DEPDIR)/campaign_server.Po # am--include-marker
 include editor/$(DEPDIR)/editor.Po # am--include-marker
 include editor/$(DEPDIR)/editor_dialogs.Po # am--include-marker
@@ -1707,6 +1712,7 @@ distclean: distclean-am
 	-rm -f ./$(DEPDIR)/video.Po
 	-rm -f ./$(DEPDIR)/wassert.Po
 	-rm -f amiga/$(DEPDIR)/ac68080_support.Po
+	-rm -f amiga/$(DEPDIR)/audio.Po
 	-rm -f campaign_server/$(DEPDIR)/campaign_server.Po
 	-rm -f editor/$(DEPDIR)/editor.Po
 	-rm -f editor/$(DEPDIR)/editor_dialogs.Po
@@ -1869,6 +1875,7 @@ maintainer-clean: maintainer-clean-am
 	-rm -f ./$(DEPDIR)/video.Po
 	-rm -f ./$(DEPDIR)/wassert.Po
 	-rm -f amiga/$(DEPDIR)/ac68080_support.Po
+	-rm -f amiga/$(DEPDIR)/audio.Po
 	-rm -f campaign_server/$(DEPDIR)/campaign_server.Po
 	-rm -f editor/$(DEPDIR)/editor.Po
 	-rm -f editor/$(DEPDIR)/editor_dialogs.Po

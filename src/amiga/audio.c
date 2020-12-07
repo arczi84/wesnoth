@@ -56,6 +56,20 @@ void playMusic(struct WaveData *waveData)
 	custom.dmacon = 0x8001;
 }
 
+void playSound(struct WaveData *waveData)
+{
+	volatile struct audioSAGA *soundHW = (struct audioSAGA *)0xdff410;
+
+	soundHW->data = waveData->data;
+	soundHW->numLongs = waveData->len / 4;
+	soundHW->volume = 0x4040;
+	soundHW->ctrl = 0x0003;
+	soundHW->period = 3546890 / (waveData->frequency);
+
+	custom.dmacon = 0x8002;
+}
+
+
 void floatFromExtended(unsigned char *extended __asm("a0"), float *result __asm("a1"));
 
 struct ExtendedFloat
@@ -117,7 +131,6 @@ struct WaveData *loadMusic(const char *filename)
 		else
 		{
 			fseek(fp, chunkHdr.ckSize, SEEK_CUR);
-			//break;
 		}
 	}
 	waveData->nChannels = commChunk.numChannels;
@@ -130,6 +143,7 @@ struct WaveData *loadMusic(const char *filename)
 void FreeMusic(struct WaveData *waveData)
 {
 	custom.dmacon = 0x0001; // Audio off..
+
 	if(!waveData)
 		return;
 	free(waveData->data);

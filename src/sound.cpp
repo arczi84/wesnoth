@@ -31,9 +31,11 @@ extern "C"
 //#include "amiga/audio.c"
 extern struct WaveData *loadMusic(const char *filename);
 extern void playMusic(struct WaveData *waveData);
+extern void playSound(struct WaveData *waveData);
 extern void FreeMusic(struct WaveData *waveData);
 extern short ac68080;
 struct WaveData *music;
+struct WaveData *sounds;
 #endif
 }
 
@@ -70,6 +72,7 @@ if (ac68080)
 void close_sound() {
 	if (ac68080) {
 		FreeMusic(music);
+		FreeMusic(sounds);
 	}
 
 }
@@ -84,6 +87,7 @@ void stop_sound() {
 	if (ac68080)
 		{
 		/*TO Do*/
+		FreeMusic(sounds);
 		}
 
 }
@@ -106,12 +110,13 @@ void play_music(std::string file)
 
 				music = loadMusic(filename.c_str());
 
-				playMusic(music);
-
 				if(music == NULL) {
 					ERR_AUDIO << "Could not load music file '" << filename << "\n";
 					return;
 				}
+
+				playMusic(music);
+
 		}
 	}
 
@@ -120,9 +125,24 @@ void play_music(std::string file)
 void play_sound(const std::string& file)
 {
 	if (ac68080)
-		{
-		/*To Do*/
+	{
+		if(preferences::sound_on()) {
+
+				const std::string& filename = get_binary_file_location("sounds", file);
+				if (!filename.empty()) {
+
+					sounds = loadMusic(filename.c_str());
+				}
+
+				if (sounds == NULL) {
+					ERR_AUDIO << "Could not load sound file '" << filename << "\n";
+					return;
+				}
+
+			//play on the first available channel
+			playSound(sounds);
 		}
+	}
 }
 
 void set_music_volume(int vol)
