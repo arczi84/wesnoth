@@ -28,7 +28,9 @@
 extern "C"
 {
 #ifdef __AMIGA__
-//#include "amiga/audio.c"
+#include <hardware/custom.h>
+extern struct Custom custom;
+
 extern struct WaveData *loadMusic(const char *filename);
 extern void playMusic(struct WaveData *waveData);
 extern void playSound(struct WaveData *waveData);
@@ -36,6 +38,7 @@ extern void FreeMusic(struct WaveData *waveData);
 extern short ac68080;
 struct WaveData *music;
 struct WaveData *sounds;
+
 #endif
 }
 
@@ -79,15 +82,33 @@ void close_sound() {
 
 void stop_music() {
 	if (ac68080) {
-		FreeMusic(music);
+		custom.dmacon = 0x0001;
 	}
+}
+
+extern "C"
+{
+extern int channel;
 }
 
 void stop_sound() {
 	if (ac68080)
 		{
-		/*TO Do*/
-		FreeMusic(sounds);
+		if (channel == 1)
+		{
+			custom.dmacon = 0x0002;
+			channel = 2;
+		}
+		else if (channel == 2)
+		{
+			custom.dmacon = 0x0004;
+			channel = 3;
+		}
+		else if (channel == 3)
+		{
+			custom.dmacon = 0x0008;
+			channel = 1;
+		}
 		}
 
 }
@@ -131,6 +152,7 @@ void play_sound(const std::string& file)
 				const std::string& filename = get_binary_file_location("sounds", file);
 				if (!filename.empty()) {
 
+					ERR_AUDIO << "Loading sound file '" << filename << "\n";
 					sounds = loadMusic(filename.c_str());
 				}
 
