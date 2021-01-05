@@ -30,11 +30,13 @@
 #include <map>
 #include <string>
 
+#if IMGLOADTIME
 extern "C"{
 #include <sys/time.h>
 
 struct timeval tval_before, tval_after, tval_result;
 }
+#endif
 
 #define LOG_DP LOG_STREAM(info, display)
 #define ERR_DP LOG_STREAM(err, display)
@@ -217,6 +219,7 @@ bool locator::value::operator<(const value& a) const
 	}
 }
 
+#undef IMGLOADTIME
 
 surface locator::load_image_file() const
 {
@@ -233,17 +236,19 @@ surface locator::load_image_file() const
 			SDL_FreeRW(ops);
 		}
 #else
+#if IMGLOADTIME
 		gettimeofday(&tval_before, NULL);
+#endif
 		if (val_.filename_ != "")
 			res = IMG_Load(location.c_str());
-
+#if IMGLOADTIME
 		std::cout << " open image '" << val_.filename_  << "'\n";
 		gettimeofday(&tval_after, NULL);
 
 		timersub(&tval_after, &tval_before, &tval_result);
 
 		printf("Time elapsed: %ld.%06ld\n", (long int)tval_result.tv_sec, (long int)tval_result.tv_usec);
-
+#endif
 #endif
 	}
 
@@ -522,6 +527,7 @@ surface get_image(const image::locator& i_locator, TYPE type, COLOUR_ADJUSTMENT 
 		imap = &unmasked_images_;
 		break;
 	case GREYED:
+		//use_saga = true;
 		imap = &greyed_images_;
 		break;
 	case BRIGHTENED:
@@ -531,6 +537,7 @@ surface get_image(const image::locator& i_locator, TYPE type, COLOUR_ADJUSTMENT 
 		imap = &semi_brightened_images_;
 		break;
 	default:
+		//use_saga = false;
 		return surface(NULL);
 	}
 

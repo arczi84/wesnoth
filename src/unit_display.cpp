@@ -182,7 +182,7 @@ void move_unit_between(display& disp, const gamemap& map, const gamemap::locatio
 
 		const int new_ticks = SDL_GetTicks();
 		const int wait_time = time_between_frames - (new_ticks - ticks);
-		//SDL_Delay(maximum<int>(wait_time,1));
+		SDL_Delay(maximum<int>(wait_time,1));
 
 		ticks = SDL_GetTicks();
 
@@ -312,7 +312,7 @@ void unit_die(display& disp, const gamemap::location& loc, const unit& u, const 
 			disp.draw_tile(loc.x,loc.y,unit_image);
 			disp.update_display();
 
-			//SDL_Delay(10);
+			SDL_Delay(10);
 
 			anim.update_current_frames();
 		}
@@ -327,7 +327,7 @@ void unit_die(display& disp, const gamemap::location& loc, const unit& u, const 
 		const int wait_time = ticks + frame_time - SDL_GetTicks();
 
 		if(wait_time > 0 && !disp.turbo())
-			//SDL_Delay(wait_time);
+			SDL_Delay(wait_time);
 
 		ticks = SDL_GetTicks();
 
@@ -584,18 +584,18 @@ bool unit_attack_ranged(display& disp, unit_map& units,
 		}
 
 		//TODO: fix this
-		//SDL_Delay(20);
+		SDL_Delay(20);
 #if 0
 		const int wait_time = ticks + time_resolution - SDL_GetTicks();
 		if(wait_time > 0 && !hide) {
-			//SDL_Delay(wait_time);
+			SDL_Delay(wait_time);
 		} else if(wait_time < 0) {
 			//if we're not keeping up, then skip frames
 			i += minimum<int>(time_resolution*4,-wait_time);
 		}
 #endif
 
-		// ticks = SDL_GetTicks();
+		//ticks = SDL_GetTicks();
 
 		attack_anim.update_current_frames();
 		def->second.update_defending_frame();
@@ -854,7 +854,7 @@ bool unit_attack(display& disp, unit_map& units, const gamemap& map,
 
 		const int wait_time = ticks + time_resolution - SDL_GetTicks();
 		if(wait_time > 0 && !hide) {
-			//SDL_Delay(wait_time);
+			SDL_Delay(wait_time);
 		}
 
 		ticks = SDL_GetTicks();

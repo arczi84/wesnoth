@@ -58,20 +58,10 @@ extern "C"
 #include <dos/dos.h>
 #include <exec/exec.h>
 
-extern struct ExecBase *SysBase;
-short ac68080 = 1;
-bool checked = false;
+extern bool ac68080;
+extern bool use_saga;
 
-void check_sys()
-{
-	if (!checked) {
-		if(SysBase->AttnFlags & (1<<10)) {
-				ac68080 = 1;
-				printf("Vampire acceleretion detected.\n");
-			}
-		checked = true;
-	}
-}
+
 
 void InitBuffers(void)
 {
@@ -88,16 +78,11 @@ void InitBuffers(void)
 	x_FBAddr2 = x_FBAddr1 + GAME_memsize;
 	x_FBAddr3 = x_FBAddr2 + GAME_memsize;
 	
-	// surface frameBuffer = get_video_surface();
-	// frameBuffer->pixels = (void *)x_FBAddr1;
-	// x_Pixels = frameBuffer->pixels;
 	
 	printf("START x_FBAddr1=%lu \n",x_FBAddr1 );
 	printf("START x_FBAddr2=%lu \n",x_FBAddr2 );
 	printf("START x_FBAddr3=%lu \n",x_FBAddr3 );
 
-	if (ac68080)
-		ApolloInitVBLServer();
 }
 
 short freed = 0;
@@ -115,8 +100,6 @@ void FreeBuffers(void)
 	printf("END x_FBAddr2=%lu \n",x_FBAddr2 );
 	printf("END x_FBAddr3=%lu \n",x_FBAddr3 );
 
-	if (ac68080)
-		ApolloShutdownVBLServer();
 	}
 }
 
@@ -131,7 +114,7 @@ unsigned int get_flags(unsigned int flags)
 	//SDL under Windows doesn't seem to like hardware surfaces for
 	//some reason.
 #if !(defined(_WIN32) || defined(__APPLE__))
-		flags |= SDL_HWSURFACE|SDL_ASYNCBLIT|SDL_RLEACCEL/*|SDL_DOUBLEBUF*/;
+		flags |= SDL_HWSURFACE;
 #endif
 	if((flags&SDL_FULLSCREEN) == 0)
 		flags |= SDL_RESIZABLE;
@@ -184,13 +167,13 @@ SDL_Rect screen_area()
 
 void update_rect(size_t x, size_t y, size_t w, size_t h)
 {
-	//const SDL_Rect rect = {x,y,w,h};
-//	update_rect(rect);
+	const SDL_Rect rect = {x,y,w,h};
+	update_rect(rect);
 }
 
 void update_rect(const SDL_Rect& rect_value)
 {
-	//if(update_all)
+	if(update_all)
 		return;
 
 	SDL_Rect rect = rect_value;
@@ -259,10 +242,14 @@ CVideo::CVideo() : bpp(0), fake_screen(false), help_string_(0), updatesLocked_(0
 {
 	const int res = SDL_Init(SDL_INIT_VIDEO | SDL_INIT_NOPARACHUTE);
 
-	check_sys();
+	//check_sys();
 
-	if (ac68080)
-		InitBuffers();
+	//if (ac68080)
+	//	InitBuffers();
+
+	if (ac68080 && use_saga) {
+		std::cout << "ApolloInitVBLServer() \n";
+	}
 
 	if(res < 0) {
 		ERR_DP << "Could not initialize SDL: " << SDL_GetError() << "\n";
@@ -284,16 +271,16 @@ CVideo::CVideo( int x, int y, int bits_per_pixel, int flags)
 		ERR_DP << "Could not set Video Mode\n";
 		throw CVideo::error();
 	}
-
-
-
 }
 
 CVideo::~CVideo()
 {
 	LOG_DP << "calling SDL_Quit()\n";
-	if (ac68080)
-		FreeBuffers();
+	//if (ac68080)
+		//FreeBuffers();
+
+	if (ac68080 && use_saga)
+		ApolloShutdownVBLServer();
 
 	SDL_Quit();
 	LOG_DP << "called SDL_Quit()\n";
@@ -315,7 +302,7 @@ void CVideo::blit_surface(int x, int y, surface surf, SDL_Rect* srcrect, SDL_Rec
 void CVideo::make_fake()
 {
 	fake_screen = true;
-	frameBuffer = SDL_CreateRGBSurface(SDL_SWSURFACE,16,16,24,0xFF0000,0xFF00,0xFF,0);
+	frameBuffer = SDL_CreateRGBSurface(SDL_SWSURFACE,1,1,24,0xFF0000,0xFF00,0xFF,0);
 	image::set_pixel_format(frameBuffer->format);
 }
 
@@ -337,13 +324,9 @@ int CVideo::setMode( int x, int y, int bits_per_pixel, int flags )
 
 	fullScreen = (flags & FULL_SCREEN) != 0;
 	frameBuffer = SDL_SetVideoMode( x, y, bits_per_pixel, flags );
-	//SDL_LockSurface( frameBuffer );
-	//frameBuffer->pixels = (void *)x_FBAddr1;
-	//x_FBAddr3 = (ULONG *)frameBuffer->pixels;
-//	 SDL_UnlockSurface( frameBuffer );
+
 	if( frameBuffer != NULL ) {
 		image::set_pixel_format(frameBuffer->format);
-
 		return bits_per_pixel;
 	} else	return 0;
 }
@@ -398,15 +381,11 @@ int CVideo::getBlueMask()
 }
 void flipSAGA()
 {
-	//x_FBAddr1 = x_FBAddr2;
-	//x_FBAddr2 = x_FBAddr3;
-//	x_FBAddr2 = (ULONG *)frameBuffer->pixels;
-
 	/* Make Drawing Buffer visible */
 	*(volatile ULONG*)SAGA_VIDEO_PLANEPTR = (ULONG)frameBuffer->pixels;
 
 }
-
+#if 0
 void flipSAGA1()
 {
 	x_Pixels  = (ULONG *)frameBuffer->pixels;
@@ -458,38 +437,47 @@ void flipSAGA3()
         	x_FBAddr1 = x_Pixels ;
 
         /* Make Drawing Buffer visible */
-        *(volatile ULONG*)SAGA_VIDEO_PLANEPTR = (ULONG)x_FBAddr3;
+        *(volatile ULONG*)SAGA_VIDEO_PLANEPTR = (ULONG)x_FBAddr1;
 
 }
 
 void flipSAGA4()
 {
-	*(volatile ULONG*)SAGA_VIDEO_PLANEPTR = (ULONG)x_FBAddr3;
-    frameBuffer->pixels = (void *)x_FBAddr2;
 
-                x_Pixels  = x_FBAddr3;
+   // frameBuffer->pixels = (void *)x_FBAddr2;
+
+    frameBuffer->pixels = (void *)  x_FBAddr3;
                 x_FBAddr3 = x_FBAddr2;
                 x_FBAddr2 = x_FBAddr1;
-                x_FBAddr1 = x_Pixels ;
+                x_FBAddr1 =  (ULONG*)frameBuffer->pixels;
 
+
+	*(volatile ULONG*)SAGA_VIDEO_PLANEPTR = (ULONG)x_FBAddr3;
 
 }
+#endif
+
+extern bool use_saga;
 
 void CVideo::flip()
 {
+
 	if(fake_screen)
 		return;
 
+	if (ac68080 && use_saga) {
+		ApolloWaitVBLPassed();
+	}
 	if(update_all) {
-		if (ac68080){
-			ApolloWaitVBLPassed();
+		if (ac68080 && use_saga) {
 			flipSAGA();
 		}
-		else
+		else {
 			::SDL_Flip(frameBuffer);
+		}
+
 	}
-#if 0
-	} else if(update_rects.empty() == false) {
+	else if(update_rects.empty() == false) {
 		size_t sum = 0;
 		for(size_t n = 0; n != update_rects.size(); ++n) {
 			sum += update_rects[n].w*update_rects[n].h;
@@ -497,23 +485,20 @@ void CVideo::flip()
 
 		const size_t redraw_whole_screen_threshold = 80;
 		if(sum > ((getx()*gety())*redraw_whole_screen_threshold)/100) {
-			if (ac68080)
+			if (ac68080 && use_saga) {
 				flipSAGA();
-			else
+			}
+			else {
 				::SDL_Flip(frameBuffer);
 
+			}
 		} else {
-
 			SDL_UpdateRects(frameBuffer,update_rects.size(),&update_rects[0]);
-			//if (ac68080)
-				//flipSAGA();
-			//*(volatile ULONG*)SAGA_VIDEO_PLANEPTR = (ULONG)frameBuffer->pixels;
-
-		}
+			}
 	}
 
 	clear_updates();
-#endif
+
 }
 void CVideo::lock_updates(bool value)
 {
@@ -531,13 +516,13 @@ bool CVideo::update_locked() const
 void CVideo::lock()
 {
 	//if( SDL_MUSTLOCK(frameBuffer) )
-//		SDL_LockSurface( frameBuffer );
+	//	SDL_LockSurface( frameBuffer );
 }
 
 void CVideo::unlock()
 {
-//	if( SDL_MUSTLOCK(frameBuffer) )
-//		SDL_UnlockSurface( frameBuffer );
+	//if( SDL_MUSTLOCK(frameBuffer) )
+	//	SDL_UnlockSurface( frameBuffer );
 }
 
 int CVideo::mustLock()
@@ -566,7 +551,7 @@ int CVideo::set_help_string(const std::string& str)
 {
 	font::remove_floating_label(help_string_);
 
-	const SDL_Color colour = { 0, 0, 0, 0xbb };
+	const SDL_Color colour = {0x0,0x00,0x00,0x77};
 
 	int size = font::SIZE_LARGE;
 

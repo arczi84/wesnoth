@@ -25,9 +25,27 @@
 #include <iostream>
 #include <map>
 
+extern "C"{
+#include <sys/time.h>
+
+struct timeval tval_before, tval_after, tval_result;
+}
+
+#define TAKETIME
+
 #define nullptr NULL
 
 #define ERR_DP LOG_STREAM(err, display)
+
+SDL_Color int_to_color(const Uint32 rgb)
+{
+	SDL_Color result;
+	result.r = (0x00FF0000 & rgb )>> 16;
+	result.g = (0x0000FF00 & rgb) >> 8;
+	result.b = (0x000000FF & rgb);
+	result.unused = 0;
+	return result;
+}
 
 SDLKey sdl_keysym_from_name(std::string const &keyname)
 {
@@ -58,8 +76,8 @@ bool point_in_rect(int x, int y, const SDL_Rect& rect)
 
 bool rects_overlap(const SDL_Rect& rect1, const SDL_Rect& rect2)
 {
-	return point_in_rect(rect1.x,rect1.y,rect2) || point_in_rect(rect2.x+rect2.w,rect2.y,rect1) ||
-	       point_in_rect(rect2.x,rect2.y+rect2.h,rect1) || point_in_rect(rect1.x+rect1.w,rect1.y+rect1.h,rect2);
+	return (rect1.x < rect2.x+rect2.w && rect2.x < rect1.x+rect1.w &&
+			rect1.y < rect2.y+rect2.h && rect2.y < rect1.y+rect1.h);
 }
 
 SDL_Rect intersect_rects(SDL_Rect const &rect1, SDL_Rect const &rect2)
@@ -333,8 +351,8 @@ surface greyscale_image(const surface &surf)
 		}
 	}
 
-	return nsurf;
-//	return create_optimized_surface(nsurf);
+	//return nsurf;
+	return create_optimized_surface(nsurf);
 }
 
 surface brighten_image(const surface &surf, fixed_t amount)
@@ -376,7 +394,7 @@ surface brighten_image(const surface &surf, fixed_t amount)
 		}
 	}
 
-
+	//return surf;
 	return create_optimized_surface(nsurf);
 }
 
@@ -417,6 +435,8 @@ surface adjust_surface_alpha(const surface &surf, int amount)
 
 
 	return create_optimized_surface(nsurf);
+	//return nsurf;
+
 }
 
 surface adjust_surface_alpha_add(surface const &surf, int amount)
@@ -457,12 +477,16 @@ surface adjust_surface_alpha_add(surface const &surf, int amount)
 	return create_optimized_surface(nsurf);
 }
 
+int inc;
+
 // Applies a mask on a surface
 surface mask_surface(surface const &surf, surface const &mask)
 {
 	if(surf == NULL) {
 		return NULL;
 	}
+//printf("mask_surface  n*%d",inc++);
+	//return surf;
 
 	surface nsurf = make_neutral_surface(surf);
 	surface nmask(make_neutral_surface(mask));
@@ -501,8 +525,8 @@ surface mask_surface(surface const &surf, surface const &mask)
 		}
 	}
 
-	return nsurf;
-	//return create_optimized_surface(nsurf);
+	//return nsurf;
+	return create_optimized_surface(nsurf);
 }
 
 // Cross-fades a surface
@@ -511,6 +535,7 @@ surface blur_surface(surface const &surf, int depth)
 	if(surf == NULL) {
 		return NULL;
 	}
+	//return surf;
 
 	surface nsurf = make_neutral_surface(surf);
 	surface res = create_compatible_surface(nsurf, surf->w, surf->h);
@@ -626,6 +651,8 @@ surface blend_surface(surface const &surf, double amount, Uint32 colour)
 		return NULL;
 	}
 
+	SDL_Color color = int_to_color(colour);
+
 	surface nsurf(make_neutral_surface(surf));
 
 	if(nsurf == NULL) {
@@ -635,25 +662,20 @@ surface blend_surface(surface const &surf, double amount, Uint32 colour)
 
 	{
 		surface_lock lock(nsurf);
-		uint32_t* beg = lock.pixels();
-		uint32_t* end = beg + nsurf->w*surf->h;
+		Uint32* beg = lock.pixels();
+		Uint32* end = beg + nsurf->w*surf->h;
 
-		Uint8 red2, green2, blue2, alpha2;
-		SDL_GetRGBA(colour,nsurf->format,&red2,&green2,&blue2,&alpha2);
-
-		red2 = Uint8(red2*amount);
-		green2 = Uint8(green2*amount);
-		blue2 = Uint8(blue2*amount);
-
-		amount = 1.0 - amount;
 		uint16_t ratio = amount * 256;
-		
-		
+		const uint16_t red   = ratio * color.r;
+		const uint16_t green = ratio * color.g;
+		const uint16_t blue  = ratio * color.b;
+		ratio = 256 - ratio;
+
 		while(beg != end) {
 			uint8_t a = static_cast<uint8_t>(*beg >> 24);
-			uint8_t r = (ratio * static_cast<uint8_t>(*beg >> 16) + red2)   >> 8;
-			uint8_t g = (ratio * static_cast<uint8_t>(*beg >> 8)  + green2) >> 8;
-			uint8_t b = (ratio * static_cast<uint8_t>(*beg)       + blue2)  >> 8;
+			uint8_t r = (ratio * static_cast<uint8_t>(*beg >> 16) + red)   >> 8;
+			uint8_t g = (ratio * static_cast<uint8_t>(*beg >> 8)  + green) >> 8;
+			uint8_t b = (ratio * static_cast<uint8_t>(*beg)       + blue)  >> 8;
 
 			*beg = (a << 24) | (r << 16) | (g << 8) | b;
 

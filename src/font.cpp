@@ -664,7 +664,10 @@ SDL_Rect measure_ucs2_text_line(ucs2_string::const_iterator first, ucs2_string::
 
 			font_style_setter const style_setter(ttfont, style);
 
-			TTF_SizeUNICODE(ttfont, (Uint16 const *)&chunk.front(), (int*)&rect.x, (int*)&rect.y);
+			int x, y;
+			TTF_SizeUNICODE(ttfont, (Uint16 const *)&chunk.front(), &x, &y);
+			rect.x = x;
+			rect.y = y;
 
 			rect.w += rect.x;
 			rect.h = maximum<Sint16>(rect.h, rect.y);
@@ -686,7 +689,10 @@ SDL_Rect measure_ucs2_text_line(ucs2_string::const_iterator first, ucs2_string::
 
 		font_style_setter const style_setter(ttfont, style);
 
-		TTF_SizeUNICODE(ttfont, (Uint16 const *)&chunk.front(), (int*)&rect.x, (int*)&rect.y);
+		int x, y;
+		TTF_SizeUNICODE(ttfont, (Uint16 const *)&chunk.front(), &x, &y);
+		rect.x = x;
+		rect.y = y;
 
 		rect.w += rect.x;
 		rect.h = maximum<Sint16>(rect.h, rect.y);
@@ -1209,6 +1215,7 @@ surface floating_label::create_surface()
 		if(foreground_ == NULL) {
 			return NULL;
 		}
+		//bgalpha_ = 255; //arti disable alpha
 
 		//if the surface has to be created onto some kind of background, then do that here
 		if(bgalpha_ != 0) {
@@ -1216,6 +1223,8 @@ surface floating_label::create_surface()
 			if(tmp == NULL) {
 				return NULL;
 			}
+//
+			//SDL_FillRect(tmp,NULL,SDL_MapRGBA(tmp->format,bgcolour_.r,bgcolour_.g,bgcolour_.b, bgalpha_));
 
 			SDL_FillRect(tmp,NULL,SDL_MapRGB(tmp->format,bgcolour_.r,bgcolour_.g,bgcolour_.b));
 			if(bgalpha_ != 255) {
@@ -1434,7 +1443,9 @@ void draw_floating_labels(surface screen)
 	for(label_map::iterator i = labels.begin(); i != labels.end(); ++i) {
 		if(context.count(i->first) > 0) {
 			i->second.draw(screen);
-		}
+			/*if (strlen(i->second.text().c_str()) > 5 )
+				SDL_Delay(300);*/
+			}
 	}
 }
 

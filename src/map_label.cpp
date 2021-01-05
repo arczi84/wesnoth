@@ -117,13 +117,13 @@ void map_labels::set_label(const gamemap::location& loc, const std::string& str)
 	const gamemap::location loc_nexty(loc.x,loc.y+1);
 	const int xloc = (disp_.get_location_x(loc) + disp_.get_location_x(loc_nextx)*2)/3;
 	const int yloc = disp_.get_location_y(loc_nexty) - font::SIZE_NORMAL;
-	const int handle = font::add_floating_label(text,font::SIZE_NORMAL,colour,xloc,yloc,0,0,-1,disp_.map_area());
+/*	const int handle = font::add_floating_label(text,font::SIZE_NORMAL,colour,xloc,yloc,0,0,-1,disp_.map_area());
 
-	labels_.insert(std::pair<gamemap::location,int>(loc,handle));
+	//labels_.insert(std::pair<gamemap::location,int>(loc,handle));
 
 	if(is_shrouded(disp_,loc)) {
 		font::show_floating_label(handle,false);
-	}
+	}*///  arti
 }
 
 void map_labels::clear()

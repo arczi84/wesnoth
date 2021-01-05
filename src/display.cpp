@@ -176,7 +176,7 @@ void display::new_turn()
 				const int cur_ticks = SDL_GetTicks();
 				const int wanted_ticks = starting_ticks + i*frame_time;
 				if(cur_ticks < wanted_ticks) {
-					//SDL_Delay(wanted_ticks - cur_ticks); //arti
+					SDL_Delay(wanted_ticks - cur_ticks); //arti
 				}
 			}
 		}
@@ -414,13 +414,19 @@ void display::scroll(int xmove, int ymove)
 	xpos_ += xmove;
 	ypos_ += ymove;
 	bounds_check_position();
+	const int dx = orig_x - xpos_; // dx = -xmove
+	const int dy = orig_y - ypos_; // dy = -ymove
 
 	//only invalidate if we've actually moved
-	if(orig_x != xpos_ || orig_y != ypos_) {
+	if(dx == 0 && dy == 0)
+		return;
+		
+	//only invalidate if we've actually moved
+	//if(orig_x != xpos_ || orig_y != ypos_) {
 		map_labels_.scroll(orig_x - xpos_, orig_y - ypos_);
 		font::scroll_floating_labels(orig_x - xpos_, orig_y - ypos_);
 		invalidate_all();
-	}
+	//}
 }
 
 int display::hex_size() const
@@ -623,9 +629,6 @@ void display::flip()
 	events::raise_volatile_draw_event();
 	cursor::draw(frameBuffer);
 
-	//WaitTOF();
-	//ApolloWaitVBLPassed();
-
 	video().flip();
 
 	cursor::undraw(frameBuffer);
@@ -762,7 +765,7 @@ void display::draw(bool update,bool force)
 
 	//force a wait for 10 ms every frame.
 	//TODO: review whether this is the correct thing to do
-	////SDL_Delay(maximum<int>(10,wait_time)); //arti
+	SDL_Delay(maximum<int>(10,wait_time)); //arti
 
 	if(update) {
 		lastDraw_ = SDL_GetTicks();
@@ -776,7 +779,6 @@ void display::draw(bool update,bool force)
 		}
 	}
 }
-
 
 void display::update_display()
 {
@@ -807,6 +809,7 @@ void display::update_display()
 		font::remove_floating_label(fps_handle_);
 		fps_handle_ = 0;
 	}
+
 	flip();
 }
 
@@ -1188,8 +1191,8 @@ void display::draw_unit_on_tile(int x, int y, surface unit_image_override,
 			//flip_surface if the image has been over-ridden.
 			if(unit_image_override == NULL) {
 				unit_image.assign(image::reverse_image(unit_image));
-			//} else {
-			//	unit_image.assign(flip_surface(unit_image));
+			} else {
+				unit_image.assign(flip_surface(unit_image));
 			}
 		}
 	}
@@ -1373,7 +1376,7 @@ void display::draw_tile(int x, int y, surface unit_image, fixed_t alpha, Uint32 
 		terrain = map_.get_terrain(loc);
 	}
 
-	image::TYPE image_type = image::UNSCALED;
+	image::TYPE image_type = image::SCALED;
 
 	const time_of_day& tod = status_.get_time_of_day();
 	const time_of_day& tod_at = timeofday_at(status_,units_,loc);
@@ -1955,12 +1958,12 @@ void display::invalidate_animations()
 	gamemap::location topleft;
 	gamemap::location bottomright;
 	get_visible_hex_bounds(topleft, bottomright);
-
-	for(size_t i = 0; i < flags_.size(); ++i) {
-		flags_[i].update_current_frame();
-		if(flags_[i].frame_changed())
-			animate_flags = true;
-	}
+/*
+	for(size_t i = 0; i < flags_.size(); ++i) {*/
+		flags_[/*i*/0].update_current_frame();
+		//if(flags_[i].frame_changed())
+			//animate_flags = true;
+	//}
 
 	for(int x = topleft.x; x <= bottomright.x; ++x) {
 		for(int y = topleft.y; y <= bottomright.y; ++y) {
@@ -2248,6 +2251,8 @@ void display::clear_chat_messages()
 
 void display::prune_chat_messages(bool remove_all)
 {
+	return; //arti
+
 	const unsigned int message_ttl = remove_all ? 0 : 1200000;
 	if(chat_messages_.empty() == false && (chat_messages_.front().created_at+message_ttl < SDL_GetTicks() || chat_messages_.size() > max_chat_messages)) {
 		const int movement = font::get_floating_label_rect(chat_messages_.front().handle).h;

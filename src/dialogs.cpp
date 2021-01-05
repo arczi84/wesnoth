@@ -133,7 +133,7 @@ bool animate_unit_advancement(const game_data& info,unit_map& units, gamemap::lo
 			events::pump();
 			gui.draw(false);
 			gui.update_display();
-			//SDL_Delay(30);
+			SDL_Delay(30);
 		}
 	}
 
@@ -156,7 +156,7 @@ bool animate_unit_advancement(const game_data& info,unit_map& units, gamemap::lo
 			events::pump();
 			gui.draw(false);
 			gui.update_display();
-			//SDL_Delay(30);
+			SDL_Delay(30);
 		}
 	}
 
@@ -448,8 +448,13 @@ std::string format_time_summary(time_t t)
 
 } //end anon namespace
 
+extern "C" {
+extern bool use_saga;
+}
+
 std::string load_game_dialog(display& disp, const config& game_config, const game_data& data, bool* show_replay)
 {
+
 	std::vector<save_info> games = get_saves_list();
 
 	if(games.empty()) {

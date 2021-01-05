@@ -400,13 +400,13 @@ AUTOCONF = autoconf
 AUTOHEADER = autoheader
 AUTOMAKE = automake-1.16
 AWK = gawk
-CC = m68k-amigaos-gcc
+CC = m68k-amigaos-gcc-4
 CCDEPMODE = depmode=gcc3
-CFLAGS =  -fomit-frame-pointer -m68060 -ffast-math -O3 -pipe -s -w $(am__append_7) $(am__append_9)
-CPP = m68k-amigaos-gcc -fomit-frame-pointer -m68060 -ffast-math -O3 -pipe -s -w -E
+CFLAGS =  -std=c99 -fomit-frame-pointer -m68040 -ffast-math -O3 -pipe -s -w  $(am__append_7) $(am__append_9)
+CPP = m68k-amigaos-gcc -fomit-frame-pointer -m68040 -ffast-math -O3 -pipe -s -w -E
 CPPFLAGS = -I/e/usr/local/amiga/m68k-amigaos/include -I/d/amiga-gcc2/include/freetype2 -I/opt/netsurf/m68k-unknown-amigaos/env/include/libpng16 -I/opt/netsurf/m68k-unknown-amigaos/env/include
-CXX = m68k-amigaos-g++-4.3.2 -fomit-frame-pointer -m68060 -ffast-math -O3 -s -w
-CXXCPP = m68k-amigaos-g++-4.3.2 -fomit-frame-pointer -m68060 -ffast-math -O3 -s -w -E
+CXX = m68k-amigaos-g++-4.3.2 -fomit-frame-pointer -m68040 -ffast-math -O3 -s -w
+CXXCPP = m68k-amigaos-g++-4.3.2 -fomit-frame-pointer -m68040 -ffast-math -O3 -s -w -E
 CXXDEPMODE = depmode=gcc3
 CXXFLAGS =   -W -Wall -ansi  $(am__append_6) $(am__append_8)
 CYGPATH_W = cygpath -w
@@ -440,7 +440,7 @@ INTL_MACOSX_LIBS =
 KDE_CONFIG = none
 KDE_DESKTOP = 
 KDE_ICON = 
-LDFLAGS =  $(am__append_10)
+LDFLAGS = -Wl,--wrap=memcpy  amiga/VBLServerHandler.ao amiga/memopt.ao --coverage  -lgcov $(am__append_10)
 LDPREFIX = 
 LIBICONV = /e/usr/local/amiga/m68k-amigaos/lib/libiconv.a
 LIBINTL = 
@@ -476,7 +476,7 @@ RANLIB = m68k-amigaos-ranlib
 SDL_CFLAGS = -I/cygdrive/e/usr/local/amiga/m68k-amigaos/include -I/cygdrive/e/usr/local/amiga/m68k-amigaos/include-extra -I/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl -I/cygdrive/e/usr/local/amiga/m68k-amigaos/sys-include
 SDL_CONFIG = /cygdrive/e/usr/local/amiga/m68k-amigaos/bin/sdl-config
 SDL_IMAGE_LIBS = -lSDL_image -ljpeg
-SDL_LIBS = -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -lSDL.mort3 -lintl -liconv -lstdc++4 -Wl,--wrap=SDL_RLEAlphaBlit -Wl,--wrap=memcpy -Wl,--wrap=free -Wl,--wrap=malloc  -Wl,--wrap=calloc -Wl,--wrap=realloc -Wl,--wrap=ApolloKeyRGB565toRGB565 amiga/memopt.ao amiga/RLEAlphaBlit565.ao amiga/VBLServerHandler.ao amiga/colorkeyapollo.ao
+SDL_LIBS = -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -lSDL -lintl -liconv -lstdc++4 
 SDL_MIXER_LIBS = 
 SDL_NET_LIBS = -lSDL_net
 SET_MAKE = 
@@ -968,7 +968,7 @@ wesnothd_SOURCES = \
 	serialization/string_utils.hpp \
 	zipios++/xcoll.hpp
 
-wesnothd_LDADD = -lSDL_net -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -lSDL.mort3 -lintl -liconv -lstdc++4 -Wl,--wrap=SDL_RLEAlphaBlit -Wl,--wrap=memcpy -Wl,--wrap=free -Wl,--wrap=malloc  -Wl,--wrap=calloc -Wl,--wrap=realloc -Wl,--wrap=ApolloKeyRGB565toRGB565 amiga/memopt.ao amiga/RLEAlphaBlit565.ao amiga/VBLServerHandler.ao amiga/colorkeyapollo.ao $(LIBZIPIOS) $(LIBINTL)
+wesnothd_LDADD = -lSDL_net -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -lSDL -lintl -liconv -lstdc++4  $(LIBZIPIOS) $(LIBINTL)
 
 #############################################################################
 #    Campaign Server                                                        #
@@ -1007,7 +1007,7 @@ campaignd_SOURCES = \
 	tstring.hpp \
 	zipios++/xcoll.hpp
 
-campaignd_LDADD = -lSDL_net -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -lSDL.mort3 -lintl -liconv -lstdc++4 -Wl,--wrap=SDL_RLEAlphaBlit -Wl,--wrap=memcpy -Wl,--wrap=free -Wl,--wrap=malloc  -Wl,--wrap=calloc -Wl,--wrap=realloc -Wl,--wrap=ApolloKeyRGB565toRGB565 amiga/memopt.ao amiga/RLEAlphaBlit565.ao amiga/VBLServerHandler.ao amiga/colorkeyapollo.ao $(LIBZIPIOS) $(LIBINTL)
+campaignd_LDADD = -lSDL_net -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -lSDL -lintl -liconv -lstdc++4  $(LIBZIPIOS) $(LIBINTL)
 
 #############################################################################
 #    Castle building helpers                                                #
@@ -1067,8 +1067,8 @@ cutter_SOURCES = \
 	tstring.hpp \
 	gettext.cpp
 
-exploder_LDADD = -lSDL_image -ljpeg -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -lSDL.mort3 -lintl -liconv -lstdc++4 -Wl,--wrap=SDL_RLEAlphaBlit -Wl,--wrap=memcpy -Wl,--wrap=free -Wl,--wrap=malloc  -Wl,--wrap=calloc -Wl,--wrap=realloc -Wl,--wrap=ApolloKeyRGB565toRGB565 amiga/memopt.ao amiga/RLEAlphaBlit565.ao amiga/VBLServerHandler.ao amiga/colorkeyapollo.ao $(LIBZIPIOS) $(LIBINTL) $(PNG_LIBS)
-cutter_LDADD = -lSDL_image -ljpeg -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -lSDL.mort3 -lintl -liconv -lstdc++4 -Wl,--wrap=SDL_RLEAlphaBlit -Wl,--wrap=memcpy -Wl,--wrap=free -Wl,--wrap=malloc  -Wl,--wrap=calloc -Wl,--wrap=realloc -Wl,--wrap=ApolloKeyRGB565toRGB565 amiga/memopt.ao amiga/RLEAlphaBlit565.ao amiga/VBLServerHandler.ao amiga/colorkeyapollo.ao $(LIBZIPIOS) $(LIBINTL) $(PNG_LIBS)
+exploder_LDADD = -lSDL_image -ljpeg -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -lSDL -lintl -liconv -lstdc++4  $(LIBZIPIOS) $(LIBINTL) $(PNG_LIBS)
+cutter_LDADD = -lSDL_image -ljpeg -L/cygdrive/e/usr/local/amiga/m68k-amigaos/lib -lSDL -lintl -liconv -lstdc++4  $(LIBZIPIOS) $(LIBINTL) $(PNG_LIBS)
 AM_CXXFLAGS = -I $(srcdir)/sdl_ttf -I../intl -I$(top_srcdir)/intl -I/cygdrive/e/usr/local/amiga/m68k-amigaos/include -I/cygdrive/e/usr/local/amiga/m68k-amigaos/include-extra -I/cygdrive/e/usr/local/amiga/m68k-amigaos/include/sdl -I/cygdrive/e/usr/local/amiga/m68k-amigaos/sys-include -DWESNOTH_PATH=\"$(pkgdatadir)\" \
 	-DLOCALEDIR=\"$(LOCALEDIR)\" -DHAS_RELATIVE_LOCALEDIR=$(HAS_RELATIVE_LOCALEDIR) -DFIFODIR=\"$(fifodir)\"
 

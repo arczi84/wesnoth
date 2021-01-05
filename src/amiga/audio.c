@@ -61,17 +61,11 @@ void playSound(struct WaveData *waveData)
 {
 	volatile struct audioSAGA *soundHW;
 	if (channel == 1)
-	{
 		soundHW = (struct audioSAGA *)0xdff410;
-	}
 	else if (channel == 2)
-	{
 		soundHW = (struct audioSAGA *)0xdff420;
-	}
 	else
-	{
 		soundHW = (struct audioSAGA *)0xdff430;
-	}
 
 	soundHW->data = waveData->data;
 	soundHW->numLongs = waveData->len / 4;
@@ -79,18 +73,15 @@ void playSound(struct WaveData *waveData)
 	soundHW->ctrl = 0x0003;
 	soundHW->period = 3546890 / (waveData->frequency);
 
-	if (channel == 1)
-	{
+	if (channel == 1) {
 		custom.dmacon = 0x8002;
 		channel = 2;
 	}
-	else if (channel == 2)
-	{
+	else if (channel == 2) {
 		custom.dmacon = 0x8004;
 		channel = 3;
 	}
-	else
-	{
+	else {
 		custom.dmacon = 0x8008;
 		channel = 1;
 	}

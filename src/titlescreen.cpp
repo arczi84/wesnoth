@@ -83,7 +83,7 @@ bool fade_logo(display& screen, int xpos, int ypos)
 
 			screen.update_display();
 
-			//SDL_Delay(10);
+			SDL_Delay(10);
 
 			events::pump();
 			if(screen.video().modeChanged()) {

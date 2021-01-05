@@ -157,6 +157,46 @@ private:
 	preproc_map defines_map_, old_defines_map_;
 };
 
+extern "C" {
+bool use_saga;
+
+#include <dos/dos.h>
+#include <exec/exec.h>
+#include "amiga/VBLServer.h"
+
+UBYTE ac68080_ammx;
+extern struct ExecBase *SysBase;
+bool ac68080 = false;
+bool checked = false;
+
+void check_sys()
+{
+	if (!checked) {
+		if(SysBase->AttnFlags & (1<<10)) {
+				ac68080 = true;
+				ac68080_ammx = 1;
+				printf("Vampire acceleretion detected.\n");
+				if (use_saga) {
+					printf("Enabling experimental SAGA direct draw.\n");
+					ApolloInitVBLServer();
+				}
+			}
+		else
+		{
+			printf("Vampire acceleretion not detected.\n");
+			if (use_saga) {
+				printf("Disabling SAGA direct draw. \n");
+				use_saga = false;
+			}
+			printf("Disabling audio.\n");
+		}
+
+		checked = true;
+	}
+}
+
+}
+
 game_controller::game_controller(int argc, char** argv)
    : argc_(argc), arg_(1), argv_(argv), thread_manager(),
      test_mode_(false), multiplayer_mode_(false),
@@ -194,6 +234,8 @@ game_controller::game_controller(int argc, char** argv)
 			}
 		} else if(val == "--nogui") {
 			no_gui_ = true;
+		} else if(val == "--saga") {
+			use_saga = true;
 		} else if(val == "--windowed" || val == "-w") {
 			preferences::set_fullscreen(false);
 		} else if(val == "--fullscreen" || val == "-f") {
@@ -235,6 +277,8 @@ game_controller::game_controller(int argc, char** argv)
 			preferences::set_music(false);
 		}
 	}
+
+	check_sys();
 }
 
 display& game_controller::disp()
@@ -274,7 +318,7 @@ bool game_controller::init_video()
 
 	std::pair<int,int> resolution = preferences::resolution();
 
-	int DefaultBPP = 8;//24;
+	int DefaultBPP = 16;
 	const SDL_VideoInfo* const video_info = SDL_GetVideoInfo();
 	if(video_info != NULL && video_info->vfmt != NULL) {
 		DefaultBPP = video_info->vfmt->BitsPerPixel;
@@ -290,10 +334,11 @@ bool game_controller::init_video()
 	resolution.first = 960;//640;
 	resolution.second = 540;//480;
 	bpp = 16;
+	///printf("\n ****** bpp  = %d ******** \n",bpp);
 #endif
 
 	if(bpp == 0) {
-	/*
+
 		//Video mode not supported, maybe from bad prefs.
 		std::cerr << "Video mode " << resolution.first
 		          << "x" << resolution.second << "x" << DefaultBPP << " "
@@ -313,7 +358,6 @@ bool game_controller::init_video()
 
 			bpp = video_.modePossible(resolution.first,resolution.second,DefaultBPP,video_flags);
 		}
-*/
 
 #ifdef USE_TINY_GUI
 		if(bpp == 0) {
@@ -358,8 +402,6 @@ bool game_controller::init_video()
 	if(force_bpp_ > 0) {
 		bpp = force_bpp_;
 	}
-
-
 
 	std::cerr << "setting mode to " << resolution.first << "x" << resolution.second << "x" << bpp << "\n";
 	const int res = video_.setMode(resolution.first,resolution.second,bpp,video_flags);

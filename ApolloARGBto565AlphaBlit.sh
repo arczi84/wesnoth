@@ -1,0 +1,1 @@
+vasmm68k_mot -m68080 -Faout -x -devpac ./src/amiga/ApolloARGBto565AlphaBlit.asm -o ./src/amiga/ApolloARGBto565AlphaBlit.ao

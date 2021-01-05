@@ -429,3 +429,10 @@ DerivedData/
 exefs/main
 *.Po
 *.7z
+*.7z
+src/wesnoth.7z
+src/Kopiuj (1) sdl_utils.cpp
+src/wesnoth
+*.gcno
+*.gcda
+*.bmp
